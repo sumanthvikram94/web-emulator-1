@@ -1,0 +1,301 @@
+ /********************************************************************************
+* 5655-MA1                                                                      *
+* © Copyright Rocket Software, Inc. or its affiliates 2016, 2020.               *
+* All Rights Reserved.                                                          *
+********************************************************************************/
+
+/* html {
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+body { 
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+    margin:0px;
+    font-size: 14px;
+    background-color: #fff;
+} */
+
+#bzwINDFILE {
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+    margin:0px;
+    font-size: 14px;
+    background-color: #fff; 
+}
+
+#bzwINDFILE .header_style
+{
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+#bzwINDFILE .header_divider
+{
+  border-bottom: 1px solid lightgray;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+#bzwINDFILE .close_button_style {
+    border:none;
+    cursor: pointer;
+    font-size:14px;
+    font-weight: bold;
+    background-color: white;
+}
+
+#bzwINDFILE table p {
+    text-align: left;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+
+#bzwINDFILE .indfile_section_style
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:80%;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index: 15000;
+}
+
+#bzwINDFILE .dynContent
+{
+  cursor: default;
+}
+
+#bzwINDFILE .dynContent_btm_tbl_indfile
+{
+    height : auto;
+    width: auto;
+    margin: 2px auto;
+    color:black;
+    border: 1px solid gray;
+    box-shadow: 2px 2px lightgrey;
+    padding: 0px 14px 0px 14px;
+    overflow:hidden;
+    display: block;
+    background-color: white;
+}
+
+#bzwINDFILE button{
+    font-size:inherit;
+    font-family:inherit;
+    color:#333333;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwINDFILE button[disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.3;
+}
+
+#bzwINDFILE .button_submit {
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    min-width: 60px;
+    height: 36px;
+    /* background-color: #3B5C7D; */
+    background-color: #990099 !important;
+    font-family: Helvetica, Arial;
+    color:white !important;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwINDFILE .button_submit:hover {
+    border: 1px solid #f4f7fb;
+    outline: 1px solid #990099;
+    color: #fff;
+    background-color: #990099;
+}
+
+#bzwINDFILE input,
+#bzwINDFILE input[type=text]
+/* #bzwINDFILE .text_input */
+{
+	box-sizing: content-box;
+    padding: 6px 12px;
+    border-bottom: 1px solid #8f8f8f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+    transition: background-color ease-in-out .15s;
+    width:95%;
+    height:36px;
+    box-sizing: border-box;
+    background-color:#F4F7FB;
+    color:black;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwINDFILE input.dsnlevel {
+    width:37%;
+}
+
+#bzwINDFILE input.filetype {
+    width:12%;
+}
+
+#bzwINDFILE input.filemode {
+    width:12%;
+}
+
+#bzwINDFILE input:focus, #bzwINDFILE select:focus, #bzwINDFILE input:active, #bzwINDFILE select:active{
+    outline: none !important;
+    border: 2px #990099 solid !important;
+    box-shadow: none !important;
+    background-color: #ffffff !important;
+}
+
+#bzwINDFILE .select_input {
+	box-sizing: content-box;
+    padding: 6px 12px;
+    border-bottom: 1px solid #8f8f8f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: background-color ease-in-out .15s;
+    width:auto;
+    height:36px;
+    box-sizing: border-box;
+    background-color:#F4F7FB;
+    color:black;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwINDFILE input[type='checkbox'] {
+    vertical-align: middle;
+    width:16px;
+    height:16px;
+    background:white;
+    border-radius:2px;
+    border:2px solid #555;
+    box-sizing: border-box;
+    padding: 0;
+    accent-color: #990099;
+    cursor: pointer;
+}
+
+#bzwINDFILE .disablelabel {
+    box-shadow: none;
+    opacity: 0.3;
+}
+
+#bzwINDFILE input[type=text][disabled]
+{
+    cursor: not-allowed;
+    background-color:white;
+    opacity: 1;
+}
+
+#bzwINDFILE input[type=text]:focus {
+    outline:none !important;
+}
+
+#bzwINDFILE input[type=button][disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.3;
+}
+
+#bzwINDFILE input::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+#bzwINDFILE input:-ms-input-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+#bzwINDFILE input::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+#bzwINDFILE a, #bzwINDFILE a:hover {
+    text-decoration: none;
+}
+
+#bzwINDFILE .indfile_list
+{
+    box-sizing: content-box;
+    padding: 6px 12px;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: background-color ease-in-out .15s;
+    width:93%;
+    height:25px;
+    background-color:#F4F7FB;
+    color:black;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwINDFILE .color_light
+{
+    color:white;
+}
+
+#bzwINDFILE .fontSize_large
+{
+   font-size: 100%;
+}
+
+#bzwINDFILE .fontSize_small
+{   
+    font-size:80%;
+    line-height: 0.5em;
+}
+
+#bzwINDFILE .field_label_flex
+{
+    display:flex;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+    padding-bottom: 5px;
+}
+
+.bzw_indfile_overlay {
+	width:100%;
+	height:100%;
+	background: #2F4F4F;
+	opacity: 0.607843;
+	position: absolute;
+	left:0;
+	top:0;
+    z-index: 1020;
+}
+
+#bzwINDFILE #advBtn {
+	width: 25%; 
+	background-color: transparent;
+    color: #990099;
+    cursor: pointer;
+	border: 0;
+    border: 1px solid #990099;
+}
+#bzwINDFILE #advBtn:hover {
+	background-color: #e5e5e5;
+}

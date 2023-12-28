@@ -1,0 +1,28 @@
+{
+  "launchpad":[{"optionId":1,"name":"Attn","tooltip":"Attention","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Attn","iconName":"Attn"},
+               {"optionId":2,"name":"Back Tab","tooltip":"Back Tab","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Back Tab","iconName":"Back Tab"},
+               {"optionId":3,"name":"Backspace","tooltip":"Backspace","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Backspace","iconName":"Backspace"},
+               {"optionId":4,"name":"Clear","tooltip":"Clear","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Clear","iconName":"Clear"},
+               {"optionId":5,"name":"Delete","tooltip":"Delete","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Delete","iconName":"Delete"},
+               {"optionId":6,"name":"Enter","tooltip":"Enter","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Enter","iconName":"Enter"},
+               {"optionId":7,"name":"Erase EOF","tooltip":"Erase End Of Field","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Erase EOF","iconName":"Erase EOF"},
+               {"optionId":8,"name":"Home","tooltip":"Home","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Home","iconName":"Home"},
+               {"optionId":9,"name":"Insert","tooltip":"Insert","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Insert","iconName":"Insert"},
+               {"optionId":10,"name":"New Line","tooltip":"New Line","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"New Line","iconName":"New Line"},
+               {"optionId":11,"name":"PF13","tooltip":"PF13","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF13","iconName":"PF13"},
+               {"optionId":12,"name":"PF14","tooltip":"PF14","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF14","iconName":"PF14"},
+               {"optionId":13,"name":"PF15","tooltip":"PF15","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF15","iconName":"PF15"},
+               {"optionId":14,"name":"PF16","tooltip":"PF16","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF16","iconName":"PF16"},
+               {"optionId":15,"name":"PF17","tooltip":"PF17","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF17","iconName":"PF17"},
+               {"optionId":16,"name":"PF18","tooltip":"PF18","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF18","iconName":"PF18"},
+               {"optionId":17,"name":"PF19","tooltip":"PF19","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF19","iconName":"PF19"},
+               {"optionId":18,"name":"PF20","tooltip":"PF20","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF20","iconName":"PF20"},
+               {"optionId":19,"name":"PF21","tooltip":"PF21","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF21","iconName":"PF21"},
+               {"optionId":20,"name":"PF22","tooltip":"PF22","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF22","iconName":"PF22"},
+               {"optionId":21,"name":"PF23","tooltip":"PF23","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF23","iconName":"PF23"},
+               {"optionId":22,"name":"PF24","tooltip":"PF24","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"PF24","iconName":"PF24"},
+               {"optionId":23,"name":"Reset","tooltip":"Reset","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Reset","iconName":"Reset"},
+               {"optionId":24,"name":"Sys Req","tooltip":"System Request","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Sys Req","iconName":"Sys Req"},
+               {"optionId":25,"name":"Print","tooltip":"Print","actionType":"KEYMAP_TYPE_3270FUNCTION","action":"Print","iconName":"Print"}
+  ]
+}

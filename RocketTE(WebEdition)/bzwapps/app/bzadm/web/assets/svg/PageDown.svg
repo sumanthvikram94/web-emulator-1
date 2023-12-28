@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>page down</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc" transform="translate(-862.000000, -222.000000)">
+            <g id="page-down" transform="translate(862.000000, 222.000000)">
+                <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="18" height="18"></rect>
+                <path d="M8.64644661,6.64644661 C9.13807119,6.5 9.26307119,6.55596441 9.35355339,6.64644661 C9.44403559,6.73692881 9.5,6.86192881 9.5,7 L9.5,7 L9.5,20 C9.5,20.1380712 9.44403559,20.2630712 9.35355339,20.3535534 C9.26307119,20.4440356 9.13807119,20.5 9,20.5 C8.86192881,20.5 8.73692881,20.4440356 8.64644661,20.3535534 C8.55596441,20.2630712 8.5,20.1380712 8.5,20 L8.5,20 L8.5,7 C8.5,6.86192881 8.55596441,6.73692881 8.64644661,6.64644661 Z" id="矩形" stroke="#ad33ad" transform="translate(9.000000, 13.500000) rotate(90.000000) translate(-9.000000, -13.500000) "></path>
+                <polyline id="路径-5" stroke="#ad33ad" stroke-width="2" stroke-linecap="round" transform="translate(9.347222, 6.152778) scale(-1, -1) rotate(90.000000) translate(-9.347222, -6.152778) " points="12.3472222 1.15277778 6.34722222 5.95833333 12.3472222 11.1527778"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

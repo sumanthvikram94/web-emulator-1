@@ -1,0 +1,185 @@
+
+
+{
+    "identifier": "com.rs.bzshared",
+    "apiVersion": "0.0.0-0000",
+    "pluginVersion": "0.0.0-0000",
+    "pluginType": "application",
+    "webContent": {
+      "framework": "angular2",
+      "launchDefinition": {
+        "pluginShortNameKey": "bzshared",
+        "pluginShortNameDefault": "Rocket BlueZone Shared",
+        "imageSrc": "assets/icon.png"
+      },
+      "descriptionKey": "bzsharedDescription",
+      "descriptionDefault": "Web based terminal emulation product by Rocket Software",
+      "isSingleWindowApp": false,
+      "defaultWindowStyle": {
+        "width": 1100,
+        "height": 682
+      }
+    },
+    "dataServices": [
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "register",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/account/account-controller.js",
+          "routerFactory": "registerRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "noAuth",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/no-auth/no-auth-controller.js",
+          "routerFactory": "noAuthRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "userResource",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/user-resource/user-resource-controller.js",
+          "routerFactory": "userResourceRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "script",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/script/script-controller.js",
+          "routerFactory": "scriptRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "userPrivilege",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/user-privilege/user-privilege-controller.js",
+          "routerFactory": "userPrivilegeRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "userAuth",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/user-auth/user-auth-controller.js",
+          "routerFactory": "userAuthRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "addSession",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/add-session/add-session-controller.js",
+          "routerFactory": "addSessionRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "syncMode",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/sync-mode/sync-mode-controller.js",
+          "routerFactory": "syncModeRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "cluster",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/cluster/cluster-controller.js",
+          "routerFactory": "clusterRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+		      "version": "1.0.0",
+          "name": "customization",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/customization/customization-controller.js",
+          "routerFactory": "customizationRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "oauth",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/oauth/oauth-controller.js",
+          "routerFactory": "oAuthRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "ssoAuth",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/sso-auth/sso-auth-controller.js",
+          "routerFactory": "ssoAuthRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "oktaMfa",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/okta-mfa/okta-mfa-controller.js",
+          "routerFactory": "oktaMfaRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "userLanguage",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/language/language-controller.js",
+          "routerFactory": "languageRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "configuration",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/configuration/configuration-controller.js",
+          "routerFactory": "configurationRouter",
+          "dependenciesIncluded": true
+        },
+        {
+          "type": "router",
+          "version": "1.0.0",
+          "name": "userTerminalMfa",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/user-terminal-mfa/user-terminal-mfa-controller.js",
+          "routerFactory": "userTerminalMfaRouter",
+          "dependenciesIncluded": true
+        },
+		{
+          "type": "router",
+          "version": "1.0.0",
+          "name": "userReport",
+          "initializerLookupMethod": "external",
+          "fileName": "apis/user-report/user-report-controller.js",
+          "routerFactory": "userReportRouter",
+          "dependenciesIncluded": true
+        }
+      ],
+      "configurationData": {
+        "resources": {
+          "defaults":{
+            "aggregationPolicy": "none"
+          }
+        }
+      }
+  }

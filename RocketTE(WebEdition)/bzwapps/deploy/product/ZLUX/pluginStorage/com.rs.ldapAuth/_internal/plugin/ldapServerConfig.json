@@ -1,0 +1,13 @@
+{
+  "ldapServerHostname":"",
+  "ldapServerPort":389,
+  "ldapRootDN" : "",
+  "ldapServerSSLEnabled":false,
+  "ldapFilter": "uid={0}",
+  "ldapReturnAttributes": "",
+  "ldapUserIdSuffix": "",
+  "ldapUserIdPrefix": "",
+  "ldapManagerDN": "",
+  "ldapManagerPassword": "",
+  "ldapTimeLimit":60  
+}

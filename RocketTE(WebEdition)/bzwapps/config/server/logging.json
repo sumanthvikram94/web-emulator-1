@@ -1,0 +1,14 @@
+{
+    "type":"file", // file or console
+    "dir": "../log",
+    "prefix": "server",
+    "surfix": ".log", // filename will be nodeServer_YYYYMMDD.log
+    "keepDays": 90, // 0 means never delete file. 
+    "dailyRotate": true,
+	"httpRequest":{
+		"enable":false,
+		"dir": "../log/access",  
+		"prefix": "access",
+		"keepDays": 30 
+	}
+}

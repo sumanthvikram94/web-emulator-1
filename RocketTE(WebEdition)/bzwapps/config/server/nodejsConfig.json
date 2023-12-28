@@ -1,0 +1,4 @@
+{
+	"opensslLegacyProvider":false,
+	"opensslWeakCiphers":false
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rocket TE Web Edition API Demo</title>
+<style>
+  p.demo {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+  b.demo {
+    font-weight: bold;
+    font-family: 'monospace';
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+
+  pre.demo {
+      display: block;
+      white-space: pre;
+      font-family: monospace;
+      margin: 1em 0px;
+  }
+
+  button.demo {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
+
+  #rte-web-api-demo-node {
+    height: 100vh;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .25rem; */
+  }
+
+  #rte-web-api-demo-node header {
+    height: 7rem;
+  }
+
+  #rte-web-api-demo-main{
+    height: calc(100% - 7rem);
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .25rem; */
+  }
+
+  #rte-web-api-demo-main .api-info{
+    height: 100%;
+    overflow: auto;
+  }
+
+  .rte-web-api-demo-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .25rem;
+  }
+
+  #rte-web-api-demo-main .rte-web{
+    padding: 1rem 0 0 1rem;
+    overflow: auto;
+  }
+
+</style>
+<!-- Includes the srouce code of Rocket TE Web APIs -->
+<script src="http://localhost:8543/ZLUX/plugins/com.rs.bzw/web/lib/js/rocket-te-web-api.js"></script>
+<script>
+  // Instantiates the API object
+  const rtewApi = new RocketTeWebApi('http://localhost:8543');
+
+  // Embeds the web component of Rocket TE Web into web page
+  async function launchWebComponent(sessionName) {
+    // Gets the parent element in which to embed web component
+    const parentElement = document.getElementById('rtewApiParent')
+    parentElement.hidden = false
+    setClassName()
+    // Invokes the API function
+    try{
+      const msg = await rtewApi.launchAsWebComponent(parentElement,sessionName)
+      console.log(msg)
+      // Sets Inspector
+      setInspector()
+    } catch (e) {
+      parentElement.hidden = true
+      throw e
+    }
+  }
+
+  // Closes the Rocket TE Web window
+  async function closeWebComponent(){
+    // Gets the parent element
+    const parentElement = document.getElementById('rtewApiParent')
+    parentElement.hidden = true
+    removeClassName()
+    // Invokes the API function
+    await rtewApi.close()
+  }
+
+  function setClassName() {
+    const node = document.getElementById('rte-web-api-demo-main')
+
+    node.classList.add('rte-web-api-demo-col')
+  }
+
+  function removeClassName() {
+    const node = document.getElementById('rte-web-api-demo-main')
+    node.classList.remove('rte-web-api-demo-col')
+  }
+
+  // Embeds an iframe into web page, launch Rocket TE Web inside of the iframe
+  async function launchIframe(sessionName) {
+    // Gets the parent element in which to embed iframe
+    const iframeParent = document.getElementById('iframeParent')
+    iframeParent.hidden = false
+    setClassName()
+    // Invokes the API function
+    const msg = await rtewApi.launchAsIframe(iframeParent,'myFrame', 500, 800, sessionName)
+    console.log(msg)
+    // Sets Inspector
+    setInspector()
+  }
+  
+  // Closes Rocket TE Web
+  async function closeIframe(){
+    // Gets the parent element
+    const parentEle = document.getElementById('iframeParent')
+    parentEle.hidden = true
+    removeClassName()
+    // Invokes the API function
+    rtewApi.close()
+  }
+  
+  // Launch Rocket TE Web in new window
+  async function launchNewWindow(sessionName) {
+    // Invokes the API function. To float the session outside of the web page
+    const msg = await rtewApi.launchAsNewWindow(500, 800, 200, 100, sessionName)
+    console.log(msg)
+    // Sets Inspector
+    setInspector()
+  }
+
+  // Sets inspector
+  async function setInspector() {
+      // Defines the inspector function
+      const inspector = (keyName) => {
+          console.log('Key pressed: ' + keyName)
+      }
+      // Invokes API function. Enables function intercept, and call the inspector function for the key pressed
+      rtewApi.setKeyInspector(inspector, true);
+  }
+
+  async function connect() {
+    const isConnected = await rtewApi.isConnected();
+    if ( isConnected ) {
+      await rtewApi.disconnect();
+      await rtewApi.wait(100);
+    }
+    const myRetVal = await rtewApi.connect("ws://localhost:8543/ZLUX/plugins/com.rs.terminalproxy/services/tn3270data", "rs73.rocketsoftware.com", 23, 0);
+    alert(myRetVal);
+  }
+  async function disconnect() {
+    const myRetVal = await rtewApi.disconnect();
+    alert(myRetVal);
+  }
+  async function doFocus() {
+    const myRetVal = await rtewApi.focus();
+    alert(myRetVal);
+  }
+  async function getCursorRow() {
+    const myRetVal = await rtewApi.getCursorRow();
+    alert(myRetVal);
+  }
+  async function getCursorColumn() {
+    const myRetVal = await rtewApi.getCursorColumn();
+    alert(myRetVal);
+  }
+  async function getText() {
+    const startRow = document.getElementById('iptGetTextStartR').value;
+    const startCol = document.getElementById('iptGetTextStartC').value;
+    const textLength = document.getElementById('iptGetTextLength').value;
+    const myRetVal = await rtewApi.getText(startRow, startCol, textLength);
+    alert(myRetVal);
+  }
+  async function checkIsConnected() {
+    const myRetVal = await rtewApi.isConnected();
+    alert(myRetVal);
+  }
+  async function readScreen() {
+    const myRetVal = await rtewApi.readScreen(13, 41, 14, 77);
+    alert(myRetVal);
+  }
+  async function sendKey() {
+    let key = document.getElementById('input_sendkey').value;
+    key = key? key: 'hello';
+    const myRetVal = await rtewApi.sendKey(key);
+    alert(myRetVal);
+  }
+
+  async function isEditable() {
+    const startRow = document.getElementById('iptGetStartR').value;
+    const startCol = document.getElementById('iptGetStartC').value;
+
+    const myRetVal = await rtewApi.isEditable(startRow, startCol);
+    alert(myRetVal);
+  }
+  async function setCursor() {
+    const myRetVal = await rtewApi.setCursor(24, 2);
+    alert(myRetVal);
+  }
+  async function typePassword() {
+    const myRetVal = await rtewApi.typePassword();
+    alert(myRetVal);
+  }
+  async function typeString() {
+    const myRetVal = await rtewApi.typeString(" world");
+    alert(myRetVal);
+  }
+  async function wait() {
+    const myRetVal = await rtewApi.wait(3000);
+    alert(myRetVal);
+  }
+  async function playScript() {
+    const scriptStr = "automationObject.connect(); \n myObj = automationObject.getRowColumn(); \n automationObject.outputs.myRetVal = myObj.row;";
+    const row = await rtewApi.playScript(scriptStr);
+    alert(row);
+  }
+
+</script>
+</head>
+<body style="font-family: 'monospace' ;font-size: 14px ;line-height: 1.42857143;overflow: hidden;">
+<div id="rte-web-api-demo-node">
+  <header>
+    <p class="demo"><h1>Rocket TE Web Edition API Demo</h1></p>
+    <p class="demo"><a class="demo" href="doc/index.html" target="_blank">Frontend API Document</a></p>
+    <p class="demo"><a class="demo" href="scriptsDoc/index.html" target="_blank">Scripting Document</a></p>
+  </header>
+  <main id="rte-web-api-demo-main">
+    <section class="api-info">
+      <br><h2>Instantiate the RocketTeWebApi object:</h2>
+      <pre class="demo">&nbsp&nbspconst rtewApi = new RocketTeWebApi('http://localhost:8543');</pre>
+      <br><h2>APIs to launch Rocket TE Web window</h2>
+      <h3>Launch the terminal SessionA in Web Component</h3></p>
+      <button class="demo" onClick="launchWebComponent('SessionA')">Launch SessionA</button>
+      <button class="demo" onClick="launchWebComponent()">Launch client</button>
+      <button class="demo" onClick="closeWebComponent()">Close it</button>
+      <pre class="demo">async function launchWebComponent( ) {
+        <br>&nbsp&nbspconst parentDiv = document.getElementById('parentDiv');
+        <br>&nbsp&nbspawait rtewApi.launchAsWebComponent(parentDiv, 'SessionA');
+        <br>&nbsp&nbspawait rtewApi.setKeyInspector((keyName) => {console.log('Key pressed: ' + keyName)});
+        <br>}
+      </pre>
+      <br>
+      
+      <br><h3>Launch the terminal SessionA in iframe</h3></p>
+      <button class="demo" onClick="launchIframe('SessionA')">Launch SessionA</button>
+      <button class="demo" onClick="launchIframe()">Launch Client</button>
+      <button class="demo" onClick="closeIframe()">Close it</button>
+      <pre class="demo">async function launchIframe( ) {
+        <br>&nbsp&nbspconst parentDiv = document.getElementById('parentDiv');
+        <br>&nbsp&nbspawait rtewApi.launchAsIframe(parentDiv,'myFrame', 500, 800, 'SessionA');
+        <br>&nbsp&nbspawait rtewApi.setKeyInspector((keyName) => {console.log('Key pressed: ' + keyName)});
+        <br>}
+      </pre>
+      <br>
+    
+      
+      <br><h3>Launch the terminal SessionA in new window</h3></p>
+      <button class="demo" onClick="launchNewWindow('SessionA')">Launch SessionA</button>
+      <button class="demo" onClick="launchNewWindow()">Launch client</button>
+      <pre class="demo">async function launchNewWindow( ) {
+        <br>&nbsp&nbspconst parentDiv = document.getElementById('parentDiv');
+        <br>&nbsp&nbspawait rtewApi.launchAsNewWindow(500, 800, 200, 100, 'SessionA');
+        <br>&nbsp&nbspawait rtewApi.setKeyInspector((keyName) => {console.log('Key pressed: ' + keyName)});
+        <br>}
+      </pre>
+      <br>
+      
+      <br><br><h2>Call the Rocket TE Web API:</h2></p>
+      <button class="demo" onClick='connect()'>connect</button>
+      <br><pre class="demo">async function connect( ) {
+      <br>&nbsp&nbspconst isConnected = await rtewApi.isConnected();
+      <br>&nbsp&nbspif ( isConnected ) {
+      <br>&nbsp&nbsp&nbsp&nbspawait rtewApi.disconnect();
+      <br>&nbsp&nbsp&nbsp&nbspawait rtewApi.wait(100);
+      <br>&nbsp&nbsp}
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.connect("ws://localhost:8543/ZLUX/plugins/com.rs.terminalproxy/services/tn3270data", "SessionA", 23, 0);
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='disconnect()'>disconnect</button>
+      <br><pre class="demo">async function disconnect() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.disconnect();
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='doFocus()'>focus</button>
+      <br><pre class="demo">async function doFocus() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.focus();
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='getCursorRow()'>getCursorRow</button>
+      <br><pre class="demo">async function getCursorRow() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.getCursorRow();
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='getCursorColumn()'>getCursorColumn</button>
+      <br><pre class="demo">async function getCursorColumn() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.getCursorColumn();
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='getText()'>getText</button>
+      &nbsp;&nbsp;Start position: (<input style="width: 30px;" maxlength="2" id="iptGetTextStartR" value="13"/>, 
+      <input style="width: 30px;" maxlength="3" id="iptGetTextStartC" value="41"/>) &nbsp; &nbsp; Text length:
+      <input style="width: 30px;" maxlength="4" id="iptGetTextLength" value="22"/>
+      <br><pre class="demo">async function getText() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.getText(1, 1, 22);
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='checkIsConnected()'>isConnected</button>
+      <br><pre class="demo">async function checkIsConnected( ) {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.isConnected();
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='readScreen()'>readScreen</button>
+      <br><pre class="demo">async function readScreen() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.readScreen(13, 41, 14, 77);
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='sendKey()'>sendKey</button> <input id="input_sendkey" value="hello">
+      <br><pre class="demo">async function sendKey() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.sendKey("hello");
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='setCursor()'>setCursor</button>
+      <br><pre class="demo">async function setCursor() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.setCursor(24, 2);
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='typePassword()'>typePassword</button>
+      <br><pre class="demo">async function typePassword() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.typePassword();
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='typeString()'>typeString</button>
+      <br><pre class="demo">async function typeString() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.typeString(" world");
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='isEditable()'>isEditable</button>  &nbsp;&nbsp;Cursor position: (<input style="width: 30px;" maxlength="2" id="iptGetStartR" value=10>, 
+      <input style="width: 30px;" maxlength="3" id="iptGetStartC" value=20>) 
+      <br><pre class="demo">async function isEditable() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.isEditable(10, 20);
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <button class="demo" onClick='wait()'>wait</button>
+      <br><pre class="demo">async function wait() {
+      <br>&nbsp&nbspconst myRetVal = await rtewApi.wait(3000);
+      <br>&nbsp&nbspalert(myRetVal);
+      <br>}</pre>
+      <div hidden>
+        <button class="demo" onClick='playScript()'>playScript</button>
+        <br><pre class="demo">async function playScript() {
+        <br>&nbsp&nbspconst scriptStr = "automationObject.connect(); \n const myObj = automationObject.getRowColumn(); \n automationObject.outputs.myRetVal = myObj.row;";
+        <br>&nbsp&nbspconst  row = await rtewApi.playScript(scriptStr);
+        <br>&nbsp&nbspalert(row);
+        <br>}</pre>
+      </div>
+    </section>
+    <section class="rte-web">
+      <div id='rtewApiParent' style="height: 500px;width: 800px; border:1px solid blue;" hidden >
+      </div>
+      <div id="iframeParent" hidden>
+      </div>
+    </section>
+  </main>
+  
+</div>
+</body>
+</html>
+

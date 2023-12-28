@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Dup</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc" transform="translate(-86.000000, -219.000000)">
+            <g id="Dup" transform="translate(86.000000, 219.000000)">
+                <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="18" height="18"></rect>
+                <rect id="矩形" stroke="#ad33ad" stroke-width="2" x="6" y="2" width="10" height="10" rx="1"></rect>
+                <path d="M13.5,6.5 L13.5,7.5 L8.5,7.5 L8.5,6.5 L13.5,6.5 Z" id="矩形" stroke="#ad33ad"></path>
+                <path d="M13.5,6.5 L13.5,7.5 L8.5,7.5 L8.5,6.5 L13.5,6.5 Z" id="矩形" stroke="#ad33ad" transform="translate(11.000000, 7.000000) rotate(90.000000) translate(-11.000000, -7.000000) "></path>
+                <path d="M13,11.4166667 L13,11.4166667 L13,15.0833333 C13,15.5895944 12.5895944,16 12.0833333,16 L10.25,16 L10.25,16 L2.91666667,16 C2.41040565,16 2,15.5895944 2,15.0833333 L2,5.91666667 C2,5.41040565 2.41040565,5 2.91666667,5 L5.66666667,5 L5.66666667,5" id="路径" stroke="#ad33ad" stroke-width="2" stroke-linejoin="bevel"></path>
+            </g>
+        </g>
+    </g>
+</svg>

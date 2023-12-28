@@ -1,0 +1,8 @@
+{
+  "administrator": {
+    "description": "The most privileged group"
+  },
+  "superadmin": {
+    "description": "The most privileged group"
+  }
+}

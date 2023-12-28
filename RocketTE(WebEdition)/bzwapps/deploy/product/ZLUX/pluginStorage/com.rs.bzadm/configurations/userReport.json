@@ -1,0 +1,1 @@
+{"maxTime":"m1","autoRefresh":"disable","saveHistory": {"max": 14, "min": 1, "value": 14}, "samplings": {"value": 5}, "license": {"min": 0, "max": 200000, "value": 0}, "tempData": {"max": 60, "min": 10, "value": 30}}

@@ -1,0 +1,32 @@
+{
+	"id":"Default Group",
+	"groupName":"Default Group",
+	"shortName":"",
+	"leader":"",
+	"parentGroupName":"",
+	"description":"",
+	"sessions":[],
+	"privileges":{
+		"createSession":false,
+		"cloneSession":false,
+		"removeSession":false,
+		"editLU":false,
+		"sessionSettings":false,
+		"enableUseEditor":false,
+		"enablePrivateScript":true,
+		"enableSharedScript":false,
+		"enableEditSession":false,
+		"enableEditFontSize":false,
+		"enableEditColors":false,
+		"enableEditCursor":false,
+		"enableShowLaunchPadMenu":false,
+		"enableEditLaunchPad":false,
+		"enableEditkeyboardMapping":false,
+		"enableEditHotSpots":false,
+		"enableEditLanguage":false,
+		"enableDisplayLaunchPadMenu":false
+	},
+	"internalUsers":[],
+	"ldapUsers":[],
+	"mssqlUsers":[]
+}

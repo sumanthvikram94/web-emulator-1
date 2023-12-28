@@ -1,0 +1,16 @@
+{
+  "launchpad":[{"optionId":1,"name":"F1","tooltip":"PF1","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF01","iconName":"F1"},
+               {"optionId":2,"name":"F2","tooltip":"PF2","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF02","iconName":"F2"},
+               {"optionId":3,"name":"F3","tooltip":"PF3","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF03","iconName":"F3"},
+               {"optionId":4,"name":"F4","tooltip":"PF4","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF04","iconName":"F4"},
+               {"optionId":5,"name":"F5","tooltip":"PF5","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF05","iconName":"F5"},
+               {"optionId":6,"name":"F6","tooltip":"PF6","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF06","iconName":"F6"},
+               {"optionId":7,"name":"F7","tooltip":"PF7","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF07","iconName":"F7"},
+               {"optionId":8,"name":"F8","tooltip":"PF8","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF08","iconName":"F8"},
+               {"optionId":9,"name":"F9","tooltip":"PF9","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF09","iconName":"F9"},
+               {"optionId":10,"name":"F10","tooltip":"PF10","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"PF10","iconName":"F10"},
+               {"optionId":11,"name":"Escape","tooltip":"Escape","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"Escape","iconName":"Escape"},
+               {"optionId":12,"name":"Enter","tooltip":"Enter","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"Enter","iconName":"Enter"},
+               {"optionId":13,"name":"Print","tooltip":"Print","actionType":"KEYMAP_TYPE_VTFUNCTION","action":"Print","iconName":"Print"}
+  ]
+}

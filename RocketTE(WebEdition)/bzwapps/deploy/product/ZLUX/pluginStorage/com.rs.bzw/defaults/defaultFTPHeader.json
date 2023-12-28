@@ -1,0 +1,4 @@
+{
+    "zos": ["Dsname", "Date", "Dsorg", "Action"],
+    "other": ["Name", "Size", "Date", "Action"]
+}

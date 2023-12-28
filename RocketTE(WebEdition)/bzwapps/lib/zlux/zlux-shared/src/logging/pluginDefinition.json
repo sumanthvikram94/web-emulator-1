@@ -1,0 +1,23 @@
+{
+  "RocketSoftwareCopyright_Header" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""],
+  "identifier": "com.rs.common.logger",
+  "apiVersion": "1.0",
+  "pluginVersion": "1.0",
+  "pluginType": "library",
+  "libraryName": "Rocket Common Logger",
+  "libraryVersion": "1.0.0",
+  "configurationData": {
+    "resources": {
+      "logging":{
+        "aggregationPolicy": "override"
+      }
+    }
+  }
+  ,"RocketSoftwareCopyright_Footer" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""]
+}

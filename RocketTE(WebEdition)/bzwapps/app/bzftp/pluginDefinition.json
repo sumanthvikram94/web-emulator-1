@@ -1,0 +1,24 @@
+{
+  "identifier": "com.rs.bzftp",
+  "apiVersion": "10.2.1-0350",
+  "pluginVersion": "10.2.1-0350",
+  "pluginType": "application",
+  "dataServices": [
+    {
+      "type": "router",
+      "name": "healthcheck",
+      "initializerLookupMethod": "external",
+      "fileName": "/controller/health-check/health-check-controller.js",
+      "routerFactory": "healthCheckRouter",
+      "dependenciesIncluded": true
+    },
+    {
+      "type": "router",
+      "name": "ftpdata",
+      "initializerLookupMethod": "external",
+      "fileName": "/controller/ftp/ftp-controller.js",
+      "routerFactory": "ftpRouter",
+      "dependenciesIncluded": true
+    }
+  ]
+}

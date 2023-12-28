@@ -1,0 +1,17 @@
+{
+  "RocketSoftwareCopyright_Header" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""],
+  "identifier": "com.rs.oAuth",
+  "pluginType": "nodeAuthentication",
+  "authenticationCategory": "oAuth",
+  "apiVersion": "1.0",
+  "pluginVersion": "1.0",
+  "filename": "oAuth.js",
+  "authenticationInstaller": "oAuthInstaller",
+  "RocketSoftwareCopyright_Footer" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""]
+}

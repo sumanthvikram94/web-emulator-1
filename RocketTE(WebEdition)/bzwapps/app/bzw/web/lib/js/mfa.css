@@ -1,0 +1,490 @@
+ /********************************************************************************
+* 5655-MA1                                                                      *
+* © Copyright Rocket Software, Inc. or its affiliates 2016, 2020.               *
+* All Rights Reserved.                                                          *
+********************************************************************************/
+
+/* html {
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+body { 
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+    margin:0px;
+    font-size: 14px;
+    background-color: #fff;
+} */
+
+#bzwMFA {
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+    margin:0px;
+    font-size: 14px;
+    background-color: #fff; 
+}
+
+#bzwMFA button{
+    font-size:inherit;
+    font-family:inherit;
+    color:#3B5C7D;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwMFA .button_submit {
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    width: auto;
+    height: 45px;
+    /* background-color: #3B5C7D; */
+    background-color: #990099 !important;
+    font-family: Helvetica, Arial;
+    color:white !important;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwMFA button[disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.3;
+}
+
+#bzwMFA .close_button_style {
+    border:none;
+    cursor: pointer;
+    font-size:14px;
+    font-weight: bold;
+    background-color: white;
+}
+
+#bzwMFA table p {
+    text-align: left;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+
+#bzwMFA input,
+#bzwMFA input[type=text],
+#bzwMFA input[type=password]
+{
+	box-sizing: content-box;
+    padding: 6px 12px;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: background-color ease-in-out .15s;
+    width:93%;
+    height:25px;
+    background-color:#F4F7FB;
+    color:black;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwMFA input[type=text][disabled],
+#bzwMFA input[type=password][disabled]
+{
+    cursor: not-allowed;
+    background-color:white;
+    opacity: 1;
+}
+
+#bzwMFA input[type=text]:focus,
+#bzwMFA input[type=password]:focus {
+    outline:none !important;
+}
+
+#bzwMFA input[type=button][disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.3;
+}
+
+#bzwMFA input::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+#bzwMFA input:-ms-input-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+#bzwMFA input::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+#bzwMFA a, #bzwMFA a:hover {
+    text-decoration: none;
+}
+
+#bzwMFA .banner
+{
+    background-color: #3B5C7D;
+    width: 100%;
+    float: left;
+    font-size: 19px;
+    overflow: hidden;
+    font-weight: 500;
+    z-index: 1030;
+    height:38px;
+    color: #fff;
+    line-height:38px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwMFA .banner_right
+{
+    float:right;
+    width: 200px;
+    height: 38px;
+    display: table-cell;
+    margin-right: 0px;
+}
+
+#bzwMFA .banner_logo
+{
+    float:right;
+    width: 88px;
+    margin-right: 0px;
+}
+
+#bzwMFA .banner_left
+{   
+    float: none;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 80%;
+    font-weight:bold;
+}
+
+#bzwMFA .header_style
+{
+    font-weight: bold;
+    padding: 10px;
+}
+
+#bzwMFA .login_section_style
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:80%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#bzwMFA .policy_list
+{
+    box-sizing: content-box;
+    padding: 6px 12px;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: background-color ease-in-out .15s;
+    width:93%;
+    height:25px;
+    background-color:#F4F7FB;
+    color:black;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+}
+
+#bzwMFA .dynContent
+{
+  cursor: default;
+}
+
+#bzwMFA .dynContent_btm_tbl_login
+{
+    height : auto;
+    width: auto;
+    margin: 2px auto;
+    color:black;
+    border: 1px solid gray;
+    box-shadow: 2px 2px lightgrey;
+    padding: 0px 14px 0px 14px;
+    overflow:hidden;
+}
+
+#bzwMFA .dc_factor
+{
+    margin: 2px auto;
+    font-family: inherit;
+    border: 1px solid gray;
+    box-shadow: 2px 2px lightgrey;
+    padding: 0px;
+    overflow:hidden;
+}
+
+#bzwMFA .dc_factor_item
+{
+    padding:10px;
+    background-color: white;
+}
+
+#bzwMFA .dc_tabs_tab
+{
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    width:max-content;
+}
+/* policy with tabs*/
+
+
+#bzwMFA .dc_factor_item a
+{
+    font-weight: normal;
+    font-size: 90%;
+}
+
+#bzwMFA .dc_factor_item_link
+{
+    font-size: 90%;
+    font-weight: normal;
+}
+
+#bzwMFA .dc_factor_item_msg
+{
+    font-size: 90%;
+    font-weight: normal;
+    margin-top:0px;
+}
+
+#bzwMFA .color_light
+{
+    color:white;
+}
+
+#bzwMFA .fontSize_large
+{
+   font-size: 100%;
+}
+
+#bzwMFA .fontSize_small
+{   
+    font-size:80%;
+    line-height: 0.5em;
+}
+
+#bzwMFA .field_label_flex
+{
+    display:flex;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
+    padding-bottom: 5px;
+}
+
+#bzwMFA .header_divider
+{
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5%;
+}
+
+#bzwMFA .ol_all /*Authentication factors*/
+{
+    height: auto;
+    color: black;
+    margin: 2px auto;
+    width: 390px;
+    border-spacing:0px;
+	background-color: white;
+}
+
+#bzwMFA .ol_totpstart
+{
+    height: auto;
+    color: black;
+    margin: 2px auto;
+    width:460px;
+    border-spacing:0px;
+}
+
+#bzwMFA .ol_td
+{
+    vertical-align:top;
+    padding:0px;
+}
+#bzwMFA .ol_token
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    z-index: 1300;
+}
+#bzwMFA .ol_token div
+{
+    margin: 2px auto;
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 3px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 514px;
+}
+#bzwMFA .ol_spin /*spin*/
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: wait;
+    z-index: 1200;
+}
+#bzwMFA .dc_msg
+{
+    border: 2px solid gray;
+    width:auto;
+}
+#bzwMFA .dc_msg_nav
+{
+    overflow: hidden;
+    background-Color:white;
+    padding:10px;
+    display:block;
+}
+
+#bzwMFA .dc_msg_nav_label
+{
+    display: inline;
+    color: white;
+    font-size: 14px;
+}
+
+#bzwMFA .dc_msgtbl
+{
+    background-color: white;
+    padding:5px;
+    width:100%;
+    table-layout: fixed;
+    display:block;
+}
+
+#bzwMFA .dc_msgtbl_content
+{
+    text-align: left;
+}
+
+#bzwMFA .dc_msgtbl_content span
+{
+    word-wrap:break-word;
+    display:inline-block;
+    color:black;
+}
+
+#bzwMFA .footer
+{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;    
+    background-color: #3B5C7D;
+    color:white;
+    text-align: center;
+    font-size: 65%;
+    line-height: 0.25em;
+    display: table-row;
+    z-index: 1999; /*always show*/
+}
+
+#bzwMFA .banner_left_style {
+    padding-left:10px;
+}
+
+#bzwMFA .login_msg_holder_init_style {
+    display:none;
+}
+
+
+#bzwMFA .qr_text_style {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    word-break: break-all;
+    padding: 10px 0px 0px 0px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: black; resize: none;
+    cursor: default;
+    height: 80px;
+}
+#bzwMFA .prompt_style {
+    margin: 0px 10px 30px 0px;
+}
+
+#bzwMFA .span_button_style{
+    float: right;
+    margin:0px 0px 10px 0px;
+}
+
+#bzwMFA .qrcode_div_style {
+    width:100%;
+    height:100%;
+    margin:auto;
+    margin-top: 15px;
+}
+
+#bzwMFA .text_totp_confirm {
+    FONT-SIZE: 100%;
+    FONT-FAMILY: serif;
+    PADDING-BOTTOM: 20px;
+    PADDING-TOP: 20px;
+    PADDING-LEFT: 20px;
+    PADDING-RIGHT: 20px;
+    TEXT-ALIGN: justify;
+    TEXT-JUSTIFY: inter-word;
+}
+
+#bzwMFA .infoModalButton {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    float: right;
+    background-color: transparent;
+    border: 0px;
+}
+
+.bzw_mfa_overlay {
+	width:100%;
+	height:100%;
+	background: #2F4F4F;
+	opacity: 0.607843;
+	position: absolute;
+	left:0;
+	top:0;
+    z-index: 1020;
+}

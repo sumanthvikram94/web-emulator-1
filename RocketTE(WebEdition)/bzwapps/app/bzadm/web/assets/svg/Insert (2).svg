@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>编组 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="TE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc" transform="translate(-1752.000000, -19.000000)" stroke="#FFFFFF">
+            <g id="编组-23" transform="translate(1477.000000, 2.000000)">
+                <g id="编组-9" transform="translate(152.000000, 17.000000)">
+                    <g id="编组-2" transform="translate(123.857143, 0.000000)">
+                        <rect id="矩形" x="0.5" y="0.5" width="15" height="15" rx="1"></rect>
+                        <rect id="矩形" fill="#D8D8D8" x="2.5" y="2.5" width="1" height="1"></rect>
+                        <rect id="矩形备份" fill="#D8D8D8" x="4.5" y="2.5" width="1" height="1"></rect>
+                        <rect id="矩形备份-2" fill="#D8D8D8" x="6.5" y="2.5" width="1" height="1"></rect>
+                        <line x1="0.5" y1="4.5" x2="14.5" y2="4.5" id="直线" stroke-linecap="square"></line>
+                        <polyline id="路径-2" points="11 8 13.1083984 10.0443959 11 12.081665"></polyline>
+                        <polyline id="路径-2备份" transform="translate(4.054199, 10.040833) scale(-1, 1) translate(-4.054199, -10.040833) " points="3 8 5.10839844 10.0443959 3 12.081665"></polyline>
+                        <line x1="9.06689453" y1="8" x2="7.04150391" y2="12.6748047" id="路径-3"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

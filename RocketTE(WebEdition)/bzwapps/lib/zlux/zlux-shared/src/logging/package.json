@@ -1,0 +1,29 @@
+{
+  "RocketSoftwareCopyright_Header": [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""
+  ],
+  "name": "commonjs-logger",
+  "version": "0.9.1",
+  "description": "The zLUX common logger for both Client and Server.",
+  "license": "private",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc --watch"
+  },
+  "author": "Sean Grady",
+  "devDependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.0.45",
+    "core-js": "^2.5.1",
+    "rxjs": "^6.2.1",
+    "rxjs-compat": "^6.2.1",
+    "typescript": "^2.9.1"
+  },
+  "RocketSoftwareCopyright_Footer": [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""
+  ]
+}

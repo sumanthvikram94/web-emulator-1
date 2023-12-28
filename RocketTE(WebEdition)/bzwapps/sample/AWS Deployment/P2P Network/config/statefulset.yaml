@@ -1,0 +1,150 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-rtew-headless # The Headless Service to serve the Rocket TE Web in both the blue and green group.
+  namespace: rtew
+  labels:
+    app: rtew
+spec:
+  ports:
+  - port: 8543 # HTTP server port
+    name: http
+  - port: 8643 # TCP port used for cluster communications.
+    name: tcp
+  clusterIP: None
+  selector:
+    app: rtew
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: ss-rtew-blue # The StatefulSet of the blue group.
+  namespace: rtew
+spec:
+  selector:
+    matchLabels:
+      app: rtew
+      group: blue
+  serviceName: "svc-rtew-headless"
+  replicas: 1
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: rtew
+        group: blue # This is required for the blue group filtering
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: rtew-blue
+        image: xxxx.ecr.us-east-1.amazonaws.com/rtew:10.2.1-0271 # Change this line to use the correct image in your ECR.
+        readinessProbe:
+          httpGet:
+            path: /ZLUX/plugins/com.rs.bzadm/services/healthCheckController/healthCheck # Wait until the server is ready
+            port: 8543
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        ports:
+        - containerPort: 8543
+        - containerPort: 8643
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.name
+        - name: RTEW_CLUSTER_AUTO_SCALING_ENABLED
+          value: 'true'
+        - name: RTEW_CLUSTER_AUTO_SCALING_DISCOVERY
+          value: bootstrap
+        - name: RTEW_CLUSTER_PROXY_PROTOCOL
+          value: dns
+        - name: RTEW_CLUSTER_PROXY_HOSTNAME
+          value: RTEW_OS_HOSTNAME
+        - name: RTEW_CLUSTER_PROXY_DOMAIN
+          value: svc-rtew-headless.rtew.svc.cluster.local
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: pv-blue
+          mountPath: /home/bzwapps/deploy
+          subPathExpr: ./$(POD_NAME)/deploy
+        - name: pv-blue
+          mountPath: /home/bzwapps/log
+          subPathExpr: ./$(POD_NAME)/log
+        - name: pv-blue
+          mountPath: /home/bzwapps/config/autoscale
+          subPathExpr: ./cluster/autoscale # Shared accross all the pods in the same StatefulSet.
+      volumes:
+      - name: pv-blue
+        persistentVolumeClaim:
+          claimName: pvc-efs-persistent-1
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: ss-rtew-green
+  namespace: rtew
+spec:
+  selector:
+    matchLabels:
+      app: rtew
+      group: green
+  serviceName: "svc-rtew-headless"
+  replicas: 1
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: rtew
+        group: green
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: rtew-green
+        image: xxxx.ecr.us-east-1.amazonaws.com/rtew:10.2.1-0272 # Change this line to use the correct image in your ECR.
+        readinessProbe:
+          httpGet:
+            path: /ZLUX/plugins/com.rs.bzadm/services/healthCheckController/healthCheck # Wait until the server is ready
+            port: 8543
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        ports:
+        - containerPort: 8543
+        - containerPort: 8643
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.name
+        - name: RTEW_CLUSTER_AUTO_SCALING_ENABLED
+          value: 'true'
+        - name: RTEW_CLUSTER_AUTO_SCALING_DISCOVERY
+          value: bootstrap
+        - name: RTEW_CLUSTER_PROXY_PROTOCOL
+          value: dns
+        - name: RTEW_CLUSTER_PROXY_HOSTNAME
+          value: RTEW_OS_HOSTNAME
+        - name: RTEW_CLUSTER_PROXY_DOMAIN
+          value: svc-rtew-headless.rtew.svc.cluster.local
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: pv-green
+          mountPath: /home/bzwapps/deploy
+          subPathExpr: ./$(POD_NAME)/deploy
+        - name: pv-green
+          mountPath: /home/bzwapps/log
+          subPathExpr: ./$(POD_NAME)/log
+        - name: pv-green
+          mountPath: /home/bzwapps/config/autoscale
+          subPathExpr: ./cluster/autoscale
+        - name: pv-blue
+          mountPath: /home/bzwapps/migrate # Required for the upgrading process.
+          subPathExpr: ./ss-rtew-blue-0/deploy
+      volumes:
+      - name: pv-blue
+        persistentVolumeClaim:
+          claimName: pvc-efs-persistent-1
+      - name: pv-green
+        persistentVolumeClaim:
+          claimName: pvc-efs-persistent-2

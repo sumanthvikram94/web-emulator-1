@@ -1,0 +1,4352 @@
+{
+  "login": {
+    "signName": "Terminal Emulator",
+    "signTitle": "Administration Console",
+    "signSubTitle": "Sign in",
+    "signBtn": "Sign in",
+    "signErrorInfo": "Invalid administrator name / password",
+    "resetTitle": "Reset password",
+    "account": "Administrator name",
+    "password": "Password",
+    "newPassword": "New password",
+    "repPassword": "Retype password",
+    "inputNewPwd": "Input new password",
+    "repeatPwd": "Repeat new password",
+    "resetBtn": "Reset",
+    "cancleBtn": "Cancel",
+    "version": "Version:",
+    "copyright": "Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "strength": {
+      "length": "Contains at least 6 characters",
+      "number": "Contains a number and a string",
+      "symbol": "Contains a special symbol",
+      "reserved": "\"password\" is a reserved password. Enter another value."
+    },
+    "resetSuccessContent":"password changed successfully",
+    "weak": "Weak",
+    "medium": "Medium",
+    "strong": "Strong",
+    "upgrade": {
+      "header": "Upgrade data",
+      "label": "",
+      "prompt": "It will take a while to migrate data...",
+      "content": "To make sure the configured sessions and users in the previous version are available in the current version, all related data will be upgraded.",
+      "note": {
+        "start": "Please be noted that all configured sessions, users, groups and server configurations will be",
+        "prompt": " DELETED ",
+        "end": "when upgrading."
+      },
+      "restart": {
+        "success": "Data upgraded successfully!",
+        "start": "If you want to apply the updated configuration,",
+        "prompt": " RESTART ",
+        "end": " the server and then reopen the Rocket TE Administration Console using the following URL:"
+      },
+      "content120": "To make sure the configured sessions, users, groups and server configurations in the previous version are available in the current version, all related data will be upgraded.",
+      "success": {
+        "header": "Data upgraded and restart server needed",
+        "reCreateHeader": "Data upgraded and restart server needed",
+        "label": "",
+        "content": "Choose what to do with the earlier version data:",
+        "button": {
+          "submit": "Keep",
+          "cancle": "Delete"
+        }
+      },
+      "recreate": {
+        "success": "Data upgraded successfully!",
+        "start": "Noticed that some upgraded data related with the Node.js security. ",
+        "prompt": "",
+        "end": "Please shutdown the server and then restart to apply."
+      },
+      "failed": {
+        "header": "Issues occurred",
+        "label": "",
+        "content": "There are some issues occurred during migrating data,  we recommended to migrate the data again or it can be tried later."
+      },
+      "degraded": {
+        "header": "Issues occurred",
+        "label": "",
+        "content": "Please make sure current version is newer than the data you want to migrate!"
+      },
+      "portCheck": {
+        "header": "Issues occurred",
+        "label": "",
+        "content": "Restart failed, HTTP port or HTTPS port is not free, please check!"
+      },
+      "clusterUpgade": {
+        "header": "Issues occurred",
+        "label": "",
+        "content": "Failed to upgrade data: Could not do upgradation in cluster mode. Please refer to FAQ 'How to upgrade clusters'"
+      },
+      "notification": {
+        "update": {
+          "title": "Upgrade data",
+          "success": "Succeeded in upgrading data",
+          "failed": "Failed to upgrade data"
+        },
+        "delete": {
+          "title": "Delete origin data",
+          "success": "Succeeded in deleting data",
+          "failed": "Failed to delete data"
+        }
+      },
+      "restartMessage": {
+        "title": "Inactive",
+        "subTitle": "Please restart the server to make the updated configrations take effect.",
+        "subTitle120": "Please restart the server to make the updated configrations take effect and reopen the Rocket TE Administration Console using the URL: {{url}}"
+      },
+      "overrideDataMessage": {
+        "title": "The same name sessions or users will be override",
+        "subTitle": "If the session and user with the same name exist, they will be overwritten when upgrading."
+      },
+      "updateLaterWarnMsg": {
+        "title": "Warning",
+        "subTitle": "All configured sessions, users, groups and server configurations will be cleaned up and overwritten by upgrading."
+      },
+      "cleanUpWarn": {
+        "title": "Warning",
+        "subTitle": "All configured sessions, users, groups and server configurations will be cleaned up and overwritten by upgrading."
+      },
+      "resetPasswordMessage": {
+        "title": "The password of some user(s) has been reset for JSON parse problems",
+        "subTitle": "The password of user(s) [{{user}}] has been reset to default password 'password' for the JSON parse problem of login.json"
+      },
+      "failedUsersMessage": {
+        "title": "Some user(s) data upgrade failed",
+        "subTitle": "The data of user(s) [{{user}}] upgrade failed for JSON parse problems"
+      }
+    }
+  },
+  "headerBar": {
+    "info": {
+      "about": "About",
+      "credits": "Credits",
+      "host": "Host",
+      "buildNum": "Build Number",
+      "close": "Close"
+    }
+  },
+  "common": {
+    "notification": {
+      "success": "Successfully",
+      "error": "Failed to",
+      "warning": "Failed partially",
+      "type": {
+        "session": "session",
+        "user": "user",
+        "group": "group",
+        "data": "data",
+        "sessionSettings": "session settings",
+        "keyboardSettings": "keyboard settings",
+        "administrator": "administrator",
+        "userAuthentication": "user authentication",
+        "authentication": "authentication",
+        "globalIni": "global.ini file",
+        "license": "license file",
+        "profile": "profile",
+        "import": "import",
+        "apiToken": "api token",
+        "script":"script",
+        "logging": "server logging",
+        "advanceSettings": "advance settings"
+      },
+      "action": {
+        "add": "added",
+        "edit": "updated",
+        "clone": "cloned",
+        "delete": "deleted",
+        "reset": "reset",
+        "get": "get",
+        "resetPassword": "reset password of",
+        "resetCode": "reset TOTP MFA QR code of",
+        "upload": "uploaded",
+        "assign": "assigned",
+        "update": "updated",
+        "makeDefault" : "make default",
+        "renamed":"renamed"
+      },
+      "cannot": "cannot ",
+      "cannotAction": {
+        "add": "add",
+        "edit": "update",
+        "clone": "clone",
+        "delete": "delete",
+        "reset": "reset",
+        "resetPassword": "reset password of",
+        "resetCode": "reset TOTP MFA QR code of",
+        "upload": "upload",
+        "assign": "assign",
+        "update": "update",
+        "rename":"rename"
+      }
+    },
+    "button": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "save": "Save",
+      "edit": "Edit",
+      "remove": "Remove",
+      "import": "Import",
+      "add": "Add",
+      "addUser": "Add",
+      "discard": "Discard",
+      "apply": "Apply",
+      "clone": "Clone",
+      "clear": "Clear",
+      "reset": "Reset password",
+      "assign": "Assign",
+      "confirm": "Confirm",
+      "exit": "Exit",
+      "test": "Test",
+      "ok": "OK",
+      "finish": "Finish",
+      "upgrade": {
+        "submit": "Upgrade now",
+        "cancle": "Upgrade later"
+      },
+      "restartServer": "Restart Server",
+      "keep": "Keep",
+      "assignSession":"Assign Session",
+      "forcePull":"Force Pull",
+      "close":"Close",
+      "rename":"Rename",
+      "originReset":"Reset"
+    },
+    "dialog": {
+      "remove": {
+        "group": "Group",
+        "session": "Session",
+        "user": "User",
+        "administrator": "Administrator",
+        "sessionSettings": "Session Settings",
+        "keyboardSettings": "Keyboard Settings",
+        "scripts": "Scripts",
+        "header": "Delete {{header}}",
+        "label": "{{label}}",
+        "removeUser": "Remove user",
+        "removeGroupConfirmMessage": "After you delete \"{{message}}\" group, you cannot recover the set of sessions and privileges that are assigned it. Do you want to delete the group?",
+        "removeSessionConfirmMessage": "The \"{{name}}\" session is assigned to {{count}} group(s). After you delete the session, you cannot recover it. Do you want to delete the session?",
+        "removeScriptDefuseMessage": "The  {{type}} \"{{name}}\" is assigned to  ",
+        "removeSettingDefuseMessage": "You can not delete {{type}} \"{{name}}\" since it has been used by {{count}} session(s)",
+        "removeScriptConfirmMessage": "Deleting this script \"{{name}}\" may impact all associated configurations, are you sure to delete it anyway?",
+        "usedBySession":" {{sessionCount}} session(s) ,",
+        "usedByHotspot":" {{hotspotCount}} hotspot(s) ,",
+        "usedByKeyboard":" {{keyboardCount}} keyboard(s) ,",
+        "usedByLaunchpad":" {{launchpadCount}} powerpad(s) ,",
+        "removeSettingConfirmMessage": "Are you sure you want to delete the {{type}} \"{{name}}\"?",
+        "removeGroupWithSessionConfirmMessage": "After you delete \"{{message}}\" group, you cannot recover the set of sessions and privileges that are assigned it. Group sessions: \"{{sessions}}\" is(are) also automatically deleted. Do you want to delete the group?"
+      },
+      "addGroupPrivilege": {
+        "header": "Session settings",
+        "label": "Add group"
+      },
+      "lockFTPCommands": {
+         "header": "Lock FTP specific settings",
+         "label": "FTP settings"
+      },
+      "w2hAdvanceDialog": {
+        "header": "Advanced settings",
+        "label": "Advanced settings"
+      },
+      "clone": {
+        "header": "Clone session",
+        "label": "Session",
+        "sessionName": "Session name"
+      },
+      "rename": {
+        "header": "Rename script",
+        "label": "Script",
+        "scriptName": "Script name"
+      },
+      "reset": {
+        "header": "Reset password",
+        "label": "",
+        "content": "Welcome to Rocket TE Administration Console. You are signing in for the first time, reset your password.",
+        "admin": "Welcome to Rocket TE Administration Console. You are logging in with reserved password, please reset your password."
+      },
+      "expired": {
+        "header": "Session Expired",
+        "label": "",
+        "content": "The session expired. Log into Rocket TE Administration Console to start a new session."
+      },
+      "upgradeNofolder": {
+        "header": "Migrate folder does not exist",
+        "content": "Copy and rename the bzwapps/deploy folder from the previous version to bzwapps/migrate. Then paste the bzwapps/migrate folder into the current bzwapps root folder. Next, click the “Upgrade data” button to try again."
+      },
+      "save": {
+         "session": {
+          "label": "Save session",
+          "message": {
+            "prefix": "Your change to the Session Scope will cause the session to be unassigned from these groups or users: ",
+            "suffix":  "Do you want to continue to make the change?"
+          }
+         }
+      }
+    },
+    "table": {
+      "all": "All",
+      "selected": "Selected",
+      "export": "Export",
+      "import": "Import",
+      "search": "Search",
+      "header": {
+        "userId": "User ID",
+        "userName": "Name",
+        "phone": "Phone number",
+        "mail": "Email",
+        "groupNames": "Group",
+        "LUs": "LUs",
+        "action": "Action",
+        "name": "Name",
+        "label": "Label",
+        "windowTB": "Terminal window title",
+        "description": "Description",
+        "statistics": "Statistics",
+        "connType": "Connection type",
+        "sessionType": "Session type",
+        "host": "Host",
+        "port": "Port",
+        "series": "Series",
+        "scope": "Scope (available for)",
+        "createUser": "Creator",
+        "group": "Groups"
+      }
+    },
+    "list": {
+      "groupName": "View by",
+      "card": "Card",
+      "tile": "Tile",
+      "list": "List"
+    },
+    "header": {
+      "show": "Show header",
+      "hide": "Hide header"
+    },
+    "noPermission": "The current user does not have permission to operate Rocket TE Admin."
+  },
+  "scripts": {
+    "name": "Session-scripts",
+    "uploadBtnText": "Import",
+    "searchOpts": {
+      "placeholder": "Search scripts ..."
+    },
+    "noScripts": "No scripts are imported. Click Import to import scripts.",
+    "import": {
+      "header": "Import scripts report",
+      "label": "Import Scripts",
+      "total": "total",
+      "success": "succeeded in importing scripts",
+      "error": "Failed to import scripts",
+      "exceedMaximum" : "At most {{maxNum}} scripts can be imported at the same time.",
+      "fileExtension":"The file extension is invalid",
+      "fileSizeLimited":"The file size should be less than 2MB ",
+      "fileSizeEmpty":"The file is empty ",
+      "importSucceedPromot":"{{fileName}}: imported as script \"{{name}}\" ",
+      "typeNotMatch":"The script type does not match.",
+      "notJsonFile":"The file data format is incorrect."
+    },
+    "series": {
+      "3270": "3270 Display",
+      "printer3270": "3270 Printer",
+      "5250": "5250 Display",
+      "printer5250": "5250 Printer",
+      "vt": "VT Series",
+      "6530": "6530 Series",
+      "FTP": "FTP Series"
+    },
+    "rename": {
+      "label": "Script name",
+      "validation": {
+        "required": "Script name is required.",
+        "exists": "This script name already exists. Enter a unique name.",
+        "existInDB": "This script name already exists in database.",
+        "length": "Maximum length is 128 characters.",
+        "text": "This names cannot contain the following characters: #&%+"
+      }
+    },
+    "groups": {
+      "name": "Groups",
+      "all":"All groups",
+      "assignBtn": "Assign to Groups",
+      "assigned": "group(s) assigned.",
+      "selectAll": "Select all",
+      "dialog": {
+        "header": "Assign to Group",
+        "label": "Script",
+        "placeholder": "Search for groups...",
+        "tooltip": {
+          "spec": {
+            "header": "Assign to specific groups",
+            "label": "Specify that scripts are displayed only to select groups."
+          },
+          "all": {
+            "header": "Assign to all groups",
+            "label": "Specify that scripts are displayed to all groups."
+          },
+          "private": {
+            "header": "Make private",
+            "label": "Specify that the script is not displayed for any groups."
+          }
+        },
+        "name": "Specify how script \"{{scriptName}}\" is assigned to groups",
+        "selectMode": {
+          "specific": "Assign to specific groups",
+          "all": "Assign to all groups",
+          "private": "Make private"
+        },
+        "groups": "Groups",
+        "selected": "Selected groups",
+        "submit": "Assign",
+        "cancel": "Cancel"
+      }
+    },
+    "allGroups": "All groups"
+  },
+  "sessions": {
+    "name": "Sessions",
+    "description": "Define and manage host sessions. To assign sessions to users, go to the Group tab.",
+    "searchOpts": {
+      "placeholder": "Search sessions ..."
+    },
+    "listSearchOpts": {
+      "placeholder": "Search {{type}} ..."
+    },
+    "addBtnText": "Add",
+    "uploadBtnText": "Import",
+    "import": {
+      "header": "Import session report",
+      "label": "Import Sessions",
+      "total": "total",
+      "success": "Succeeded in importing sessions",
+      "error": "Failed to import sessions",
+      "exceedMaximum" : "At most {{maxNum}} sessions can be imported at the same time."
+    },
+    "series": {
+      "3270": "3270 Display",
+      "printer3270": "3270 Printer",
+      "5250": "5250 Display",
+      "printer5250": "5250 Printer",
+      "vt": "VT Series",
+      "6530": "6530 Series",
+      "FTP": "FTP Series"
+    },
+    "level": {
+      "type": "Session scope",
+      "all": "All",
+      "global": "Global",
+      "group": "Group",
+      "candidate": "Candidate"
+    },
+    "host": "Host: ",
+    "port": "Port: ",
+    "noData": "There are currently no sessions for this series.",
+    "noSession": "No session definitions are defined. Click Add to define one.",
+    "nokeyboards": "No keyboards are defined. Click Add to define one.",
+    "nosessionSettings": "No session settings are defined. Click Add to define one.",
+    "addSession": {
+      "submitBtnText": "Submit",
+      "names": {
+        "label": "Session name",
+        "validation": {
+          "required": "Session name is required.",
+          "exists": "This session name already exists. Enter a unique name.",
+          "existInDB": "This session name already exists in database.",
+          "length": "Maximum length is 64 characters.",
+          "text": "This name cannot contain the following characters: /\\*&%#?~+`\"",
+          "w2htext": "This name cannot contain the following characters: /\\*&%#?~+`<>:|\""
+        }
+      },
+      "labels": {
+        "label": "Session label",
+        "validation": {
+          "required": "Session label is required.",
+          "exists": "This session label already exists. Enter a unique label.",
+          "existInDB": "This session label already exists in database.",
+          "length": "Maximum length is 64 characters.",
+          "text": "This label cannot contain the following characters: /\\*&%#?~+`\"",
+          "w2htext": "This label cannot contain the following characters: /\\*&%#?~+`<>:|\""
+        }
+      },
+      "windowTBs": {
+        "label": "Terminal window title",
+        "validation": {
+          "required": "Terminal window title is required.",
+          "exists": "This terminal window title already exists. Enter a unique terminal window title.",
+          "existInDB": "This terminal window title already exists in database.",
+          "length": "Maximum length is 64 characters.",
+          "text": "This terminal window title cannot contain the following characters: /\\*&%#?~+`\"",
+          "w2htext": "This terminal window title cannot contain the following characters: /\\*&%#?~+`<>:|\""
+        }
+      },
+      "sessionTypes": {
+        "label": "Session type",
+        "placeholder": "choose an option ",
+        "3270": {
+          "text": "3270 Display",
+          "printer": "3270 Printer",
+          "3270Model2": "3278 Model 2 (24 x 80)",
+          "3270Model3": "3278 Model 3 (32 x 80)",
+          "3270Model4": "3278 Model 4 (43 x 80)",
+          "3270Model5": "3278 Model 5 (27 x 132)",
+          "3270dynamic": "3278 Dynamic",
+          "3270Model2_3279": "3279 Model 2 (24 x 80)",
+          "3270Model3_3279": "3279 Model 3 (32 x 80)",
+          "3270Model4_3279": "3279 Model 4 (43 x 80)",
+          "3270Model5_3279": "3279 Model 5 (27 x 132)",
+          "3270dynamic_3279": "3279 Dynamic",
+          "3287Model2": "3287 Model 1"
+        },
+        "5250": {
+          "text": "5250 Display",
+          "printer": "5250 Printer",
+          "5250Model3179-2": "3179 Model 2 (24 x 80)",
+          "5250Model3180-2": "3180 Model 2 (27 x 132)",
+          "5250Model3196-A1": "3196 Model A1 (24 x 80)",
+          "5250Model3477-FC": "3477 Model FC (27 x 132)",
+          "5250Model3477-FG": "3477 Model FG (27 x 132)",
+          "5250Model5251-11": "5251 Model 11 (24 x 80)",
+          "5250Model5291-1": "5291 Model 1 (24 x 80)",
+          "5250Model5292-2": "5292 Model 2 (24 x 80)",
+          "5250Model5555-B01": "5555 Model B01 (24 x 80)",
+          "5250Model5555-C01-132": "5555 Model C01 (27 x 132)",
+          "5250Model5555-C01-80": "5555 Model C01 (24 x 80)",
+          "3812Model1": "3812 Model 1 (Single-Byte Printer)",
+          "5553ModelB01": "5553 Model B01 (Double-Byte Printer)"
+        },
+        "vt": {
+          "text": "VT Series",
+          "vtLinux": "VT Linux",
+          "vt220": "VT 220",
+          "vt320": "VT 320",
+          "vt420": "VT 420",
+          "vt52": "VT 52",
+          "vt100": "VT 100",
+          "vt_scoansi": "SCOANSI",
+          "vt_wyse60": "WYSE60",
+          "vt_wyse60/aif": "WYSE60/AIF",
+          "vt_vax/aix": "VAX/AIX",
+          "vt_hp2392a": "HP2392A",
+          "vt_hp70092/6": "HP70092/6",
+          "vt_hp70094/8": "HP70094/8",
+          "vt_ibm3151": "IBM3151"
+        },
+        "6530": {
+          "text": "6530 Series",
+          "TANDEM": "TANDEM"
+        },
+        "FTP": {
+          "text": "FTP Series",
+          "FTP_IBM_AS400": "IBM AS400",
+          "FTP_IBM_MVS": "IBM MVS",
+          "FTP_IBM_VM" : "IBM VM",
+          "FTP_IBM_VSE": "IBM VSE",
+          "FTP_UNIX"   : "UNIX(standard)",
+          "FTP_Windows_NT":"Windows NT",
+          "FTP_Auto_Detect":"Auto-detect",
+          "FTP_VMS": "VMS",
+          "FTP_NetWare":"NetWare",
+          "FTP_VOS":"VOS",
+          "FTP_Tandem":"Tandem",
+          "FTP": "File Transfer Protocol - FTP",
+          "SFTP": "SSH File Transfer Protocol - SFTP",
+          "FTPS": "FTP over Implicit TLS/SSL - FTPS",
+          "FTPES": "FTP over Explicit TLS/SSL - FTPES"
+        }
+      },
+      "keyboards": {
+        "label": "Keyboard Setting",
+        "template": {},
+        "import": {
+          "header": "Import keyboard setting report",
+          "label": "Import Keyboard Setting",
+          "total": "total",
+          "success": "Succeeded in importing keyboard settings",
+          "error": "Failed to import keyboard settings"
+        }
+      },
+      "scripts": {
+        "label": "Scripts",
+        "template": {},
+        "import": {
+          "header": "Import script report",
+          "label": "Import Script",
+          "total": "total",
+          "success": "Succeeded in importing scripts",
+          "error": "Failed to import scripts",
+          "exceedMaximum" : "At most {{maxNum}} scripts can be imported at the same time."
+        }
+      },
+      "sessionSettings": {
+        "label": "Session Setting",
+        "template": {}
+      },
+      "upload": "Assign",
+      "autoScript": "Auto-Play script on connect",
+      "3270Extensions": "TN3270E Extensions",
+      "3270FieldValidation": "3270 Field Validation",
+      "hostBell": "Host Bell",
+      "forceAutoWrap": "Force Auto Wrap",
+      "profile": "Profile",
+      "assigeProfilePrompt": "The profile must end with {{fileName}} and file size should be less than {{fileSize}} KB.",
+      "terminalID": {
+        "label": "Terminal ID",
+        "validation": {
+          "length": "Maximum length is 15 characters."
+        }
+      },
+      "backUp":{
+        "checkbox":"Enable \"Hot Backup\" Host Names",
+        "addNew":"Add",
+        "dragInfo":"Drag and drop item to change the order.",
+        "title":"Hot Backup",
+        "label":"Hot Backup",
+        "addTitle":"Add New Host",
+        "editTitle":"Edit Host",
+        "none":"None",
+        "header":{
+          "name":"Name",
+          "action":"Actions"
+        },
+        "host":{
+          "label":"TCP host",
+          "required":"Host is required",
+          "length":"Maximum length is 253 characters.",
+          "text":"Only alphanumeric characters, periods, colons, underscores and dashes are allowed."
+        },
+        "port":{
+          "label":"TCP port",
+          "required":"Port is required",
+          "length":"Port must be a number in the range 1 - 65535.",
+          "text":"Only numeric values are allowed."
+        }
+      },
+      "rows": {
+        "label": "Rows",
+        "validation": {
+          "required": "A number is required for rows.",
+          "min": "Minimum rows cannot be less than 24.",
+          "max": "Maximum rows cannot be more than 98.",
+          "text": "Numeric values only for rows."
+        }
+      },
+      "columns": {
+        "label": "Columns",
+        "validation": {
+          "required": "A number is required for columns.",
+          "min": "Minimum columns cannot be less than 80.",
+          "max": "Maximum columns cannot be more than 160.",
+          "text": "Numeric values only for columns."
+        }
+      },
+      "altrows": {
+        "label": "Alternate Rows",
+        "validation": {
+          "required": "A number is required for alternate rows.",
+          "min": "Minimum alternate rows cannot be less than 24.",
+          "max": "Maximum alternate rows cannot be more than 98.",
+          "text": "Numeric values only for rows."
+        }
+      },
+      "altcolumns": {
+        "label": "Alternate Columns",
+        "validation": {
+          "required": "A number is required for alternate columns.",
+          "min": "Minimum alternate columns cannot be less than 80.",
+          "max": "Maximum alternate columns cannot be more than 160.",
+          "text": "Numeric values only for columns."
+        }
+      },
+      "defrows": {
+        "label": "Default Rows",
+        "validation": {
+          "required": "A number is required for default rows.",
+          "min": "Minimum default rows cannot be less than 24.",
+          "max": "Maximum default rows cannot be more than 98.",
+          "text": "Numeric values only for default rows."
+        }
+      },
+      "defcolumns": {
+        "label": "Default Columns",
+        "validation": {
+          "required": "A number is required for default columns.",
+          "min": "Minimum default columns cannot be less than 80.",
+          "max": "Maximum default columns cannot be more than 160.",
+          "text": "Numeric values only for default columns."
+        }
+      },
+      "size": {
+        "label": "Max Size"
+      },
+      "ftp": {
+        "host": "Initial Host Directory",
+        "username": "User Name",
+        "password": "Password",
+        "tranMode": {
+          "label": "Transfer Mode",
+          "active": "Active",
+          "passive": "Passive"
+        }
+      },
+      "host": {
+        "label": "TCP host",
+        "validation": {
+          "required": "TCP host is required.",
+          "length": "Maximum length is 253 characters.",
+          "text": "Only alphanumeric characters, periods, colons and dashes are allowed."
+        }
+      },
+      "port": {
+        "label": "TCP port",
+        "placeholder": "Enter TCP port number",
+        "validation": {
+          "required": "A number is required.",
+          "length": "Port must be a number in the range 1 - 65535.",
+          "text": "Only numeric values are allowed."
+        }
+      },
+      "connectionTypes": {
+        "telnet": {
+          "label": "Telnet",
+          "name": "Telnet"
+        },
+        "tls": {
+          "label": "TLS",
+          "name": "TLS"
+        },
+        "tooltip": "To use TLS for stricter certificates verification, you could export the host certificate to PEM format (Base64 encoded). Then upload via page \"Configurations->Server->Certificate authorities\"."
+      },
+      "certificates": {
+        "accept": {
+          "label": "Accept",
+          "name": "Accept"
+        },
+        "reject": {
+          "label": "Reject",
+          "name": "Reject",
+          "info": "Reject means it will reject any connection if the host certificate is not authorized with the list of well-known CAs. For self-signed certificates,please upload the root certificate via page \"Configurations->Server->Certificate authorities\"."
+        }
+      },
+      "tls": {
+        "label":"Minimum TLS Version",
+        "version": {
+          "v10": "TLS v1.0",
+          "v11": "TLS v1.1",
+          "v12": "TLS v1.2",
+          "v13": "TLS v1.3"
+        }
+      },
+      "groupLabel": "Connection type",
+      "certificateLabel": "Invalid certificates",
+      "oriFileText": "originated from",
+      "security": {
+        "principle":"Alternate Principal Name",
+        "cipherTitle":"Select one or more Cipher Suites to Enable TLS",
+        "useCipher":"Select preferred Cipher Suites"
+      },
+      "scope": {
+        "label": "Scope",
+        "global": {
+          "label": "Global",
+          "tooltip": "global-level sessions can be assigned to all groups"
+        },
+        "group": {
+          "label": "Group",
+          "candidate": "Available for",
+          "placeholder": "Search groups...",
+          "candTooltip": "group-level session is created for the specific group",
+          "tooltip": "group-level sessions are only available to specific groups"
+        }
+      },
+      "GDDMSupportLabel":"Enable Graphics"
+    },
+    "prompt": {
+      "info": "To assign sessions to the group, click Assign Sessions",
+      "noPriSession": "There is no session in current group.",
+      "btnText": "Assign Sessions",
+      "noSession": "You must create sessions before you can assign them",
+      "removeGlobal": "\"{{sessions}}\" is(are) global session(s). After you remove the session(s) from the group, this session does not belong to any group you manage and the relationship between user and session will also be released. you cannot see it when editing group again. Do you want to unassign the session? ",
+      "hasToUser": "\"{{sessions}}\" has(have) assigned to user(s). After you remove the session(s) from the group, the relationship between user and session will also be released. Do you want to unassign the session? "
+    },
+    "view": {
+      "basic": "Connection",
+      "security": "Security",
+      "keepAlive": "Keep Alive",
+      "display": "Display",
+      "signon": "Signon",
+      "printer": "Printer",
+      "misc-w2h": "Miscellaneous",
+      "advanced": "Advanced"
+    },
+    "security": {
+      "type": {
+        "name": "Security Type",
+        "none": "None",
+        "implicit": "Implicit TLS",
+        "explicit": "Explicit TLS",
+        "ssh": "SSH",
+        "implicit_FTP": "Implicit FTPS (SSL/TLS)",
+        "explicit_FTP": "Explicit FTPS (SSL/TLS)",
+        "ssh_FTP": "SFTP (SSH)"
+      },
+      "version": {
+        "name": "Minimum TLS Version",
+        "ssh": "Minimum SSH Version",
+        "v3": "SSL v3",
+        "v1.0": "TLS v1.0",
+        "v1.1": "TLS v1.1",
+        "v1.2": "TLS v1.2",
+        "v1.3": "TLS v1.3",
+        "v2": "SSH v2"
+      },
+      "preferred": {
+        "name": "Preferred CipherSuite",
+        "strong": "Strong only",
+        "aes128": "AES 128",
+        "aes256": "AES 256",
+        "rc4": "RC4",
+        "des3": "3DES",
+        "aes": "AES",
+        "blowfish": "Blowfish",
+        "des": "DES"
+      },
+      "invalidCerte": {
+        "name": "Invalid Certificates",
+        "reject": "Always Reject",
+        "ask": "Ask Before Accepting",
+        "accept": "Always Accept"
+      },
+      "certificate": {
+        "name": "Check for Certificate Revocation",
+        "not": "Do Not Check",
+        "server": "Server Certificate Only",
+        "chain": "Server and Chain Certificates",
+        "root": "Server, Chain and Root Certificates"
+      },
+      "principal": "Alternate Principal Name",
+      "remote": "Remote Command",
+      "clearControlChannel": "Enable Clear Control Channel",
+      "clearDataChannel": "Enable Clear Data Channel"
+    },
+    "keepAlive": {
+      "title": "Keep session alive timer options",
+      "disable": "Disable",
+      "nop": "Use NOP",
+      "timingMark": "Use Timing Mark",
+      "tcp": "Use TCP",
+      "timerValue": "Timer Value (Minutes)",
+      "validationText": "The timer value should be between 1 to 999.",
+      "enableKeepAlive": "Enable Keep Alive",
+      "autoReconnectTitle": "Auto-Reconnect options",
+      "autoReconnect": "Auto-Reconnect Session"
+    },
+    "display": {
+      "type": "Keyboard Type",
+      "page": "Code Page",
+      "set": "Character Set",
+      "printAss": "Printer Association",
+      "record": "Request Startup Response Record",
+      "pattern": {
+        "page": "Numeric values only for code page.",
+        "set": "Numeric values only for character set."
+      }
+    },
+    "printer": {
+      "name": "*MSGQ name",
+      "library": "*MSGQ library",
+      "font": "Font",
+      "hostTransform": "Host print transform",
+      "typeMode": "Mfg. Type & Model",
+      "customName": "Custom name",
+      "customLibrary": "Custom library",
+      "paper": {
+          "label": "Paper",
+          "s1": "Paper source 1",
+          "s2": "Paper source 2",
+          "envelope": "Envelope source"
+      },
+      "formfeed": {
+          "label": "Formfeed",
+          "default": "Default",
+          "continuous": "Continuous",
+          "cut": "Cut",
+          "autocut": "Autocut"
+      },
+      "pattern": {
+          "font": "Numeric values only for character set.",
+          "name": "MSGQ name is required.",
+          "library": "MSGQ library is required."
+      }
+  },
+    "signon": {
+      "force": "Force Encrypted Signon",
+      "name": "User Name",
+      "password": "Password",
+      "reset": "Edit Password",
+      "call": "Program to Call",
+      "menu": "Initial Menu",
+      "library": "Current Library",
+      "type": {
+        "name": "Signon Type",
+        "des": "DES Signon Bypass",
+        "sha": "SHA-1 Signon Bypass"
+      }
+    },
+    "misc-w2h": {
+      "sessionIdLabel": "HLLAPI session ID",
+      "sessionIdAuto": "Automatically assign",
+      "sessionIdManual": "Manually specify",
+      "sessionIdSelectLabel": "Session ID",
+      "sessionIdTooltip": "This feature is often used when Rocket TE sessions are being launched in conjunction with a Rocket TE Automation script. For example, the script writer can write the script to connect to session 8. If the Rocket TE Administrator assigns the session ID of 8, then the script will only connect to this session."
+    }
+  },
+  "sessionSettings": {
+    "name": "Session settings",
+    "label": "Session settings",
+    "description": "",
+    "addBtnText": "Add",
+    "series": {
+      "3270": "3270 Display",
+      "printer3270": "3270 Printer",
+      "5250": "5250 Display",
+      "printer5250": "5250 Printer",
+      "vt": "VT Series"
+    },
+    "addSessionsetting": {
+      "submitBtnText": "Submit",
+      "names": {
+        "label": "Name",
+        "validation": {
+          "required": "Name is required.",
+          "exists": "The session settings name already exists. Enter a unique name.",
+          "length": "Maximum length is 50 characters.",
+          "text": "The name cannot include following characters: /\\*&%#~\"`or?"
+        }
+      },
+      "modelType": {
+        "listTitle": "Emulation type",
+        "placeholder": "Emulation type",
+        "label": "Emulation  type"
+      }
+    },
+    "editSessionSetting": {
+      "launchpad": {
+        "modelType": {
+          "placeholder": "Select the display options",
+          "label": "Display options",
+          "icon": "Icon",
+          "name": "Name",
+          "iconName": "Icon and Name"
+        },
+        "position": {
+          "placeholder": "Select the position options",
+          "label": "Position options",
+          "left": "Left",
+          "top": "Top",
+          "right": "Right",
+          "bottom": "Bottom"
+        },
+        "title":"Power Pad",
+        "label":"Power Pad",
+        "table":{
+          "string":"Button Name",
+          "action":"Actions"
+        },
+        "addNew": {
+          "buttonText": "Add",
+          "addTitle": "Add New Power Pad Button"
+        },
+        "editLaunchpad": {
+          "editTitle": "Edit Power Pad Button"
+        },
+        "launchpadButtonsTitle": "Power Pad Buttons",
+        "none": "None",
+        "names": {
+          "label": "Name",
+          "validation": {
+            "required": "Name is required.",
+            "exists": "The name already exists. Enter a unique name.",
+            "length": "Maximum length is 16 characters.",
+            "text": "The name cannot include the following characters: /\\*&%#~\"`?"
+          }
+        },
+        "tooltip": {
+          "label": "Tooltip"
+        },
+        "actionType": {
+          "label": "Action type"
+        },
+        "action": {
+          "label": "Actions",
+          "parameters": "One or more required fields are empty."
+        },
+        "Icon": {
+          "label": "Icon"
+        },
+        "dragRemindInformation": "Drag and drop Power Pad to change the order of the buttons on the power pad.",
+        "addEditRemindMessage": "You can define one or more power pad buttons. After you define all power pad buttons, click Submit."
+      },
+      "cursor": {
+        "vertical": "Show vertical cursor guide",
+        "horizontal": "Show horizontal cursor guide",
+        "underline": "Underline Cursor",
+        "steady": "Steady Cursor",
+        "highlightFocusedField": "Outline active unprotected field"
+      },
+      "hotspots":{
+        "label":"hotspot",
+        "title":"Hotspots",
+        "none":"None",
+        "table":{
+          "string":"Character string",
+          "action":"Actions"
+        },
+        "enableHotspots":{
+          "label":"Enable hotspots"
+        },
+        "showHotspots": {
+          "label": "Show hotspots"
+        },
+		"turnOnURL": {
+          "label": "Turn \"HTTP(S)://\" strings into hotspots"
+        },
+        "matchCase": {
+          "label": "Match case"
+        },
+        "actionType": {
+          "label": "Action type"
+        },
+        "action": {
+          "label": "Actions"
+        },
+        "characterString": {
+          "label": "Character string",
+          "regExpMessage": "The string cannot include the following characters:  *&%#~\"`?"
+        },
+        "addNewButton": {
+          "text": "Add"
+        },
+        "existMessage":"The name already exists. Enter a unique name.",
+        "emptyCheck":"One or more required fields are empty.",
+        "addNewHotspot":"Add hotspot definition",
+        "editHotspot":"Edit hotspot definition",
+        "definedHotspots":"Defined hotspots",
+        "addEditRemindMessage":"You can define one or more hotspots. After you define all hotspots, click Submit."
+      },
+      "color": {
+        "labelStandardColors": "Standard Colors",
+        "labelExtendedColors": "Extended Colors",
+        "labelInverseColors": "Inverse Colors",
+        "labelExtendedBoldColors": "Extended Bold Colors",
+        "OverrideInverseColors": "Override Inverse Colors",
+        "Foreground": "Foreground",
+        "Background": "Background",
+        "ForegroundBold": "Foreground Bold",
+        "BackgroundBold": "Background Bold",
+        "ForegroundBlinking": "Foreground Blinking",
+        "BackgroundBlinking": "Background Blinking",
+        "ForegroundBoldBlinking": "Foreground Bold Blinking",
+        "BackgroundBoldBlinking": "Background Bold Blinking",
+        "ProtectedBoldText": "Protected Bold Text",
+        "UnprotectedBoldText": "Unprotected Bold Text",
+        "ProtectedText": "Protected Text",
+        "UnprotectedText": "Unprotected Text",
+        "HotspotsForeground": "Hotspots Foreground",
+        "HotspotsBackground": "Hotspots Background",
+        "CursorGuide": "Cursor Guide",
+        "OIAText": "OIA Text",
+        "Blue": "Blue",
+        "Red": "Red",
+        "Pink": "Pink",
+        "Green": "Green",
+        "Turquoise": "Turquoise",
+        "Yellow": "Yellow",
+        "White": "White",
+        "PinkPurple": "Pink / Purple",
+        "Cyan": "Cyan",
+        "Black": "Black",
+        "LightGray": "Light Gray",
+        "InverseForeground": "Inverse Foreground",
+        "InverseBackground": "Inverse Background",
+        "InverseForegroundBold": "Inverse Foreground Bold",
+        "InverseBackgroundBold": "Inverse Background Bold",
+        "InverseForegroundBlinking": "Inverse Foreground Blinking",
+        "InverseBackgroundBlinking": "Inverse Background Blinking",
+        "InverseForegroundBoldBlinking": "Inverse Foreground Bold Blinking",
+        "InverseBackgroundBoldBlinking": "Inverse Background Bold Blinking",
+        "BrightBlue": "Bright Blue",
+        "BrightRed": "Bright Red",
+        "BrightMagentaPink": "Bright Magenta / Pink",
+        "BrightGreen": "Bright Green",
+        "BrightCyan": "Bright Cyan",
+        "BrightYellow": "Bright Yellow",
+        "DarkGray": "Dark Gray"
+      },
+      "fontConfig": {
+        "font": {
+          "label": "Font",
+          "name": "Name",
+          "size": "Size",
+          "remind": "To apply font changes, save and then reopen the session.",
+          "weight": {
+            "label": "Weight",
+            "bold": "Bold",
+            "normal": "Normal"
+          }
+        },
+        "setting":{
+          "autoSizeFont":"Auto-size font",
+          "autoSizeWindow":"Auto-size session window",
+          "fixedSizeFont": "Fixed-aspect ratio"
+        },
+        "scrollback": {
+          "label": "Scrollback",
+          "enable": "Enable scrollback",
+          "lines": "Maximum lines",
+          "validations": {
+            "max": "Maximum lines is a number in the range 99 - 1000.",
+            "range": "Maximum lines is a number in the range {{min}} - {{max}}.",
+            "number": "Numeric values only for scrollback.",
+            "require": "Max lines of scrollback cannot be null."
+          }
+        }
+      },
+      "language": {
+        "label": "Language",
+        "euroSupport": "Support Euro symbol",
+	"codePagelabel": "Remote character set"
+      },
+      "printBasic": {
+        "printMethod": {
+          "label": "Print method",
+          "choose": "Choose an option",
+          "pdf": "Print to PDF",
+          "browser": "Browser Printing",
+          "passthrough": "Passthrough",
+          "normal": "Passthrough - Normal",
+          "afp": "Passthrough - AFP Support",
+          "noebcdic": "Passthrough - No EBCDIC conversion"
+        },
+        "timeout": "End bracket timeout",
+        "seconds": "second(s)",
+        "unbind": "Use host unbind as the end of job indicator",
+        "ignoreFF": "Ignore form feeds sent from host",
+        "processHorzTabs": "Process SCS horizontal tab commands",
+        "message": {
+          "range": "Must be a number in the range {{min}} - {{max}}"
+        }
+      },
+      "printAppearance": {
+        "pageSize": {
+          "label": "Paper size",
+          "A3": "A3",
+          "A4": "A4",
+          "A5": "A5",
+          "B4": "B4",
+          "B5": "B5",
+          "executive": "Executive",
+          "legal": "Legal",
+          "letter": "Letter",
+          "statement": "Statement",
+          "tabloid": "Tabloid"
+        },
+        "orientation": {
+          "label": "Orientation",
+          "portrait": "Portrait",
+          "landscape": "Landscape"
+        },
+        "margin": {
+          "label": "Margins (inch)",
+          "left": "Left",
+          "right": "Right",
+          "top": "Top",
+          "bottom": "Bottom"
+        },
+        "fontSize": "Font size(pts)",
+        "linesPerPage": "Lines per page",
+        "override": "Override host commands",
+        "message": {
+          "range": "Must be a number in the range {{min}} - {{max}}",
+          "overlap": "The margins overlap or they are off the paper."
+        }
+      }
+    },
+    "bottomBtns": {
+      "next": "Next",
+      "submitBtnText": "Submit"
+    },
+    "steps": [
+      {
+        "label": "1. Name the session setting"
+      },
+      {
+        "label": "2. Set the session setting"
+      }
+    ],
+    "indFileTransfer":{
+      "tabName":{
+          "settings":"Settings",
+          "advanced":"Advanced",
+          "dbcs":"DBCS"
+      },
+      "settings":{
+          "hostName":"Host System",
+          "vmcms":"VM/CMS",
+          "tso":"TSO",
+          "cicsvs":"CICS/VS",
+          "hostFileOptions":"Host File Options",
+          "fileType":"File Type",
+          "fileMode":"File Mode",
+          "fileOptions":"File Options",
+          "text":"Text",
+          "binary":"Binary",
+          "crlf":"CR/LF",
+          "append":"Append",
+          "transferOptions":"Transfer Options",
+          "useLTT":"Use Local Translate Tables",
+          "packetSize":"packet Size",
+          "autoBT":"Auto-<Erase Input> before Transfer",
+          "sendCBT":"Send <Clear> before Transfer",
+          "inputNumber":"Please enter an integer"
+      },
+      "advanced":{
+          "recordFormat":"Record Format",
+          "default":"Default",
+          "variable":"Variable",
+          "fixed":"Fixed",
+          "undefined":"Undefined",
+          "recordLength":"Record Length",
+          "blockSize":"Block Size",
+          "space":"Space",
+          "allocateSize":"Allocate Size",
+          "increment":"Increment",
+          "unspecified":"Unspecified",
+          "avgBlocks":"Avg. Blocks",
+          "cylinders":"Cylinders",
+          "options":"Options",
+          "tracks":"Tracks",
+          "hostFilePW":"Host File Password",
+          "tpn":"Transfer Program Name",
+          "ilp":"Include Left Parenthesis",
+          "irp":"Include Right Parenthesis",
+          "addParameters":"Additional Parameters"
+      },
+      "dbcs":{
+        "options":"DBCS Options",
+        "fileOptions":"File Options",
+        "enable":"Enable DBCS Processing",
+        "codepage":"PC Code Page:",
+        "so":"SO",
+        "noso":"NOSO",
+        "user":"USER"
+      }
+  }
+  },
+  "keyboard": {
+    "name": "Keyboard settings",
+    "label": "Keyboard settings",
+    "description": "",
+    "addBtnText": "Add",
+    "importBtnText": "Import",    
+    "listTittle": "Select the series:",
+    "series": {
+      "3270": "3270 Display",
+      "5250": "5250 Display",
+      "vt": "VT Series"
+    },
+    "addKeyboard": {
+      "submitBtnText": "Save",
+      "names": {
+        "label": "Name",
+        "validation": {
+          "required": "Keyboard name is required.",
+          "exists": "The name already exists. Enter a unique name.",
+          "length": "Maximum length is 32 characters.",
+          "text": "The name cannot include the following characters: /\\*&%#~\"`?"
+        }
+      },
+      "modelType": {
+        "placeholder": "Emulation type",
+        "label": "Emulation type"
+      }
+    },
+    "editKeyboard": {
+      "selectKey": "1. Select a key",
+      "selectActionType": "2. Select the action type and action for:",
+      "actionType": "Action type",
+      "actions": "Actions",
+      "printScreenWarning": "The PrintScreen key cannot be mapped.",
+      "warningMessage": "NumLock is toggle key. It can only be mapped in combination with other keys.",
+      "warningMessage2": "Please specify another key to map the combination key.",
+      "mappingList": {
+        "header": "View all key mappings",
+        "onlyShowCustomized": "Only show customized key mappings",
+        "viewList": "View current key mappings",
+        "closeBtn": "Close",
+        "search": "Search",
+        "key": "Key",
+        "action":"Action",
+        "actionType": "Action type",
+        "back": "Back"
+      },
+      "keyboardType": "Keyboard Type",
+      "standardKeys": "Standard Keys",
+      "commandKeys": "Command Keys",
+      "numpadKeys": "Numpad Keys"
+    },
+    "keyboardOptions": {
+      "autoReset":{
+        "title":"Auto-Reset options:",
+        "label":"Auto-Reset when keyboard is Locked"
+      },
+      "autoResetMode": {
+        "title": "Auto-Reset mode:",
+        "immediateAutoReset": "Immediate Auto-Reset",
+        "autoResetNextKey": "Auto-Reset when Next Key is Pressed"
+      },
+      "autoRepeat": {
+        "title": "Auto-Repeat mode:",
+        "label": "Auto-Repeat Mode for Ctrl, Alt and Shift keys"
+      },
+      "autoTab": {
+        "title": "Auto-Tab option:",
+        "label": "Auto-Tab after Auto-Reset"
+      },
+      "rapidLeftRight":{
+        "label":"Rapid left/right options:",
+        "text":"Operate {{type}} Function Rapid Left/Right as Word Left/Right"
+      },
+      "backspaceOptions": {
+        "label": "Additional backspace options:",
+        "defaultBackspace": "Default Backspace",
+        "autoSkipBackspace": "Auto Skipping Backspace",
+        "StopAtBeginning": "Stop at the beginning of the input field",
+        "listTitle": "Additional backspace options",
+        "destructiveBackspace": "Operate {{type}} Function Backspace as a Destructive Backspace"
+      },
+      "keypadMode": {
+        "label": "Keypad Mode",
+        "options": {
+            "hostctr": "Host Controlled",
+            "num": "Numeric",
+            "app": "Application"
+        }
+      },
+      "mouseAction":{
+        "label": "Mouse event options:",
+        "dbclick2word": {
+          "label": "Select word by mouse double click"
+        },
+        "mouseWheel": {
+          "label": "Scroll mouse wheel to trigger page up/down"
+        }
+      },
+      "autoCopy": {
+        "text": "Auto-Copy mouse selections"
+      },
+      "paste": {
+        "label": "Paste from Clipboard:",
+        "skipSpace": "Skip spaces when moving to new field",
+        "straightPaste": "Straight Paste with Wrapping",
+        "columnsAligned": "Paste with Columns Aligned",
+        "tabReplace":"Treat tabs as spaces"
+      }
+    },
+    "bottomBtns": {
+      "submitBtnText": "Save"
+    },
+    "steps": [
+      {
+        "label": "1. Name the keyboard"
+      },
+      {
+        "label": "2. Set the keyboard"
+      }
+    ]
+  },
+  "users": {
+    "label": "User",
+    "name": {
+      "label": "Name",
+      "placeholder": "For example, FirstName LastName",
+      "validation": {
+        "length": "Maximum length is {{maxLength}} characters.",
+        "text": "The name cannot contain the following characters:  /\\*&%<>\"|:?"
+      }
+    },
+    "userId": {
+      "label": "User ID",
+      "validation": {
+        "required": "User ID is required.",
+        "exists": "The user ID \"{{userId}}\" already exists. Enter a unique user ID.",
+        "length": "Maximum length is {{maxLength}} characters.",
+        "text": "The user ID cannot contain the following characters: /*&%<>\"|:?",
+        "defaultName": "The user ID cannot be 'superadmin'. Enter a another user ID."
+      },
+      "promopt":"You can delete the corresponding user code."
+    },
+    "password": {
+      "label": "Password",
+      "validation": {
+        "required": "Password is required.",
+        "match": "The passwords do not match.",
+        "length": "The password must contain at least {{minPasswordLen}} characters.",
+        "text": "The password can only contain Latin-1 characters",
+        "reserved": "\"password\" is a system default password, user will be asked to reset their password when they log in to system with the default password."
+      },
+      "info": "Enter the default system password \"password\" here if you want users to reset their password when they login to the system for the first time."
+    },
+    "repeatPassword": {
+      "label": "Confirm password",
+      "validation": {
+        "required": "You must retype the password.",
+        "match": "The passwords do not match. ",
+        "length": "The password must contain at least {{minPasswordLen}} characters.",
+        "text": "The password cannot contain the following characters: :&<>\" and space"
+      }
+    },
+    "resetPassword": {
+      "header": "Reset password",
+      "label": "User ID: {{userId}}",
+      "labels": "User ID",
+      "newPassword": "New password",
+      "repeatPassword": "Confirm password",
+      "confirmBtn": "Reset password",
+      "cancelBtn": "Cancel"
+    },
+    "resetCode": {
+      "header": "Reset TOTP MFA",
+      "resetCodeConfirm": "Are you sure that you want to reset TOTP MFA QR code of \"{{userId}}\" ? ",
+      "notExist": "The user \"{{userId}}\" did not generate TOTP data and there is no need to reset it!"
+    },
+    "mail": {
+      "label": "Email",
+      "validation": "The email address is not valid."
+    },
+    "phone": {
+      "label": "Phone number",
+      "validation": "The phone number is not valid."
+    },
+    "group": {
+      "label": "Group",
+      "selectGroup": "Select an option",
+      "placeholder_mutiple": "Please choose an exist group or add a new group",
+      "placeholder_gpAdmin": "Please choose an exist group",
+      "mssqlValidation": "The Group cannot contain the following characters: , "
+    },
+    "onlyDefaultGroupMode": {
+      "label": "Group",
+      "defaultValue": "Default Group"
+    },
+    "lu": {
+      "label": "Logical unit",
+      "addLu": "Add logical unit.",
+      "info": "Configure LU and device name",
+      "groupName": "LU configuration",
+      "add": "Show all 32 LUs",
+      "hide": "Hide 22 less LUs",
+      "prompt": {
+        "name": "Already added 32 LUs",
+        "content": "The maximum number of adding LUs is 32. There has already been added 32 LUs."
+      },
+      "validationText": "Max length is 31 characters.",
+      "overwrite": {
+        "3270": "LU Name",
+        "5250": "Device Name",
+        "placeholder": "%s1%"
+      }
+    },
+    "addGroup": {
+      "text": "Assign to group",
+      "title": "Assign to group",
+      "noGroupMessage": "Create groups on the Groups tab. Then assign users to groups.",
+      "validationText": {
+        "group": "You are a group administrator, and the created user must assign to any group."
+      },
+      "confirmBtn": "Save"
+    },
+    "menus": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "resetPassword": "Reset password",
+      "resetQRCode": "Reset TOTP MFA"
+    },
+    "search": {
+      "placeholder": "Search for users..."
+    },
+    "deleteUser": {
+      "header": "Delete {{type}}",
+      "label": "{{type}}",
+      "removeUserConfirmMessage": "Are you sure you want to delete \"{{username}}\"?",
+      "removeUserNoPermission": "You can not delete user \"{{username}}\", since it has been assigned into other group(s): \"{{groups}}\" "
+    },
+    "import": {
+      "header": "Import user report",
+      "label": "Users",
+      "subHeader": "Import Users",
+      "subTitle": " Download the template, and enter user credentials. Then add the file, and click Import. ",
+      "addFile": "Add file",
+      "filesize": "Only .xls, .xlsx, and .csv files. 2MB maximum file size.",
+      "overwritePassword": "Overwrite password",
+      "downloadTemplate": "Download Template",
+      "totalCount": "Import \"{{fileName}}\",  the total items: {{totalCount}}",
+      "success": "Succeeded in creating file items: {{count}}",
+      "error": "Failed to create the file items: {{count}}",
+      "warning": "Warning items: {{count}}",
+      "errorMessage": {
+        "title": "Error message",
+        "content": "The user id field is empty.",
+        "userIdEmptyErrorCount":"The user id field is empty items: {{count}}",
+        "fileSize": "The file is too large. The maximum size is 100 KB.",
+        "fileTitle": "Missing required columns: \"{{column}}\". Please use the template to import user list.",
+        "userExist": "The user id already exists.",
+        "userIdErrorCount": "The user id contains illegal character items: {{count}}",
+        "userIdErrorMessage": "The user id cannot contain the following characters: /*&%<>\"|:?",
+        "passwordErrorCount": "The password contains illegal character items: {{count}}",
+        "passwordErrorMessage": "The password cannot contain the following characters: :&<>\" and space",
+        "passwordLengthErrorCount": "The password with a length less than 6 characters items: {{count}}",
+        "passwordLengthErrorMessage": "The password must contains at least 6 characters. ",
+        "userNameErrorCount": "The user name contains illegal character items: {{count}}",
+        "userNameLengthErrorCount": "The user name with a length more than 128 characters items: {{count}}",
+        "userNameLengthErrorMessage": "The user name with a length should be less than 128 charaters",
+        "phoneErrorCount": "The phone number contains illegal character items: {{count}}",
+        "mailErrorCount": "The email address contains illegal character items: {{count}}",
+        "userNameErrorMessage": "The user name cannot contain the following characters: /\\*&%<>\"|:?",
+        "phoneErrorMessage": "The phone number is not valid.",
+        "mailErrorMessage": "The email address is not valid.",
+        "userIdLengthErrorCount": "The user id with a length more than 128 characters items: {{count}}",
+        "userIdLengthErrorMessage": "The user id with a length should be less than 128 charaters",
+        "groupNameErrorCount": "The group name contains illegal character items: {{count}}",
+        "groupNameErrorMessage": "The group name should be letters, numbers, underscores, dot, or spaces.",
+        "groupNameLengthErrorCount": "The group name with a length more than 50 characters items: {{count}}",
+        "groupNameLengthErrorMessage": "The group name with a lenght should be less than 50 characters",
+        "luErrorCount": "LU length exceed items: {{count}}",
+        "luErrorMessage": "LU maximum length is 31."
+      },
+      "method": {
+        "overwrite": "Overwrite data",
+        "append": "Append data",
+        "updateUser": "Update existing users",
+        "notUpdateUser": "Do not update existing users",
+        "updatePwd": "Update password",
+        "warning": {
+          "overwrite": "All existing user data will be overwritten. For users who do not present in the imported file, all related records will be removed from the system. The records to be removed include user logon data, group assignment, user customized session and session settings.",
+          "password": "Will overwrite existing password"
+        }
+      },
+      "missingColumns": {
+        "password": "password",
+        "name": "name",
+        "phone number": "phone number",
+        "email": "email",
+        "group": "group"
+      },
+      "warnMessage": {
+        "title": "Warning message",
+        "missPassowrd": "User missed password items: {{count}}",
+        "missingColumnMessage": "No information for \"{{column}}\"",
+        "defaultPassword": "Set the default password: {{password}}"
+      },
+      "BZISConfirm":{
+        "Header": "Import user data from BlueZone Integration Server",
+        "label": "Users",
+        "confirmButton": "Import",
+        "Content": "It seems you are importing user data from the BlueZone Integration Server. This process combines the site and page names to form group names and ignores the location column. In addition, the LU7 column maps to LU1, the LU8 maps to LU2, and so on. \nClick Import if this meets your requirements. Otherwise, click Cancel and refer to the Administrator Guide to change your CSV file manually. Then you can import the new file."
+      }
+    }
+  },
+  "groups": {
+    "selectSessionTitle": "Assign sessions to the group.",
+    "setPrivilegeTitle": "Assign privileges to the group.",
+    "addUserTitle": "Assign users to the group",
+    "searchPlaceholder": "Search groups ...",
+    "noAuth": "The authentication type is None. Only the \"default group\" is available",
+    "addBtnText": "Add",
+    "importSiteBtnText": "Import site",
+    "updateGroupFailedPrompt":"Update group failed caused by :",
+    "webConnect": {
+      "title": "Import Web Connection",
+      "steps": {
+        "site": "1. Upload site",
+        "preview": "2. Import preview",
+        "summary": "3. Import summary"
+      },
+      "import": {
+        "type": {
+          "label": "Import from",
+          "webConnect": "WebConnect",
+          "passport": "Passport"
+        },
+        "method": {
+          "label": "Import method",
+          "file": "Import from file",
+          "ldap": "Import from LDAP"
+        },
+        "ldap": {
+          "server": "LDAP server",
+          "name": "Username",
+          "password": "Password",
+          "base": "Base distinguished name",
+          "mdn": "Authentication distinguished name",
+          "mpwd": "Authentication password",
+          "instname": "Configuration instance",
+          "test": "Test connection",
+          "ssl": "SSL-enabled",
+          "autogroup":"Create groups automatically by user's domain, if unchecked you have \nto create groups manually and associate them with sessions and users.",
+          "override":"Override the existing data.",
+          "selectAll":"Select All",
+          "agency":"Import by agency",
+          "agencyInit":"please select agency",
+          "agencyTips":"Select the desired agency to import. If no agency is selected, all the data will be imported by default. ",
+          "notFound":"no agency found",
+          "selected":" selected",
+          "id":"ID",
+          "agencyLoading":"loading...",
+          "validation": {
+            "server": "LDAP server name is required",
+            "name": "Username is required",
+            "password": "Password is required",
+            "base": "Base distinguished name is required",
+            "mdn": "Authentication distinguished name is required",
+            "mpwd": "Authentication password is required",
+            "instname": "Configuration instance is required",
+            "agency": "Please input a two-character Identifier for selected agency "
+          },
+          "testResult": {
+            "failed": "Connect failed",
+            "succ": "Connect successfully"
+          },
+          "nextInfo": "'Next' button is only available after test connection successfully"
+        },
+        "file": {
+          "name": "Add File",
+          "description": "Only .zip and .tar files. Compress from folders \"cfgdir\", \"profile\".",
+          "note": {
+            "label": "Please note that:",
+            "requied": "You will have to create groups manually and associate them with sessions and users.",
+            "password": "Default password of all users is \"password\". "
+          }
+        },
+        "preview": {
+          "description": "Select the launch folders which you are going to migrate to groups. Group name could be edited directly.",
+          "summary": {
+            "header": "Summary",
+            "label": "Finished importing on ",
+            "download": "Download log",
+            "success": "Succeed",
+            "warning": "Warning",
+            "failed": "Failed",
+            "group": "Groups",
+            "user": "Users",
+            "session": "Sessions",
+            "keymap": "Keymaps",
+            "attribute": "Attributes",
+            "hotspot": "Hotspots",
+            "clickpad":"ClickPads"
+          },
+          "detail": {
+            "label": "Failed and warning information details",
+            "session": "Session's failed and warning message",
+            "user": "User's failed and warning message",
+            "group": "Group's failed and warning message",
+            "keymap": "Keymap's failed and warning message",
+            "attribute": "Attribute's failed and warning message",
+            "hotspot": "Hotspot's failed and warning message",
+            "clickPad": "ClickPad's failed and warning message"
+          }
+        },
+        "summary": {
+          "description": "Successfully import the select launch folders and migrate to groups. The result is as follow. You can refer to \"import log\" for more details."
+        },
+        "log": {
+          "label": "Last import on ",
+          "btn": "Import history",
+          "table": {
+            "download": "Download",
+            "headers": {
+              "filename": "File name",
+              "timestamp": "Import Date",
+              "action": "Action"
+            }
+          }
+        },
+        "loading": "Importing"
+      },
+      "bottomBtns": {
+        "submitBtnText": "Finish"
+      }
+    },
+    "noData": "No groups are defined. Click Add to define one.",
+    "bottomBtns": {
+      "submitBtnText": "Submit",
+      "info": "Next, assign sessions and privileges to the group."
+    },
+    "bottomProgress": {
+      "progress0": {
+        "info": "Next, assign sessions to the group.",
+        "notification": "Successfully created a group."
+      },
+      "progress1": {
+        "info": "Next, assign privileges to the group.",
+        "notification": "Successfully assigned sessions."
+      },
+      "progress2": {
+        "info": "Next, add users to this group.",
+        "notification": "Successfully assigned privileges."
+      },
+      "progress3": {
+        "info": " ",
+        "notification": "Successfully assigned users."
+      }
+    },
+    "createSteps": {
+      "setBasics": "1. Name the group",
+      "assignSessions": "2. Assign sessions",
+      "setPrivileges": "3. Assign privileges",
+      "assignUsers": "4. Assign users"
+    },
+    "addGroup": {
+      "name": {
+        "label": "Name",
+        "validation": {
+          "text": "Enter letters, numbers, underscores, hyphen, dot, or spaces.",
+          "required": "Group name is required.",
+          "exists": "This group name already exists. Enter a unique name.",
+          "length": "Maximum length is 50 characters.",
+          "defaultName": "'Default Group' is a reserved group. Enter another name."
+        }
+      },
+      "deployMode": {
+        "label": "Deployment mode",
+        "modes": {
+          "w2h": {
+            "label": "Standard Web Deployment",
+            "name": "Standard Web Deployment",
+            "desc": "The Standard Web Deployment mode is the default mode for Rocket TE Web Deployment Manager. When this deployment mode is configured, the user opens a web browser, navigates to a URL, clicks on a link, and Rocket TE is automatically downloaded and installed. The user uses a shortcut in desktop to start Rocket TE client sessions. This deployment mode also provides for \"automatic\" updates of the Rocket TE emulation clients."
+          },
+          "sd": {
+            "label": "Served Desktop",
+            "name": "Served Desktop",
+            "desc": "The Served Desktop mode brings the benefits and familiarity of a desktop client with the convenience and advantages of a Rocket TE client install. Think of the Served Desktop mode as a way to use a web server to automatically deploy, install, and maintain Rocket TE as a standard Windows desktop application on many user workstations, without having to visit each of those workstations."
+          }
+        }
+      },
+      "description": {
+        "label": "Description",
+        "validation": {
+          "text": "The descriptions cannot include the following characters: /\\*&%#?~`\"",
+          "length": "Maximum length is 300 characters."
+        }
+      }
+    },
+    "addPrivilege": {
+      "base": {
+        "createSessionLabels": "Create, edit, clone and remove self-defined sessions",
+        "clonePreSession": "Clone pre-defined sessions",
+        "cloneSessionLabels": "Clone sessions",
+        "removeSessionLabels": "Remove sessions",
+        "sessionSettingsLabels": "Customize session settings",
+        "sessionSettingsSubOptions": {
+          "comments": "Enable the privilege. Then select session settings. ",
+          "links": "Session settings",
+          "hideSettingIcon": "Also hide session settings icon"
+        },
+        "AdvancedSessionSettingsSubOptions": {
+          "comments": "Enable the privilege. Then select advanced session settings. ",
+          "links": "Advanced settings"
+        },
+        "enableDisplayLaunchPadMenuLabels": "Use power pad",
+        "enablePrivateScriptLabels": "Record, import, edit, run and delete self-defined scripts",
+        "enableSharedScriptLabels": "Run and view pre-defined scripts",
+        "enableRecorderLabels_w2h": "Record and edit scripts",
+        "enablePlayScriptLabels_w2h": "Run scripts",
+        "lockFTPCommandsLabels": "Lock FTP specific settings",
+        "lockFTPCommandsSubOptions": {
+          "comments": "Enable this privilege. Then select FTP specific settings to lock. ",
+          "links": "FTP settings"
+        }
+      },
+      "advanced": {
+        "w2hTabLabel": "Basic settings",
+        "viewSessionPanel": "View session panel",
+        "editLULabels": "Edit LU/device name",
+        "enableEditSessionLabels": "Customize session settings  ",
+        "enableEditFontSizeLabels": "Edit font and size settings",
+        "enableEditColorsLabels": "Edit color settings",
+        "enableEditCursorLabels": "Edit cursor settings",
+        "enableEditLaunchPadLabels": "Edit power pad settings",
+        "enableEditkeyboardMappingLabels": "Edit keyboard settings",
+        "enableEditHotSpotsLabels": "Edit hot spot settings",
+        "enableEditLanguageLabels": "Edit language/translation settings",
+        "enableFTPTransferSettingLabels": "Edit FTP Transfer setting",
+        "enableEdit3270pLabels": "Edit printer settings"
+      },
+      "W2HAdvanced": {
+        "w2hTabLabel": "Advanced settings",
+        "enableAdvAPISettingLabels": "API Settings",
+        "enableConSettingLabels": "Connection Properties",
+        "enableAdvLicMgLabels": "License Manager",
+        "enableAdvToolbarLabels": "Tool Bar",
+        "enableAdvEditPropLabels": "Edit Properties",
+        "enableAdvStatusbarLabels": "Status Bar",
+        "enableAdvMacroSettingLabels": "Macro Settings",
+        "enableAdvIND$FILELabels": "IND$File Transfer",
+        "enableAdvFilePropLabels": "File Properties",
+        "enableAdvScriptSettingLabels": "Script Settings",
+        "enableAdvPrintScreenLabels": "Print Screen Settings",
+        "enableAdvPrintQueueLabels": "Print Queue Settings"
+      },
+      "FTPCommands": {
+        "lockFTPCWDLabels": "Block Change Directory (CWD)",
+        "lockFTPSTORLabels": "Block Upload (STOR)",
+        "lockFTPRETRLabels": "Block Download (RETR)",
+        "lockFTPSITELabels": "Block SITE commands (SITE)",
+        "lockFTPMKDLabels": "Block Make Directory (MKD)",
+        "lockFTPRMDLabels": "Block Remove Directory (RMD)",
+        "lockFTPDELELabels": "Block Delete File (DELE)"
+      }
+    },
+    "addUser": {
+      "authenticationMsg": "Identity source",
+      "users": "Users",
+      "add": "Add",
+      "authenticationType": {
+        "ldap": "LDAP",
+        "blueZoneInternal": "Rocket TE",
+        "database": "Database"
+      },
+      "msg": {
+        "ldap": "Please enter search filter to assign users to the group",
+        "blueZoneInternal": "Please click 'Assign User' button to assign users to the group",
+        "noUser": "There is no user in current group."
+      },
+      "searchUsers": {
+        "label": "Assign users with filter",
+        "placeholder": "Enter a search filter",
+        "validationText": "Thr search filter cannot include the following characters: /\\*&%#?~`\""
+      },
+      "mssqlUsers": {
+        "label": "Assign users who have this group name in the data table",
+        "placeholder": "Please assign one or more user groups"
+      },
+      "internalUsers": {
+        "prompt": {
+          "name": "Notice",
+          "description": "Select users on one page. Then click Save to add the users to the group. If you select users and immediately change pages, your selections are not saved."
+        }
+      },
+      "ssoUsers": {
+        "operator": {
+          "or": "Or",
+          "add": "And"
+        },
+        "relation": {
+          "equal":"Equals",
+          "has": "Has"
+        },
+        "add": "Add",
+        "delete": "Delete",
+        "placeholder": {
+          "attr": "Attribute",
+          "value": "Value"
+        }
+      },
+      "assignbtn": {
+        "text": "Assign Users"
+      },
+      "searchbtn": {
+        "text": "Apply"
+      },
+      "showTable": {
+        "header": "Assign Users",
+        "label": "Add group"
+      },
+      "tableHeader": {
+        "userId": "User ID",
+        "userName": "User Name",
+        "mail": "Email",
+        "phone": "Phone number",
+        "accessGroups": "Group",
+        "action": "Action",
+        "sessions":"Sessions"
+      },
+      "dialogHeaders": {
+        "userId": "User ID",
+        "accessGroups": "Group"
+      },
+      "ldapMapDescription": " This field determines the users who have privilege to access this group. If your LDAP return attributes is a distringuished name is like:cn=username1, ou=department1, o=organization1,c=country1.  And you want to let all users in a certain department have access to this groups, you can input such like ou=department1",
+      "onlyDefaultGroupMode": {
+        "title": "Only Default Group mode",
+        "subtitle": "All users belong to this group."
+      },
+      "assignSession":{
+          "name": "Assign Session",
+          "assignBtn": "Assign Groups",
+          "assigned": "session(s) assigned.",
+          "selectAll": "Select all",
+          "allSessions":"Current group sessions",
+          "dialog": {
+            "header": "Assign session",
+            "label": "Group",
+            "placeholder": "Search for sessions...",
+            "selectMode": {
+              "name": "Assign session to user",
+              "all": "Assign all sessions that have been assigned to the group",
+              "specific": "Assign specific sessions"
+            },
+            "groups": "Sessions",
+            "selected": "Selected sessions",
+            "submit": "Assign",
+            "cancel": "Cancel",
+            "global": "Global",
+            "group": "Group"
+          }
+        }
+    },
+    "edit": {
+      "header": "Groups",
+      "tabs": {
+        "basic": "Basic Settings",
+        "setting": "Group Settings",
+        "client": "Client Distribution",
+        "dataSecurity": "Data Security"
+      },
+      "session": "Sessions",
+      "privilege": "Privileges",
+      "user": "Users",
+      "dataSecurity": "Data Security Configuration",
+      "setting": {
+        "w2h": "Standard Web Deployment settings",
+        "sd": "Served settings"
+      },
+      "client": {
+        "file": "Files Distribution",
+        "feature": "Features Distribution"
+      }
+    },
+    "dist": {
+      "srcFolder": "Source folders",
+      "header": {
+        "name": "File name",
+        "size": "File size",
+        "mtime": "Date modified",
+        "toClient": "Distribute to client",
+        "action": "Action"
+      },
+      "addFile": "Add file",
+      "addFileModal": {
+        "label": "FILE DISTRIBUTION",
+        "header": "Add Files",
+        "confirm": "Continue",
+        "cancel": "Cancel",
+        "overwrite": "The following files already exist in server, do you want to replace them?",
+        "invalidFileName": "A file name can't contain any of the following characters:",
+        "invalidCharacters": "    # \\ / : * ? \" < > |",
+        "invalidFileSize": "The file size should be less than {{fileSize}} KB."
+      },
+      "action": {
+        "delete": "Delete"
+      }
+    },
+    "importSite": {
+      "title": "Import site",
+      "steps": [
+        {
+          "label": "1. Upload site"
+        },
+        {
+          "label": "2. Import preview"
+        },
+        {
+          "label": "3. Import summary"
+        }
+      ],
+      "history": {
+        "siteFile": "Site zip file",
+        "siteName": "Site name",
+        "date": "Import date",
+        "action": "Action",
+        "actionView": "View detail",
+        "actionDownload": "Download log"
+      },
+      "stepUpload": {
+        "lastImportDate": "The last import date is {{date}}",
+        "uploadTitle": "By compressing a site folder created by BlueZone Web-to-Host Wizard into a zip file and importing it here, your site’s launch folders and their sessions will be transitioned to Rocket TE Administration Console’s groups and session definitions automatically.",
+        "uploadDesc": "Only .zip file is valid",
+        "addFile": "Add file",
+        "noteTitle": "Please note that:",
+        "notes": [
+          { "text": "All launch folders will be imported as groups." },
+          { "text": "All sessions of launch folder will be imported as sessions and assigned to the associated group." },
+          { "text": "The following session types will be ignored during import: TCP/IP Printer server, ALC display, T27 display and UTS display." },
+          { "text": "Binary format session profile need to be converted to text format before import, otherwise the session will not be imported." },
+          { "text": "The GUI/FTP locks configured in launch folder will be converted to privilege in the associated group." }
+        ]
+      },
+      "stepAnalyze": {
+        "title": "The following launch folders are detected and will be migrated to groups, input to change the default group name.",
+        "totalSessions": "Total contained sessions:",
+        "sessionsValid": "Sessions will be imported",
+        "sessionsInvalid": "Sessions will be ignored",
+        "invalidType": "Session type is not supported:",
+        "invalidFormat": "Session profile is binary format or does not exist:",
+        "invalidconnection": "No connection info in profile:",
+        "groupNameLabel": "Group to be created for launch folder '{{orgName}}'",
+        "groupNameConflict": "Customized group name conflicts.",
+        "groupExists": "This group name already exists. Enter a unique name or resolve the name conflict.",
+        "overwriteGroup": "Overwrite the existing group?",
+        "importGroup": "Import",
+        "skipGroup": "Skip",
+        "notifySessionConflict": "The following sessions already exist: {{sessions}}, do you want to overwrite or skip them?",
+        "overwriteSession": "Overwrite",
+        "skipSession": "Skip"
+      },
+      "stepReport": {
+        "title": "Site import completed, please see the summary of the infomation imported below, more details could be found in the import log. ",
+        "errTitle": "Import failed, more details could be found in the import log. ",
+        "download": "Download",
+        "groupImported": "1 group has been created/updated.",
+        "mulGroupsImported": "{{count}} groups have been created/updated.",
+        "sessionsExisted": "Existing sessions",
+        "sessionsImported" : "Sessions imported successfully",
+        "sessionsIgnored" : "Sessions ignored",
+        "sessionsFailed": "Sessions failed to import"
+      },
+      "summaryModal": {
+        "label": "Groups",
+        "header": "Import Summary"
+      },
+      "inputPromptModal": {
+        "label": "Groups",
+        "header": "Import Site",
+        "confirm": "Continue",
+        "cancel": "Cancel",
+        "overwrite": "site exists in server, do you want to replace it?"
+      },
+      "ReportModal": {
+        "label": "Groups",
+        "header": "Summary of Import Site",
+        "summary": "Importing site finishes. Here is the summary.",
+        "groupTitle": "The following groups are created or updated.",
+        "noGroup": "There is no group created."
+      },
+      "error": {
+        "nonZip": "Invalid file extension."
+      }
+    },
+    "feature" : {
+      "bzmp": "Mainframe Printer",
+      "bzap": "iSeries Printer",
+      "bzftp": "Rocket TE FTP Client",
+      "bzlpd": "TCP/IP Print Server",
+      "bzkerb": "Kerberos"
+    },
+    "preText": {
+      "text": "Edit",
+      "menus": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "verify": "Test",
+        "clone": "Clone",
+        "rename": "Rename",
+        "assign": "Assign to groups",
+        "setDefault": "Make default"
+      }
+    },
+    "groupCard": {
+      "defaultGroupDescription": "A system default group which contains all your users. This group is available when \"Only use Default Group for user's access control\" option is enabled.",
+      "defaultGroupCountInfo": "{{sessionCount}} sessions",
+      "countInfo": "{{userCount}} users, {{sessionCount}} sessions",
+      "groupInfo": "{{userCount}} user groups, {{sessionCount}} sessions",
+      "ssoGroupInfo": "{{sessionCount}} sessions",
+      "sdDesc":"Served Desktop",
+      "w2hDesc":"Standard Web Deployment",
+      "group": "Group",
+      "global": "Global",
+      "candGroup": "For group"
+    }
+  },
+  "settings": {
+    "authentication": {
+      "inactive": "Inactive",
+      "authenticationMethods": "Authentication method",
+      "userDataSource": "Identity source",
+      "changeAuthConfirm": "Are you sure that you want to change authentication?",
+      "changeToNoneAuth": "When setting None as the authentication method, RTE Web and its APIs will be accessible by anyone. This can be a security risk, especially when RTE Web is configured to serve public users through the internet. Are you sure that you want to change authentication?",
+      "defaultPassword": "Notice: With authentication method change from {{auth}} to Rocket TE, the users created in {{auth}} method will get a default password as \"{{password}} \" until it’s reset.",
+      "restartNotifation": "To update the user authentication method, restart the server. Until you restart the server, the authentication method is {{auth}}, and the identity source is {{source}}.",
+      "restartNotifation2": "To update the user authentication method, restart the server. Until you restart the server, the authentication method is  {{auth}}.",
+      "restartNotifation3": "To update the protocol configuration, restart the server.",
+      "copyData": "Copy values from authentication",
+      "Identitydescription": "The identity source is an existing repository that stores user credentials.",
+      "noAuth": {
+        "label": "None",
+        "description": "Users are not authenticated; they access Rocket TE directly, without providing credentials.",
+        "info": "To assign privileges to these users, use the Default group, which is created automatically. "
+      },
+      "tabs": {
+        "user": "User Authentication",
+        "api": "API Authentication"
+      },
+      "token": {
+        "legend": "API Token",
+        "label": "Token",
+        "headers": {
+          "token": "Token",
+          "expire": "Expire date",
+          "allowed": "Allowed web origins",
+          "action": "Actions"
+        },
+        "noData": "There is no API token",
+        "btn": {
+          "add": "Add",
+          "back": "Back"
+        },
+        "delete": {
+          "header": "Delete Token",
+          "title": "Token",
+          "info": "Are you sure you want to delete \"{{token}}\"?",
+          "btn": {
+            "delete": "Delete",
+            "cancle": "Cancel"
+          }
+        },
+        "expiration": {
+          "label": "Expiration",
+          "types": {
+            "m1": "30 Days",
+            "m3": "90 Days",
+            "never": "Never"
+          },
+          "time": "Expire date"
+        },
+        "applyFor": {
+          "label": "Apply for",
+          "types": {
+            "ur": "User reports",
+            "all": "All features"
+          }
+        },
+        "copy": {
+          "label": "Copy",
+          "result": {
+            "succ": "Copied",
+            "failed": "failed"
+          }
+        },
+        "introduction": {
+          "title": "Token-based authentication for REST API:",
+          "message": "To ensure security, the requests to Rocket TE REST API must include HTTP header \"rte-api-token\". And the value must match to a valid API Token below."
+        },
+        "allows": {
+          "label": "Allowed web origins",
+          "validationText": "Allowed web origins fields are empty.",
+          "detail":"Comma-separated list of allowed origins for use with Cross-Origin Authentication, Device Flow, and web message response mode, in the form of <scheme> \"://\" <host> [ \":\" <port> ], such as https://login.mydomain.com or http://localhost:3000. You can use wildcards at the subdomain level (e.g.: https://*.contoso.com). Query strings and hash information are not taken into account when validating these URLs."
+        },
+        "notification": {
+          "add": "add",
+          "and": "and",
+          "edit": "edit",
+          "apiToken": "api token"
+        },
+        "update": "Update token"
+      },
+      "bluezoneInternal": {
+        "label": "Rocket TE",
+        "description": "Users are authenticated by credentials that are stored in Rocket TE."
+      },
+      "ldap": {
+        "label": "LDAP",
+        "description": "Users are authenticated by an existing LDAP environment.",
+        "legend": "LDAP configuration",
+        "btnTestSettings": "Test Settings",
+        "servername": {
+          "label": "Host name",
+          "placeholder": "For example: ldap.rs.com or ldap.rs.com:port ",
+          "validation": "Host name cannot include the following characters: ^%&',;=?$\""
+        },
+        "port": {
+          "label": "Port",
+		  "validation": "Port must be a number in the range 1 - 65535."
+        },
+        "rootDN": {
+          "label": "Search base",
+          "placeholder": "For example: dc=rocketsoftware,dc=com",
+          "validation": "The rootDN cannot include the following characters: ^%&',;=?$\""
+        },
+        "filter": {
+          "label": "Search filter",
+          "placeholder": "Enter LDAP search filter",
+          "validation": "Filter cannot include the following characters: ^%&',;=?$\"",
+          "description": "If your LDAP configuration does not include a uid attribute or does not have   meaningful uid values, enter mail={0}. Then users use their email addresses to log into Rocket TE."
+        },
+        "returningAttributes": {
+          "label": "Return attributes",
+          "placeholder": "Enter LDAP search return attributes",
+          "validation": "Return attributes cannot include the following characters: ^%&',;=?$\"",
+          "description": "Specify the attributes that the LDAP query should return. Use these attributes to assign users to a group; If the attribute is not specified, the DN's value will be returned."
+        },
+        "userIdSuffix": {
+          "label": "UserId Suffix",
+          "description": "To avoid having to type like '@domain.com', use this can automatically append a domain name at the end of UserId, then pass into the LDAP to bind."
+        },
+        "userIdPrefix": {
+          "label": "UserId Prefix",
+          "description": "To avoid having to type like 'domain\\', use this can automatically append a domain name at the before of UserId, then pass into the LDAP to bind."
+        },
+        "managerDN": {
+          "label": "Manager DN",
+          "description": "If your LDAP server doesn't support anonymous binding (IOW, if your LDAP server doesn't even allow a query without authentication), then Rocket TE would have to first authenticate itself against the LDAP server, and Rocket TE does that by sending 'manager' DN and password. A DN typically looks like CN=MyUser,CN=Users,DC=mydomain,DC=com although the exact sequence of tokens depends on the LDAP server configuration. It can be any valid DN as long as LDAP allows this user to query data."
+        },
+        "managerPassword": {
+          "label": "Manager Password",
+          "description": ""
+        },
+        "sslEnabled": {
+          "label": "SSL-enabled"
+        },
+		"testing":{
+			"description":"Use your LDAP username and password to test your LDAP settings before saving. It is a good practice to verify a few other user accounts as well. you can use an empty password if you don't know their password to validate that user lookup is working.",
+			"Lookup":"Lookup:",
+			"Login":"Login:",
+			"testoccurs":"test occurs error",
+			"testuser":"Please input test user!",
+			"finishyet":"Please finish the ldap setting!",
+      "testHead":"Test LDAP Settings",
+      "failedBind":"Test LDAP setting failed: "
+		}
+      },
+      "sso": {
+        "label": "Single sign-on",
+        "description": "Users are authenticated by an existing single sign-on environment.",
+        "legend": "Single sign-on configuration",
+        "sp": "Service provider",
+        "idp": "Identity provider",
+        "productName": "Method",
+        "metadata": {
+          "view": "View Service Provider Metadata"
+        },
+        "entityId": {
+          "label": "Entity ID",
+          "placeholder": "https://sp.example.com",
+          "description": "Unique identifier for the service provider, often the URL of the metadata file.",
+          "validation": {
+            "required": "Entity id is required.",
+            "format": "The entity id format should be start with 'urn:'"
+          }
+        },
+        "assertEndpoint": {
+          "label": "Assert endpoint",
+          "placeholder": "https://sp.example.com:port/ZLUX/plugins/com.rs.ssoController/services/ssoController/assert",
+          "description": "Assert endpoint(usually called Assertion Consumer Service URL) of the service provider. No need to change it unless the host name does not contain the full domain name or the host name is \"localhost\".",
+          "validation": {
+            "required": "Assert endpoint is required."
+          }
+        },
+        "privateKey": {
+          "label": "Private key",
+          "placeholder": "Select file format like xxx.key",
+          "description": "Private key for the service provider.",
+          "validation": {
+            "required": "Private key is required.",
+            "uploadFail": "Private key upload failed",
+            "extendError": "File extend incorrect",
+            "fileError": "Private key is invalid, file size is 0 KB"
+          }
+        },
+        "certificate": {
+          "label": "Certificate",
+          "placeholder": "Select file format like xxx.cert",
+          "description": "Certificate for the service provider.",
+          "validation": {
+            "required": "Certificate is required.",
+            "uploadFail": "Certificate upload failed",
+            "extendError": "File extend incorrect",
+            "fileError": "Certificate is invalid, file size is 0 KB"
+          }
+        },
+        "linkAdvanced": "Advanced",
+        "selectFiles": "Select Files",
+        "uploadFiles": "Upload Files",
+        "alt_private_keys": {
+          "label": "Additional private keys",
+          "placeholder": "Select file(s) format like xxx.key",
+          "description": "This field determines your additional private key(s) useful for adding backward-compatibility for old certificates after a rollover",
+          "validation": {
+            "uploadFail": "Additional private key upload failed",
+            "extendError": "File extend incorrect",
+            "fileError": "Additional private key is invalid, file size is 0 KB"
+          }
+        },
+        "alt_certs": {
+          "label": "Additional certificates",
+          "placeholder": "Select file(s) format like xxx.cert",
+          "description": "This field determines your additional certificate(s) useful for staging new certificates for rollovers.",
+          "validation": {
+            "uploadFail": "Additional certificate(s) upload failed",
+            "extendError": "File extend incorrect",
+            "fileError": "Additional certificate is invalid, file size is 0 KB"
+          }
+        },
+        "audience": {
+          "label": "Audience",
+          "placeholder": "https://sp.example.com",
+          "description": "The audience of the SAML assertion. Default will be the entity id on SAML request",
+          "validation": {
+            "format": "The audience format should be start with 'urn:'"
+          }
+        },
+        "nameid_format": {
+          "label": "Name ID format",
+          "placeholder": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+          "description": "Format for Name ID. Identifies the SAML processing rules and constraints for the assertion's subject statement. Use the default value of 'Unspecified' unless the application explicitly requires a specific format.",
+          "validation": {
+            "format": "The format should be start with 'urn:'"
+          }
+        },
+        "notbefore_skew": {
+          "label": "Not before skew (Seconds)",
+          "description": "To account for clock skew between IdP and SP, accept responses with a NotBefore condition ahead of the current time (according to our clock) by this number of seconds. Defaults to 1. Set it to 0 for optimum security but no tolerance for clock skew.",
+          "validation": {
+            "format": "The value should be a number between 0-99999."
+          }
+        },
+        "sso_login_url": {
+          "label": "SSO login url",
+          "placeholder": "https://saml-identity-provider-login-url/",
+          "description": "This field determines your SAML2 identity provider login url",
+          "validation": {
+            "required": "sso login url is required.",
+            "format": "Login url format is invalid"
+          }
+        },
+        "sso_logout_url": {
+          "label": "SSO logout url",
+          "placeholder": "https://saml-identity-provider-login-url/logout",
+          "description": "This field determines your SAML2 identity provider logout url., like 'LOGIN_URL/logout'",
+          "validation": {
+            "required": "sso logout url is required.",
+            "format": "Logout url format is invalid"
+          }
+        },
+        "allow_unencrypted_assertion": {
+          "label": "Allow unencrypted assertions"
+        },
+        "force_authn": {
+          "label": "Force re-authentication",
+          "description": "If checked, forces re-authentication of users even if the user has a SSO session with the IdP"
+        },
+        "sign_get_request": {
+          "label": "Sign request"
+        },
+        "allow_iframe": {
+          "label": "Allow iframe embedding",
+          "description": "If checked, allow Rocket TE to embed the IdP in an iframe"
+        },
+        "samlCertificate": {
+          "label": "Identity Provider Certificate",
+          "placeholder": "Select file format like xxx.pem",
+          "description": "This field determines your SAML2 identity provider certificate",
+          "validation": {
+            "required": "Identity Provider Certificate is required.",
+            "uploadFail": "Identity Provider Certificate upload failed",
+            "extendError": "File extend incorrect",
+            "fileError": "Indentity provider certificate is invalid, file size is 0 KB"
+          }
+        },
+        "inputUserId": {
+          "label": "Response fields",
+          "placeholder": "The name_id field is the default",
+          "validation": {
+            "required": "Response fields is required."
+          },
+          "description": "Enter the name of the SAML response field to use for the user ID."
+        },
+        "upload": {
+          "addFile": "Select File",
+          "upload": "Upload File"
+        }
+      },
+      "database": {
+        "label": "Microsoft SQL Server",
+        "description": "Users are authenticated by an existing Microsoft SQL Server environment.",
+        "legend": "SQL Server configuration",
+        "mssql": {
+          "label": "Microsoft SQL Server",
+          "linkAdvanced": "Advanced",
+          "btnTestConnection": "Test connection",
+          "hostName": {
+            "label": "Database URL",
+            "placeholder": "For example, dbhost.rs.com\\database or dbhost.rs.com:port\\database",
+            "validation": "The database URL can't include characters: ^%&',;=?$\""
+          },
+          "port": {
+            "label": "Port"
+          },
+          "dataBaseName": {
+            "label": "Database",
+            "validation": "Input correct database URL, like (dbhost.rs.com\\database or dbhost.rs.com:port\\database) "
+          },
+          "userName": {
+            "label": "User name",
+            "validation": "Input cannot include characters: ^%&',;=?$\""
+          },
+          "password": {
+            "label": "Password"
+          },
+          "userTableName": {
+            "label": "Table name",
+            "placeholder": "Name of the table that stores user credentials",
+            "validation": "The field name cannot include characters: ^%&',;=?$\""
+          },
+          "userIdFieldName": {
+            "label": "User ID column name",
+            "placeholder": "Name of the column that contains the user ID",
+            "validation": "The field name cannot include characters: ^%&',;=?$\""
+          },
+          "userPasswordFieldName": {
+            "label": "Password column name",
+            "placeholder": "Password column name",
+            "validation": "The field name cannot include characters: ^%&',;=?$\""
+          },
+          "passwordEncryptor": {
+            "label": "Password encryption"
+          },
+          "groupFieldName": {
+            "label": "Group column name",
+            "placeholder": "Name of the column that contains the group name",
+            "validation": "The field name cannot include characters: ^%&',;=?$\"",
+            "description": "Specify your database table 'Group' column name, this column will be used to map session group."
+          },
+          "allowManage": {
+            "label": "Allow managing user data"
+          }
+        },
+        "oauth": {
+          "label": "HTTP Authorization Header",
+          "description": "Users are authenticated by an existing HTTP Authorization Header environment."
+        }
+      },
+      "oauth": {
+        "label": "HTTP Authorization Header",
+        "description": "Users are authenticated by an existing HTTP Authorization Header environment.",
+        "method": {
+          "name": "Method",
+          "basic": "HTTP Authorization Header - Ignore password"
+        },
+        "tooltip": {
+          "basic": "This method is usually set by an authenticating reverse proxy server such as Microsoft's ISA Server. This header should be a base-64 encoded string, which contains the current user ID."
+        },
+        "introduce": {
+          "basic": {
+            "step1": "Choose \"Basic access - no password\" in case you want to by-pass the login page, and user identity is recognized from HTTP header.",
+            "step2": "This HTTP header is usually set by your authenticating reverse proxy. The header format is: Authorization: Basic <credentials>, where credentials is the Base64 encoding of ID and password joined by a single colon :.",
+            "step3": "End user can access to the product through URL: ",
+            "step4": "<PROXY-SERVER>:<PORT>/ZLUX/plugins/com.rs.bzshared/services/oauth/"
+          }
+        }
+      }
+    },
+    "bottomBtns": {
+      "apply": "Apply",
+      "discard": "Discard"
+    },
+    "fullScreen": {
+      "name": "fullScreen",
+      "labels": "Full-screen mode"
+    },
+    "launchSessionMode": {
+      "label": "Session launch method",
+      "tab": "RTE tab",
+      "list": "Session list",
+      "browser": "New browser tab",
+      "window": "New browser window"
+    },
+    "navRec": {
+      "name": "navRec",
+      "labels": "Enable navigation recorder"
+    },
+    "api": {
+      "name": "API",
+      "labels": "Enable Rocket TE Web API"
+    },
+    "client": {
+      "basic": {
+        "limitation": {
+          "name": "limitation",
+          "labels": "Enable restricted session access mode",
+          "limitSession": "Limit the number of active sessions utilized by user",
+          "validateText": {
+            "min":"Minimum session count cannot be less than {{min}}.",
+            "max":"Maximum session count cannot be greater than {{max}}.",
+            "requied": "Session count is required.",
+            "integer": "Session count must be an integer."
+          }
+        },
+        "hideServer": {
+          "name": "hideServer",
+          "labels": "Hide server URL on client UI"
+        },
+        "placeVirtulKeyboardBelow": {
+          "name": "placeVirtulKeyboardBelow",
+          "labels": "Place keyboard below terminal window"
+        },
+        "mobileKeyboard": {
+          "name": "mobileKeyboard",
+          "labels": "Enable system keyboard on mobile"
+        },
+        "autoMobileKeyboard": {
+          "name": "autoMobileKeyboard",
+          "labels": "Auto display / hide keyboard on mobile",
+          "description": "Keyboard auto displays when clicking entry field and auto hides when clicking protected field or 'Enter' key."
+        }
+      }
+    },
+    "contextMenu": {
+      "name": "contextMenu",
+      "labels": "Right-click menu for Rocket TE"
+    },
+    "importOption": {
+      "name": "import",
+      "labels": "Enable import feature"
+    },
+    "logLevels": {
+      "label": "Log Level for Rocket TE server",
+      "name": "Log Level",
+      "description": "Set the log level for nodeServer_<date>.log which is located in log folder.",
+      "severe": "Severe",
+      "warning": "Warning",
+      "info": "Info",
+      "debug": "Debug",
+      "verbose": "Verbose"
+    },
+    "protocol": {
+      "name": "Protocol",
+      "http": "HTTP",
+      "https": {
+        "name": "HTTPS",
+        "cert": {
+          "label": "Certificate",
+          "placeholder": "Select file format like xxx.cert"
+        },
+        "pfx": {
+          "label": "PFX (PKCS#12)",
+          "placeholder": "Select file format like xxx.pfx"
+        },
+        "key": {
+          "label": "Private key",
+          "placeholder": "Select file format like xxx.key"
+        },
+        "ca": {
+          "label": "Certificate authorities",
+          "placeholder": "Select file format like xxx.pem, xxx.cert or xxx.cer"
+        },
+        "upload": {
+          "title": "Upload File",
+          "prompt": "The following files already exist: {{files}}, do you want to overwrite or skip them?"
+        },
+        "type": "Server certificate type",
+        "select": "Select File",
+        "notice":{
+          "name": "Notice",
+          "prompt":  "If you upload an invalid file, the RTE service may not start when try to re-start.",
+          "path": "File storage location"
+        },
+        "pfxPwd": "PFX passphrase",
+        "reset": "Reset"
+      },
+      "port": {
+        "label": "Port",
+        "tooltip": {
+          "https": "The port number (443, or between 1025-65535) [Default: 8544]",
+          "http": "The port number (80, or between 1025-65535) [Default: 8543]",
+          "https_w2h": "The port number (443, or between 1025-65535) [Default: 8554]",
+          "http_w2h": "The port number (80, or between 1025-65535) [Default: 8553]"
+        },
+        "validation": {
+          "required": "A number is required.",
+          "httpLength": "Port of HTTP must be a number in the range 1025 - 65535 or is 80.",
+          "httpsLength": "Port of HTTPS must be a number in the range 1025 - 65535 or is 443.",
+          "text": "Only numeric values are allowed."
+        }
+      },
+      "tag": {
+        "closeTitle": "Delete",
+        "succTitle": "Uploaded",
+        "failedTitle": "Failed to upload"
+      },
+      "btns": {
+        "overwrite": "Overwrite",
+        "skip": "Skip",
+        "delete": "Delete",
+        "cancle": "Cancel",
+        "test": "Test Settings",
+        "testResult": "Test Result"
+      },
+      "deleteFile": {
+        "header": "Delete File",
+        "content": "Are you sure you want to delete \"{{name}}\"? \nIt may cause the service failed to re-start if the file is still being used."
+      },
+      "prompt": "'Apply' button is only available after test successfully",
+      "sync": "Synchronize current configuration to all peer nodes"
+    },
+    "serverTabs": {
+      "protocol": "Protocol",
+      "advanced": "Advanced"
+    },
+    "labelLanguage": {
+      "name": "Language",
+      "label": "Language"
+    },
+    "license":{
+      "name": "License",
+      "uploadLicensePrompt": "The license file name must end with .lic and file size should be less than {{fileSize}} KB."
+    },
+    "methods": {
+      "name": "Launch method",
+      "launchPad": "Use session manager",
+      "all": "Launch all sessions at once"
+    },
+    "cache": {
+      "name": "Cache option",
+      "usePersonal": "Use personal folder as working directory",
+      "notUserPer": "Do not use Personal folder as working directory",
+      "filesIn": "Cache files in",
+      "files": {
+        "temp": "Temp",
+        "application": "Application Data",
+        "all": "All Users Application Data"
+      },
+      "bit": "Cache 32-bit or 64-bit",
+      "bits": {
+        "32": "32-bit",
+        "windows": "Match Windows",
+        "ms": "Match MS Office"
+      }
+    },
+    "language": {
+      "name": "Emulator language",
+      "nameInServer": "Language",
+      "lanOptions": {
+        "Dutch": "Dutch",
+        "English": "English",
+        "French": "French",
+        "German": "German",
+        "Japanese": "Japanese",
+        "Spanish": "Spanish",
+        "Portuguese": "Portuguese"
+      }
+    },
+    "browser": {
+      "name": "Open Web Launch config",
+      "desktop": "Create desktop shortcut",
+      "shortcutName": "Desktop shortcut label",
+      "menu": "Create program menu item",
+      "noMenu": "Do not create program menu item",
+      "clear": "Clear Rocket TE Launch Files after launch",
+      "noClear": "Do not clear launch files",
+      "clearLabel": "Clear launch File",
+      "validation": {
+        "required": "The label is required.",
+        "length": "Maximum length is 16 characters.",
+        "text": "The label cannot contain the following characters: /\\*&%#?~+`\""
+      },
+      "noValueLabel": "No shortcut will be created"
+    },
+    "downloadAuto":{
+      "download": "Download BZLP file automatically after log in",
+      "label":"Download automatically"
+    },
+    "serverURL":{
+      "label": "Server URL",
+      "placeHolder": "For example: http[s]://host or http[s]://host:port ",
+      "validation": {
+        "length": "Maximum length is 259 characters.",
+        "header": "http or https is required.",
+        "text": "Host cannot include the following characters: ^&',;=?$"
+      },
+      "info": "If you want to configure a load balancer, enter the URL for your DNS alias. For example, http://www.mydomain.com:8553. This setting updates the Terminal Emulator Launch File (bzw2h.bzlp) and launches configured sessions through your load balancer."
+    },
+    "groupGlobalIni":{
+      "Label": "File global.ini",
+      "LabelNoValue": "File global.ini for this group is unconfigured, inherit from global level.",
+      "Button": "Add File",
+      "info": "A global.ini file is created for each group, and it allows you to customize Rocket TE Features.",
+      "infoE": "A global.ini file is created for each group, and it allows you to customize Rocket TE Features. Configurations exist in UI can not be changed by uploading global.ini.",
+      "uploadPrompt": "The global.ini file extension should be {{fileName}}"
+    },
+    "groupDefaultIni":{
+      "Label": "File default.ini",
+      "LabelNoValue": "File default.ini for this group is unconfigured, inherit from global level.",
+      "Button": "Add File",
+      "info": "A default.ini file is created for each group, and it controls the downloading of the Rocket TE emulation client files.",
+      "infoE": "A default.ini file is created for each group, and it controls the downloading of the Rocket TE emulation client files. Configurations exist in UI can not be changed by uploading default.ini.",
+      "uploadPrompt": "The default.ini file extension should be {{fileName}}"
+    },
+    "uploadInvlaidFile":{
+      "invalidFileName": "A file name can't contain any of the following characters:",
+      "invalidCharacters": "    # = & \\ / : * ? \" < > |",
+      "invalidDefaultIni":"This file is not valid for defalult.ini.",
+      "invalidW2HDefaultIni": "This is a configure file in Served Desktop mode so can't be uploaded to group in Standard Web Deployment mode.",
+      "invalidServedDefaultIni": "This is a configure file in Standard Web Deployment mode so can't be uploaded to group in Served Desktop mode.",
+      "overSizedIniFile":"The file size of {{fileName}} shoule be less than {{fileSize}} KB."
+    },
+    "licenseManager":{
+      "label":"License Manager",
+      "server": {
+        "label": "Server",
+        "validation": {
+          "length": "Maximum length is 249 characters.",
+          "text": "Only alphanumeric characters, periods, colons, underscores and dashes are allowed.",
+          "warning": "Clear the Port or enter a server name or IP address."
+        }
+      },
+      "port": {
+        "label": "Port",
+        "validation": {
+          "required": "A number is required.",
+          "length": "Port must be a number in the range 1 - 65535.",
+          "text": "Only numeric values are allowed."
+        }
+      },
+      "group": {
+        "label": "License Manager group",
+        "labelNoGroup":  "Group name is unconfigured.",
+        "validation":{
+          "length": "Maximum length is 31 characters.",
+          "text": "This names cannot contain the following characters: /\\*&%#?~+`\""
+        }
+      },
+      "noValueLabel": "No valid server has been indicated."
+    },
+    "log": {
+      "name": "Diagnostics",
+      "logEvents": "Log Rocket TE Web Deployment control events"
+    },
+    "bzlpSecurity": {
+      "name": "BZLP security",
+      "enableAuth": "Require authentication to run BZLP file",
+      "bypassAuth": "Timer value to bypass authentication (minutes)",
+      "tooltip": "The timer starts after downloading the BZLP file, and authentication will be skipped when running the BZLP file during the interval."
+    },
+    "serverConfigurationsMessage": {
+      "success": "Successfully updated server configurations",
+      "clientSuccess": "Successfully updated client configurations",
+      "fullScreenSuccess": "Full screen mode updated successful\n",
+      "apiSuccess": "Rocket TE web API updated successful\n",
+      "navRecSuccess": "Navigation recorder mode updated successful\n",
+      "contextMenuSuccess": "Context menu updated successful\n",
+      "importSuccess": "Import feature updated successful\n",
+      "hideURLSuccess": "Hide server URL updated successful\n",
+      "limitationSuccess": "Limit session mode updated successful\n",
+      "limitSessionsSuccess": "Limit session count updated successful\n",
+      "logSuccess": "Log level updated successful\n",
+      "launchModeSuccess": "Session launch method updated successful\n",
+      "languageSuccess": "Language updated successful\n",
+      "mfaSuccess": "MFA integration configuration updated successful\n",
+      "dataSecuritySuccess": "Data security configuration updated successful\n",
+      "placeVirtulKeyboardBelowChanged": "Place virtul keyboard below terminal window updated successful\n",
+      "mobileSystemKeyboardChanged": "Show system keyboard on mobile updated successful\n",
+      "autoMobileKeyboardChanged": "Auto display / hide system keyboard on mobile updated successful\n",
+      "bzw2h": "BZW2H configurations updated",
+      "fail": "Update server configurations failed",
+      "clientFail": "Update client configurations failed",
+      "action": "updated server \n configurations",
+      "status": "successfully",
+      "api": "Rocket TE Web API only works when configuring None as the authentication method and using 'Default Group' for users' access control.",
+      "navRec": "Enable the option to use navigation recorder feature in Rocket TE Web Edition.",
+      "info": "By default, the right-click menu for the browser is displayed. Enable the option to display the right-click menu for Rocket TE. Press Ctrl + Right-click to switch between menus.",
+      "systemKeyboard": "System keyboard only works when using Rocket TE Web Edition on mobile device."
+    },
+    "twoFactor": {
+      "applySecondAuth": "Enable multi-factor authentication",
+      "placeholder": "Multi-factor authentication",
+      "configTitle": "{{type}} configuration",
+      "validation": {
+        "required": "{{type}} is required",
+        "org_url": "Okta Org URL must start with https://",
+        "loginCallback": "Login callback url must start with http:// or https://"
+      },
+      "duo": {
+        "label": "Duo",
+        "config": {
+          "ikey": {
+            "label": "Integration key"
+          },
+          "skey": {
+            "label": "Secret key"
+          },
+          "api_hostname": {
+            "label": "API host name"
+          }
+        },
+        "info": {
+          "howTo": "How to get Duo configuration:",
+          "step1": "1. Sign up for a Duo account.",
+          "step2": "2. Log in to the Duo Admin Panel and navigate to Applications.",
+          "step3": "3. Click Protect an Application and locate the entry for Web SDK or OneLogin in the applications list.",
+          "step4": "4. Click Protect to the far-right to configure the application and get your integration key, secret key, and API hostname."
+        }
+      },
+      "okta": {
+        "label": "Okta",
+        "config": {
+          "org_url": {
+            "label": "Okta Org URL",
+            "placeholder": "https://yourOktaDomain"
+          },
+          "client_id": {
+            "label": "Client ID"
+          },
+          "client_secret": {
+            "label": "Client secret"
+          },
+          "loginCallback": {
+            "label": "Login callback url"
+          }
+        },
+        "info": {
+          "howTo": "How to get Okta configuration:",
+          "step1": "1. Sign up for an Okta account for a unique Okta Org URL.",
+          "step2": "2. Log in to the Okta Admin Panel and navigate to Applications.",
+          "step3": "3. Create a web application with the OpenID Connect sign-on method. Then you can get a ClientID and Client secret from the General panel.",
+          "step4": "4. Check the login callback url of {{productName}}. You don’t need to change it unless the host name does not contain the full domain name or the host name is \"localhost\".",
+          "step5": "5. Copy the login callback url and update the Login redirect URIs of the web application with it."
+        }
+      },
+      "TOTP": {
+        "label": "Time-based one-time password (TOTP)",
+        "config": {
+          "app": {
+            "label": "App",
+            "info":"A phone app to get MFA codes when prompted during sign-in"
+          },
+          "algorithm": {
+            "label": "Algorithm",
+            "info":"The algorithm used for calculating the HMAC"
+          },
+          "digits": {
+            "label": "Digits",
+            "info":"The length of the token"
+          },
+          "step": {
+            "label": "Step",
+            "info":"Time step"
+          },
+          "window": {
+            "label": "Window",
+            "info":"Tokens in the previous and future x-windows that should be considered valid"
+          },
+          "showMore":"More"
+        }
+      }
+    },
+    "onlyDefaultGroupMode": {
+      "label": "Only use \"Default Group\" for users' access control",
+      "info": "A \"Default Group\" will be created automatically where you can manage all your users' access, like which sessions they can access, what privileges they can have, and so on."
+    },
+    "matchedGroupMode": {
+      "label": "Map authenticated user to group when:",
+      "info": " When this option is enabled, if an authenticated user is not assigned to any group, use the mapping rule to match the user to the corresponding group.",
+      "mail": "User's email domain matches group name",
+      "urlParam": "URL query parameter matches group name"
+    },
+    "varConfigure": {
+      "label": "Map user attributes to script variables",
+      "tooltip": "Rocket TE scripts can accept variables which can be passed to RTE client based on the mapping below, enter the user attribute names (such as mail, username or other) to map to the script variables (Var1 to Var9). This feature is only available for Standard Web Deployment mode.",
+      "text": "Variables configuration",
+      "var": {
+        "help": "Enter the user attribute name",
+        "help4api": "Enter the attribute name of JSON response body"
+      },
+      "api": {
+        "label": "Call RESTful API and map JSON response to script variables",
+        "tooltip": "Enable this option if you want to create new attributes (such as login string for the host system) based on the user attributes, you need to design a RESTful API, and RTE Web Deployment Manager will make a call to your API with the user attributes as HTTP request body, your API should return a JSON format response which includes the new created attributes, then you can enter the attribute names of the JSON response to map to the script variables.",
+        "method": {
+          "label": "Method",
+          "put": "PUT",
+          "post": "POST"
+        },
+        "url": {
+          "label": "URL",
+          "tooltip": "",
+          "help": "http://www.example.com:3000/api/token",
+          "error": "Request URL is required."
+        },
+        "headers": {
+          "label": "Headers",
+          "tooltip": "Enter the HTTP request header, 'Authorization' header can be used if your RESTful API requires Basic Authentication.",
+          "add": "Add",
+          "help4name": "Request header name",
+          "help4value": "Request header value",
+          "error4name": "Request header name is required.",
+          "error4value": "Request header value is required."
+        }
+      }
+    },
+    "ignorePasswordMode": {
+      "label": "Ignore user password for authentication",
+      "info": "When this option is enabled, a user’s password is not required for authentication. Users can login with only their User ID."
+    },
+    "httpHeader": {
+      "label": "First try to authenticate with HTTP authorization header",
+      "info": "When this option is enabled, the system first tries to extract a user ID from the HTTP header “Authorization” and then authenticates with the user ID. If no such user ID exists in the system, the user is redirected to the login page. The HTTP authorization header is usually set by your authenticating reverse proxy. The header format is: Authorization: Basic <credentials>."
+    },
+    "cluster": {
+      "url": "Node URL",
+      "status": "Status",
+      "action": "Action",
+      "peerInfo": "Peer metadata",
+      "clusterPort": "Cluster port",
+      "copy": "Copy",
+      "copySucc": "Copied",
+      "statusOptions": {
+        "undefined": "Checking",
+        "loading": "Checking",
+        "checkin": "Check-in",
+        "pulling": "Pulling",
+        "data out of date": "Data Out Of Date",
+        "lonely island": "Lonely Island",
+        "restart required": "Restart Required",
+        "ready": "Ready",
+        "offline": "Offline",
+        "data conflict": "Data Conflict",
+        "listening": "Listening",
+        "not listening": "Not Listening"
+      },
+      "btnText": "Add",
+      "disableAddNodeButtonTitle": "It cannot add node under Single singon authentication",
+      "prompt": "Enable cluster nodes for load balance",
+      "protocol": "Protocol",
+      "master": "Local node",
+      "node": "Peer nodes",
+      "introduce": "Rocket TE cluster provides capacities of High Availability and Load Balancing. Nodes inside cluster work together as a peer-to-peer network. Configurations and data changes made on one node are synchronized to all other nodes automatically through TCP connections. Each node can provide full functions as Administration Console and Terminal Emulation application server.",
+      "introducePort": "On the first startup, server finds an available port number since 8643. This port will be used for communication between peer nodes inside cluster. \nIn case this port is in use by other process, the status will be Not Listening, and clustering functions won't work. Please make sure the port is not occupied by other application.",
+      "chartNote": "Note: click a node to push the data to others nodes ",
+      "actions": {
+        "delete": "Delete"
+      },
+      "notification": {
+        "addSuccessful": "Add peer node successfully",
+        "addFailed": "Add peer node failed",
+        "deleteSuccessful": "Delete peer node successfully.",
+        "deleteFailed": "Delete peer node failed",
+        "deleteError": "peer node unreachable",
+        "enableCluster": "Enable/disable peer node successfully",
+        "inActiveNode": "It's not suggested to delete a \"{{status}}\" node, this action might cause wrong status of the cluster.",
+        "enableClusterFailed": "Enable/disable peer node failed",
+        "subTitle": "node:",
+        "enableClusterMaster": "Primary:",
+        "statusError": "Can not remove node in status \"{{status}}\"."
+      },
+      "addNode": {
+        "header": "Add",
+        "label": "Cluster Settings",
+        "protocol": "Protocol",
+        "peerInfo": "Peer metadata",
+        "host": "IP address or host name",
+        "port": "Port number",
+        "portValidationText": "Port must be a number in the range 1 - 65535.",
+        "hostValidationText": "Please enter the server's fully qualified domain name. For example, server.rocketsoftware.com",
+        "hostRequired": "IP/Host name is required",
+        "portRequired": "Port number is required",
+        "peerRequired": "Peer info is required",
+        "hostPlaceholder": "For example: 0.0.0.0 or server.rocketsoftware.com",
+        "portPlaceholder": "Input port number",
+        "add": "Add",
+        "cancel": "Cancel",
+        "peerDesp": "Copy the peer metadata from the administrator console of the node to be added into cluster.",
+        "message": {
+          "nodeUnreach": "Node unreachable",
+          "failedAdd": "Failed to add peer",
+          "errInfo": "Please make sure the node configuration is correct and the node is up running.",
+          "protocolError": "The node contains both http and https configurations, the protocol must use \"https\".",
+          "inAnotherCluster": "Target node is in another cluster.",
+          "configured": "Targe node is already configured.",
+          "sameWithMaster": "The node configuration cannot be the same with primary node."
+        }
+      },
+      "refresh": {
+        "label": "Refresh status",
+        "header": "Refresh node status",
+        "success": "Refresh node status is successful",
+        "failed": "Failed to refresh nodes status"
+      },
+      "resolve": {
+        "label": "Resolve conflicts"
+      },
+      "deleteNode": {
+        "header": "Delete node",
+        "label": "CLUSTER",
+        "delete": "Delete",
+        "content": "Are you sure you want to delete \"{{node}}\"?"
+      },
+      "forcePull": {
+        "header": "Pull Data",
+        "label": "CLUSTER",
+        "content": "Force pull will remove the selected node's data then pull a copy data from the local node, Are you sure to continue?",
+        "statusError": "Force pull only works in status of \"Ready, Data Conflict or Data Out Of Date\"",
+        "failed": "Failed to pull data for peer \"{{node}}\".",
+        "success":"Succeeded to pull data for peer \"{{node}}\"."
+      },
+      "forcePullFrom": {
+        "header": "Overwrite cluster data from \"{{node}}\"",
+        "label": "CLUSTER",
+        "content": "Force pull from selected node will remove the other node's data then push a copy data from the selected node to others, Are you sure to continue?",
+        "statusError": "An error has occurred while forcing push data, error message: \"{{msg}}\"",
+        "failed": "Failed to pull data from peer \"{{node}}\".",
+        "success":"Succeeded to pull data from peer \"{{node}}\"."
+      },
+      "restart": {
+        "header": "Restart Peer",
+        "label": "CLUSTER",
+        "content": "Are you sure you want to restart the peer node?",
+        "statusError": "Restart peer only works in status of \"Ready, Data Conflict or Data Out Of Date\"",
+        "failed": "Failed to restart peer \"{{node}}\".",
+        "success":"Will restart the peer \"{{node}}\" in 5 seconds."
+      },
+      "conflict": {
+        "header":"Conflict Information",
+        "conflictEntity":"Conflicting about",
+        "type": "Type",
+        "remotePeer": "Remote peer",
+        "dataEntity": "Data entity",
+        "localLastBlockDateTime": "Local occurrence time",
+        "peerLastBlockDateTime": "Peer occurrence time",
+        "correctPeer": "Reference peer",
+        "infectedInfo": "infected by other nodes in the cluster",
+        "solution":{
+          "header": "Conflict diagram"
+        },
+        "conflict":"Conflict node",
+        "recommended":"Recommended node",
+        "ready":"Ready node",
+        "infected":"Infected node"
+      }
+    },
+    "serverRestart": {
+      "timeout": "Server did not start in 20 seconds. Please check it on server side.",
+      "checkServer": "Server is not responding. Please check whether server is down.",
+      "error": "Error while restart server!",
+      "restarting": "Restaring server"
+    },
+    "group": {
+      "title": "Override server settings",
+      "secTitle": "Standard Web Deployment options",
+      "useGlobalSetting": "Use server setting for this group",
+      "nUseGlobalSetting": "Override server settings for this group"
+    },
+    "servedSetting":{
+      "installation":{
+        "title":"Installation options",
+        "installDir":{
+          "label":"Installation directory",
+          "info1":"Provided variables are as below:",
+          "info2":"<Program Files>",
+          "info3":"<User Application Data>",
+          "info4":"<All Users Application Data>",
+          "info5":"<User Documents>",
+          "info6":"<All Users Documents>",
+          "info7":"%programfilesfolder%",
+          "info8":"%personalfolder%",
+          "info9":"%desktopdirectory%",
+          "emptyText":"Install directory can not be empty.",
+          "overLength":"Maximum length is 200 characters. "
+        },
+        "isUseProgramGroup": {
+          "title":"Program Group",
+          "label":"Use Program Group",
+          "uncheckText":"Do not use program group"
+        },
+        "programGroupName": {
+          "label":"Program Group Name"
+        },
+        "isCreateShortCut": {
+          "title":"Create Shortcut",
+          "label":"Create a shortcut to launch the Session Manager",
+          "uncheckText": "Do not create shortcut"
+        },
+        "shortcutName": {
+          "label":"Shortcut name"
+        },
+        "otherOptions":"Other Options",
+        "isAddManager": {
+          "label":"Add Session Manager to Startup folder",
+          "unCheckText": "Do not add Session Manager to Startup folder"
+        },
+        "isSuppressLaunch": {
+          "label":"Suppress launch of Session Manager after install",
+          "unCheckText": "Do not suppress launch of Session Manager"
+        },
+        "isSuppressSession": {
+          "label":"Suppress session launch after install",
+          "unCheckText": "Do not suppress session launch"
+        }
+      },
+      "sessionManager":{
+        "update":"Update options",
+        "title":"Session Manager options",
+        "isAutoUpdate":{
+          "label":"Enable Session Manager auto-update",
+          "uncheckText":"Disable Session Manger AutoUpdate"
+        },
+        "isForceUpdate":{
+          "label":"Force updates",
+          "checkText": "Enable Session Manager force update",
+          "uncheckText":"Disable Session Manager force update"
+        },
+        "SecondaryURL": {
+          "label":"Secondary URL",
+          "emptyText": "Secondary URL is unconfigured"
+        },
+        "isRunInTray":{
+          "label":"Run in tray",
+          "checkText":"Run application in tray",
+          "uncheckText":"Run application normally"
+        }
+      },
+      "cmSetting":{
+        "title":"Common settings"
+      },
+      "validation":{
+        "required": "The label is required.",
+        "length": "Maximum length is {{maxLength}} characters.",
+        "text": "The label cannot contain the following characters: /\\*&%#?~+`\""
+      }
+    },
+    "tabs":{
+      "basicTab":"Basic",
+      "w2hTab":"Web Deployment",
+      "sdTab":"Served Desktop",
+      "mfaTab": "MFA Integration",
+      "dataSecurityTab" : "Data Security"
+    },
+    "dataSecurity" : {
+      "overWriteServerDS" : "Overwrite global settings",
+      "mask" : {
+        "header" : "Data masking configurations",
+        "title" : "Data masking",
+        "totalControlHeader" : "Apply data masking",
+        "totalControl" : "Apply data masking for security",
+        "maskOption":{
+          "title": "Masking options",
+          "apiControl" : "Apply data masking when accessing with API",
+          "copyControl" : "Apply data masking when copy",
+          "mChar" : "Mask content with"
+        },
+        "cases" : "Additional situation to apply when data masking",
+        "basic" : {
+          "title" : "PAN masking ",
+          "basicRule" : "14-19 digits with/without seperator will be masked",
+          "displayRule" : {
+            "title" : "Display as:",
+            "display0" : "Display first 6 and last 4/5/6/7 digits",
+            "display1" : "Display last 4 digits",
+            "display2" : "Display first 4 digits",
+            "display3" : "Full Mask"
+          }
+        },
+        "custom" : {
+          "title" : "Custom masking",
+          "switch" : "Apply custom masking rule",
+          "colRule" : "Rule",
+          "colFormat" : "Format",
+          "type": "Data Security",
+          "deleteLabel": "Delete custom masking rule",
+          "editLabel": "Edit custom masking rule",
+          "colAction" : "Action",
+          "delete" : "Delete",
+          "add" : "Add",
+          "edit" :  "Save",
+          "addLabel" :  "Add custom masking rule",
+          "ruleName" :  "Rule name",
+          "ruleFormat" :  "Rule format",
+          "prompt1" : "'#' stands for any numeric character.",
+          "prompt2" : "'@' stands for any alphabet character.",
+          "prompt3" : "'?' stands for any single character.",
+          "prompt4" : "'*' matches any character zero or more times.",
+          "regprompt" : "Tips for building regular expression rules",
+          "regMode" : "Regular Expression Mode",
+          "removeRuleConfirmMessage": "Are you sure with deleting rule \"{{rulename}}\"?",
+          "promptForNullName" : "Rule name is required!",
+          "promptForNullDetail" : "Rule format is required!",
+          "promptForExistRule" : "Rule name cannot be duplicated!"
+        },
+        "scope":{
+          "label":"Scope",
+          "optionAll":"Apply for all screens",
+          "optionScreen":"Apply for specific screens",
+          "placeholder":"Search screens..."
+        },
+        "screen":{
+          "screensColunm":"Screens",
+          "addScrHeader":"Add screen",
+          "editScrHeader":"Edit screen",
+          "listScreenHeader":"Terminal screens",
+          "buttonIden":"Screen Identification",
+          "labelRuleType":"Mode",
+          "optionPattern":"Pattern match",
+          "optionField":"Field match",
+          "backToRule":"Back to custom masking rule",
+          "backToList":"Back to screen list"
+        }
+      },
+      "terminalScreen":{
+        "screenName":{
+          "lable":"Screen name",
+          "existInfo":"Exist screen name",
+          "requireInfo":"Screen name is required"
+        },
+        "condition":{
+          "label":"Screen conditions (max:{{count}})",
+          "addCondition":"Add condition"
+        },
+        "description":{
+          "label":"Screen description"
+        },
+        "startRow":{
+          "label":"Row",
+          "validation":"Row must be a number in the range {{range}}."
+        },
+        "startColumn":{
+          "label":"Start column",
+          "validation":"Column must be a number in the range {{range}}."
+        },
+        "endColumn":{
+          "label":"End column",
+          "validation": "End column position should behind the start column position."
+        },
+        "content":{
+          "label":"Expected content",
+          "validation":"Expected content is required"
+        },
+        "operator":{
+          "label1":"Operator",
+          "label2":"AND-OR"
+        },
+        "delete":{
+          "deleteBtn":"Delete",
+          "cancelBtn":"Cancel",
+          "header":"Delete screen",
+          "message":"Are you sure to delete screen \"{{name}}\".",
+          "canNotMessage":"You can not delete screen \"{{name}}\" since it has been used by {{usingStr}} data security."
+        },
+        "table":{
+          "header":{
+            "screenName":"Screen name",
+            "description":"Description",
+            "identifier":"Identifier expression"
+          }
+        }
+      }
+    },
+    "mfaConfig": {
+      "addBtnText": "Add",
+      "serverURL": {
+        "label": "Server URL",
+        "placeholder": "For example: http[s]://host:port ",
+        "validation": {
+          "pattern": "The server URL should be start with \"http://\" or \"https://\"."
+        }
+      },
+      "policyName": {
+        "label": "Policy name",
+        "validation": {
+          "required": "Policy name is required."
+        }
+      },
+      "host": {
+        "label": "TCP host",
+        "radioLabel": "Host systems",
+        "none": "None",
+        "all": "All",
+        "customize": "Customize",
+        "validation": {
+          "required": "Host name is required."
+        }
+      }
+    }
+  },
+  "admin": {
+    "btnText": "Add",
+    "placeholder": "Search for administrators...",
+    "headers": {
+      "name": "Name",
+      "role": "Role",
+      "entitlement": "Entitlements",
+      "group": "Group",
+      "action": "Actions"
+    },
+    "list": {
+      "header": "Add",
+      "label": "Administrator settings",
+      "role": "Role",
+      "user": "User",
+      "viewer": "View only"
+    },
+    "add": {
+      "name": "Name",
+      "password": {
+        "name": "Password",
+        "validation": {
+          "reserved": "\"password\" is a system default password, user will be asked to reset their password when they log in to system with the default password."
+        }
+      },
+      "repeatPassword": "Confirm password",
+      "nameInvalid": {
+        "required": "Name is required.",
+        "pattern": "The name cannot contain the following characters: /*&%<>\"|:?",
+        "min": "Contains at least 6 characters",
+        "repetitive": "This name already exists. Enter a unique name.",
+        "reserved": "\"superadmin\" is a system default administrator. Enter another name."
+      },
+      "roles": {
+        "name": "Role",
+        "admin": "Administrator",
+        "groupAdmin": "Group Administrator",
+        "operateAdmin": "Operator",
+        "detailAdmin": "This role has all the privileges to manage and access the entire Rocket TE Administration Console except Administrators.",
+        "detailGpAdmin": "This role is restricted to access the groups which are assigned and manage the group with the entitlements which are specified.",
+        "detailOpAdmin": "This role could only view user reports."
+      },
+      "groups": {
+        "name": "Groups",
+        "assignBtn": "Assign Groups",
+        "assigned": "group(s) assigned.",
+        "selectAll": "Select all",
+        "dialog": {
+          "header": "Assign Group",
+          "label": "Administrator",
+          "placeholder": "Search for groups...",
+          "tooltip": {
+            "spec": {
+              "header": "Manage specific groups",
+              "label": "Group administrator can only manage the groups which are selected. And if the groups are changed, the selection should be changed manually."
+            },
+            "all": {
+              "header": "Manage all groups",
+              "label": "Group administrator can always manage all the groups no matter how the groups change."
+            }
+          },
+          "selectMode": {
+            "name": "Which groups the administrator can manage",
+            "specific": "Manage specific groups",
+            "all": "Manage all groups"
+          },
+          "groups": "Groups",
+          "selected": "Selected groups",
+          "submit": "Assign",
+          "cancel": "Cancel"
+        }
+      },
+      "allGroups": "All groups",
+      "entitlement": {
+        "name": "Entitlements",
+        "editUser": "This option only applies when you set Rocket TE or Microsoft SQL Server as the authentication method.",
+        "resetUserPwd": "This option only applies when you set Rocket TE or Microsoft SQL Server as the authentication method.",
+        "mgSession": "This option controls permission to add, edit, clone, test and delete sessions",
+        "mgGpSession": "This option applies when assigning sessions to group.",
+        "mgUserSession": "This option applies when assigning sessions to user."
+      },
+      "privilegeLabel": {
+        "admin": {
+          "mgSession": "Manage session",
+          "mgUsers": "Manage uses",
+          "mgGroups": "Manage groups",
+          "mgConfig": "Manage configurations",
+          "mgUserReports": "View user reports"
+        },
+        "groupAdmin": {
+          "viewSession": "View session",
+          "mgSession": "Manage session",
+          "mgGpSession": "Assign session to group",
+          "mgUserSession": "Assign session to group's user",
+          "mgPrivilege": "Set privilege",
+          "editUser": "Manage user",
+          "resetUserPwd": "Reset user password",
+          "all": "All privileges"
+        },
+        "operateAdmin": {
+          "mgUserReports": "View user reports"
+        }
+      },
+      "privilegeValue": {
+        "admin": {
+          "mgSession": "Manage sessions",
+          "mgUsers": "Manage uses",
+          "mgGroups": "Edit groups",
+          "mgConfig": "Manage configuration"
+        },
+        "groupAdmin": {
+          "mgGpSession": "Manage session",
+          "mgPrivilege": "Manage privilege",
+          "editUser": "Edit user",
+          "resetUserPwd": "Reset user password",
+          "all": "All privileges"
+        }
+      },
+      "reset": "Reset password"
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "sessions": "Sessions",
+    "definition": "Session Definitions",
+    "home": "Home",
+    "Users": "Users",
+    "Groups": "Groups",
+    "configurations": "Configurations",
+    "User Authentication": "Authentication",
+    "Server": "Server",
+    "Cluster": "Cluster",
+    "Client": "Client",
+    "Import": "Import",
+    "Administrator": "Administrators",
+    "Keyboard": "Keyboard Settings",
+    "SessionSettings": "Session Settings",
+    "userReport": "User Reports",
+    "serverStatus": "User Overview",
+    "serverHistory": "User over Time",
+    "onlineUser": "User by Server",
+    "userByGroups": "User by Group",
+    "userHistory": "User History",
+    "script":"Scripts"
+  },
+  "header": {
+    "logOut": "Sign out",
+    "title":"TE Administration Console",
+    "home": {
+      "name": "Welcome",
+      "description": "Welcome to the Rocket TE Administration Console. What would you like to do next?"
+    },
+    "dashboard": {
+      "name": "User Overview",
+      "description": "To view user overview report.",
+      "session": {
+        "navs": [
+          {"value": "User Overview"}
+        ],
+        "name": "User by Server",
+        "description": "To view user by server."
+      },
+      "user": {
+        "navs": [
+          {"value": "User Overview"}
+        ],
+        "name": "User by Server",
+        "description": "To view user by server."
+      },
+      "count": {
+        "navs": [
+          {"value": "User Overview"},
+          {"value": "User"}
+        ],
+        "name": "User by Server",
+        "description": "To view user by server."
+      },
+      "server": {
+        "navs": [
+          {"value": "User Overview"}
+        ],
+        "name": "User over Time",
+        "description": "To view user over time."
+      }
+    },
+    "history": {
+      "name": "User over Time",
+      "description": "To view user over time."
+    },
+    "onlineUser": {
+      "name": "User by Server",
+      "description": "To view online users."
+    },
+    "userHistory": {
+      "name": "User History",
+      "description": "To view user history."
+    },
+    "userByGroups": {
+      "name": "User by Group",
+      "description": "To view user report by group.",
+      "group": {
+        "navs": [
+          {"value": "User by Group"}
+        ],
+        "name": "User List",
+        "description": "To view user list"
+      }
+    },
+    "groups": {
+      "name": "Groups",
+      "description": "To manage user privileges and user access to sessions, create groups.",
+      "add": {
+        "navs": [
+          {"value": "Groups"}
+        ],
+        "name": "Add Group",
+        "description": "Define the group. Then add users and assign sessions and privileges to it."
+      },
+      "addSession": {
+        "navs": [
+          {"value": "Groups"},
+          {"value": "Edit Group"}
+        ],
+        "name": "Add Group Session",
+        "description": "Create group session for the group."
+      },
+      "edit": {
+        "navs": [
+          {"value": "Groups"}
+        ],
+        "name": "Edit",
+        "description": "View and edit group information."
+      },
+      "importSite": {
+        "navs": [
+          {"value": "Groups"}
+        ],
+        "name": "Import Site",
+        "description": "Import site created by BlueZone Web-to-Host Wizard."
+      },
+      "viewHistory": {
+        "navs": [
+          {"value": "Groups"},
+          {"value": "Import Site"}
+        ],
+        "name": "Import History",
+        "description": "View the import history for sites."
+      }
+    },
+    "sessions": {
+      "name": "Session Definitions",
+      "description": "Define sessions. Then go to the Groups page to  assign sessions to users.",
+      "add": {
+        "navs": [
+          {"value": "Session Definitions"}
+        ],
+        "name": "Add Session",
+        "description": "Define the new session."
+      },
+      "edit": {
+        "navs": [
+          {"value": "Session Definitions"}
+        ],
+        "name": "Edit",
+        "description": "Define the new session."
+      }
+    },
+    "userAuthentication": {
+      "name": "Authentication",
+      "description": "Select the authentication method and identity source for Rocket TE. "
+    },
+    "server": {
+      "name": "Server",
+      "description": "When Rocket TE works as cluster, server configurations made on current page will not impact other peer nodes. For example, each node can be configured to listen on different port and use different certificates.",
+      "bzw2hDescription": "Configure Rocket TE for server"
+    },
+    "client": {
+      "name": "Client",
+      "description": "Configure Rocket TE Web",
+      "bzw2hDescription": "Configure Rocket TE Web Deployment"
+    },
+    "cluster": {
+      "name": "Cluster",
+      "description": "If your environment includes a load balancer, configure the cluster nodes."
+    },
+    "import": {
+      "name": "Import",
+      "description": "Import data from legacy product into Rocket Terminal Emulation Web edition.",
+      "viewHistory": {
+        "navs": [
+          {"value": "Import"}
+        ],
+        "name": "Import History",
+        "description": "View the import history."
+      }
+    },
+    "administrator": {
+      "name": "Administrators",
+      "description": "Configure administrators to operate Rocket TE Admin.",
+      "add": {
+        "navs": [
+          {"value": "Administrators"}
+        ],
+        "name": "Add Administrator",
+        "description": "Add the new administrator."
+      },
+      "edit": {
+        "navs": [
+          {"value": "Administrators"}
+        ],
+        "name": "Edit",
+        "description": "Edit the administrator."
+      }
+    },
+    "users": {
+      "name": "Users",
+      "description": "Use \"{{source}}\" to store user credentials. If you store user credentials elsewhere, click  Configurations -> Authentication. Then configure the identify source.",
+      "ldapAndLdap": {
+        "description":"For LDAP authentication using TOTP for MFA, navigate to the Configurations -> Authentication page to view user authentication details."
+      } ,
+      "addUser": {
+        "navs": [
+          {"value": "Users"}
+        ],
+        "name": "Add User",
+        "description": "Add users one at a time. To assign users to groups, create the groups before you add the users."
+      },
+      "editUser": {
+        "navs": [
+          {"value": "Users"}
+        ],
+        "name": "Edit",
+        "description": ""
+      }
+    },
+    "script":{
+      "name": "Scripts",
+      "description": "Import scripts. Scripts can be used in other configurations like session auto-play, hotspot, power pad, etc."
+    },
+    "sessionSettings": {
+      "name": "Session Settings",
+      "description": "Define sets of settings. Then go to the Session page to assign settings to sessions.",
+      "addSessionSetting": {
+        "navs": [
+          {"value": "Session Settings"}
+        ],
+        "name": "Add Session Settings",
+        "description": "Define the set of session settings. Then set basic information to set session settings."
+      },
+      "edit": {
+        "navs": [
+          {"value": "Session Settings"}
+        ],
+        "name": "Edit",
+        "description": "Set basic information to set session settings."
+      },
+      "tab": {
+        "font": "Font / Size",
+        "colors": "Colors",
+        "cursor": "Cursor",
+        "powerpad": "Power Pad",
+        "hotspots": "Hotspots",
+        "language": "Language",
+		"translation": "Translation",
+        "printOptions": "Print Options",
+        "appearance": "Appearance",
+        "indfile":"IND$FILE"
+      }
+    },
+    "keyboard": {
+      "name": "Keyboard Settings",
+      "description": "Define keyboards. Then go to the Session page to assign keyboards to sessions.",
+      "addKeyboard": {
+        "navs": [
+          {"value": "Keyboard Settings"}
+        ],
+        "name": "Add Keyboard",
+        "description": "Define the keyboard. Then to map individual keys."
+      },
+      "edit": {
+        "navs": [
+            {"value": "Keyboard Settings"}
+        ],
+        "name": "Edit",
+        "description": "Map individual keys."
+      },
+      "tab": {
+        "keyMappings": "Key Mappings",
+        "options": "Options"
+      }
+    }
+  },
+  "home": {
+    "introduce": {
+      "description":"What's new?"
+    },
+    "configure": {
+      "description": "I want to configure new settings",
+      "completed": "All completed!",
+      "start": "Start here",
+      "more": "Learn more",
+      "stepsCompt": "steps completed",
+      "skip": "Skip",
+      "steps": {
+        "step": "Step",
+        "auth": {
+          "name": "Configure user authentication and the identity source",
+          "description": "User authentication controls who can log into Rocket TE. The identity source contains information that you need to configure user access to sessions. ",
+          "btn": "Configure",
+          "info": "{{count}} configured",
+          "view": "Watch video: How to configure user authentication and the identity source",
+          "database": {
+            "fallback": "Rocket TE",
+            "noauth": "None",
+            "mssql": "Microsoft SQL Server",
+            "ldap": "LDAP",
+            "sso": "Single sign-on"
+          }
+        },
+        "user": {
+          "name": "Add and manage users",
+          "description": "Add and manage users based on your chosen authentication method.",
+          "btn": "Manage users",
+          "info": "{{count}} total users",
+          "view": "Watch video: How to manage user"
+        },
+        "session": {
+          "name": "Define sessions",
+          "description": "Define different types of sessions including 3270, 5250, VT, FTP and Mainframe printer sessions.",
+          "btn": "Define sessions",
+          "info": "{{count}} sessions defined",
+          "view": "Watch video: How to define session and configure session settings",
+          "settings": "Configure session setting",
+          "keyboard": "Configure keyboard setting",
+          "script": "Configure script"
+        },
+        "group": {
+          "name": "Creating groups",
+          "description": "Create groups to control user access to sessions based on your chosen authentication method.",
+          "btn": "Manage groups",
+          "info": "{{count}} total groups",
+          "view": "Watch video:  How to create group to manage permission"
+        },
+        "login": {
+          "name": "Let end user log-in to Rocket Terminal Emulator",
+          "description": "After configuration, your user can use the credential you configured to log in to __param1__. You can also configure other session settings in \"Session Settings\" and \"Keyboard Settings\".",
+          "btn": "",
+          "view": "Watch video: How to access session - end user"
+        }
+      }
+    },
+    "upgrade": {
+      "description": "I want to upgrade data from a previous version",
+      "latest": "All data has been upgraded to latest version",
+      "site": "Import site",
+      "data": "Upgrate data",
+      "importData": {
+        "titleBzw2h": "Import site created by BlueZone Web-to-Host Wizard",
+        "details": [
+          {"text": "If you are using BlueZone Web-to-Host Wizard 7.1, you can compress a site folder into a zip file and import it by clicking \"Import site\" button."}
+        ],
+        "btn": "Import site",
+        "btnInfo": "",
+        "view": "Watch video: How to import data"
+      },
+      "upgradeData": {
+        "title": "Upgrade data from a previous version of Rocket Terminal Emulator",
+        "titleBzw2h": "Upgrade data from a previous version of Rocket Terminal Emulator",
+        "details": [
+          {"text": "1. In the \"bzwapps\" folder of the previous version of your Rocket Terminal Emulator/BlueZone, create a copy of the \"deploy\" folder, and rename it to \"migrate\"."},
+          {"text": "2. In the \"bzwapps\" folder of your current Rocket Terminal Emulator, paste the newly-created \"migrate\" folder from Step # 1."},
+          {"text": "3. Click the \"Upgrade data\" button to complete the upgrade."}
+        ],
+        "btn": "Upgrade data",
+        "btnInfo": "Updated in:",
+        "view": "Watch video: How to upgrade data"
+      }
+    },
+    "tooltip": {
+      "desc": "Return to Home to continue configuration.",
+      "btn": "Got it",
+      "sessions": "Use __param1__ and __param2__ to define a general setting profile that can be used while you edit this session.",
+      "setting": {
+        "keybord": "Keyboard Settings",
+        "settings": "Session Settings",
+        "scripts": "Scripts",
+        "dont": "Don't show me again"
+      }
+    },
+    "faq": {
+      "name": "FAQ",
+      "connect": "Contact __param1__ for more help.",
+      "info": {
+        "auth": {
+          "name": "User authentication",
+          "documents": {
+            "configure": "How do I configure user authentication and the identity source?",
+            "available": "What are the available authentication methods?",
+            "LDAP": "How do I configure LDAP as the authentication method?",
+            "SSO": "How do I configure single sign-on as the authentication method?"
+          }
+        },
+        "user": {
+          "name": "Users",
+          "documents": {
+            "import": "How do I import and manage users?"
+          }
+        },
+        "session": {
+          "name": "Sessions",
+          "documents": {
+            "define": "How do I define a session?"
+          }
+        },
+        "group": {
+          "name": "Groups",
+          "documents": {
+            "assign": "How do I assign a user to a group?"
+          }
+        },
+        "upgradeCluster": {
+          "name": "Upgrades",
+          "documents": {
+            "cluster": "How to upgrade clusters?"
+          }
+        }
+      },
+      "auth": {
+        "fallback": {
+          "documents": {
+            "configure": "How do I configure Rocket TE as the authentication method?"
+          }
+        },
+        "ldap":  {
+          "documents": {
+            "configure": "How do I configure LDAP as the authentication method?",
+            "identity": "How do I configure the identity source?",
+            "manage": "How do I manage users in a different identity source?",
+            "addUser": "How do I add user to a group if identity source is LDAP?"
+          }
+        },
+        "mssql":  {
+          "documents": {
+            "configure": "How do I configure Microsoft SQL server as the authentication method?",
+            "addUser": "How do I add users to a group if the identity source is Microsoft SQL server?"
+          }
+        },
+        "noauth":  {
+            "documents": {
+            "configure": "How do I configure None as the authentication method?"
+          }
+        },
+        "sso": {
+          "documents": {
+            "configure": "How do I configure Single sign-on as the authentication method?",
+            "addUser": "How do I add users to a group?"
+          }
+        }
+      }
+    }
+  },
+  "report": {
+    "select": {
+      "name": "User totals",
+      "h1": "User totals over the past 1 hour",
+      "d1": "User totals over the past 24 hours",
+      "w2": "User totals over the past 14 days",
+      "total": "Peak total number",
+      "daily": "Daily status"
+    },
+    "noData": "No data in selected node",
+    "charts": {
+      "column": "Bar",
+      "area": "Area",
+      "line": "Line"
+    },
+    "refresh": "Refresh",
+    "labels": {
+      "since": "Since",
+      "userOn": "user on"
+    },
+    "auto": {
+      "refresh": "Auto refresh",
+      "interval": "Refresh interval",
+      "disable": "Disable",
+      "s10": "10 Seconds",
+      "m1": "1 Minute",
+      "m2": "2 Minutes",
+      "m5": "5 Minutes",
+      "m15": "15 Minutes"
+    },
+    "tools": {
+      "all": "All",
+      "config": {
+        "header": "Configure user reports",
+        "token": {
+          "label": "Token",
+          "tooltip": "Please config a token which could use to verify when use API to connect user reports",
+          "validationText": {
+            "length": "Maximum length is 16 characters."
+          }
+        },
+        "maxSaved": "Max save time",
+        "refresh": "Auto refresh",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "maxTime": {
+          "m1": "1 Month",
+          "m2": "2 Months",
+          "m3": "3 Months"
+        },
+        "sampling": {
+          "label": "Sampling Interval (Minute)",
+          "tip": "The duration (in minutes) between which samplings are taken. Default value is 5 minutes.",
+          "m5": "5 Minutes",
+          "m10": "10 Minutes",
+          "m30": "30 Minutes",
+          "h1": "1 Hour",
+          "h3": "3 Hours",
+          "h6": "6 Hours",
+          "validationText": {
+            "min":"Minimum sample time cannot be less than {{min}}.",
+            "max":"Maximum sample time cannot be greater than {{max}}.",
+            "requied": "Sample time is required.",
+            "integer": "Sample time must be an integer."
+          }
+        },
+        "license": {
+          "label": "Number of Licenses",
+          "tip": "If you enter the number of licenses here, it will draw a line on the “User over Time” related charts so that you can monitor your organization’s usage against the number of licenses.",
+          "validationText": {
+            "min":"Minimum license count cannot be less than {{min}}.",
+            "max":"Maximum License count cannot be greater than {{max}}.",
+            "requied": "License count is required.",
+            "integer": "License count must be an integer."
+          }
+        },
+        "saves": {
+          "label": "Keep user history for (Day)",
+          "tip": "The period (in days) to keep the user history data.",
+          "validationText": {
+            "min":"Minimum save time cannot be less than {{min}}.",
+            "max":"Maximum save time cannot be greater than {{max}}.",
+            "requied": "Save time is required.",
+            "integer": "Save time must be an integer."
+          }
+        }
+      }
+
+    },
+    "lastGenerate": "Page last generated on",
+    "overview": {
+      "headers": {
+        "server": "Server name",
+        "user": "# of users",
+        "session": "# of sessions",
+        "status": "Server status",
+        "last": "Last checked"
+      },
+      "total": "Grand Total"
+    },
+    "users": {
+      "headers": {
+        "index": "#",
+        "userId": "User ID",
+        "ip": "Client IP",
+        "name": "Server name",
+        "sessionID": "Session ID",
+        "st": "Connect time",
+        "et": "Disconnect time"
+      }
+    },
+    "daily": {
+      "headers": {
+        "unique": "Unique users - daily",
+        "peak": "Peak users - daily"
+      },
+      "title": {
+        "unique": "Count of users that have ever launched session during the day based on server time zone.",
+        "peak": "Sampled max concurrent user count during the day based on server time zone."
+      }
+    },
+    "peakUser": {
+      "headers": {
+        "past14": "Peak users - past 14 days",
+        "peakRecorded": "Peak users - ever recorded",
+        "unique": "Unique users - ever recorded"
+      },
+      "title": {
+        "past14": "Sampled max concurrent user count during the past 14 days based on server time zone.",
+        "peakRecorded": "Sampled max concurrent user count since the server first startup.",
+        "unique": "Count of users that have ever launched session since the server first startup."
+      }
+    },
+    "overTime": {
+      "period": {
+        "label": "Last",
+        "h1": "Hour",
+        "d1": "Day",
+        "d3": "3 Days",
+        "w1": "1 Week",
+        "w2": "2 Weeks"
+      },
+      "periods": {
+        "label": "Last",
+        "h1": "1 Hour",
+        "d1": "1 Day",
+        "d3": "3 Days",
+        "w1": "1 Week",
+        "w2": "2 Weeks"
+      },
+      "markerLine": "Number of Licenses"
+    },
+    "groupUser": {
+      "header": "User by Group",
+      "noData": "No data in current group"
+    },
+    "userHistory": {
+      "header": "Historical data of user",
+      "userId": "User Id",
+      "start": "Start time",
+      "end": "End time",
+      "search": "Search",
+      "server": "Server",
+      "noData": "Please enter any user id and time period to search user history.",
+      "invalidText": {
+        "date": "Unable to parse date.",
+        "startEarly": "The start time must be before today.",
+        "started": "The start time must be earlier than the end time",
+        "ended": "The end time must be later than the start time",
+        "useId": "The user id field is empty."
+      },
+      "prompts": {
+        "title": "According to custom settings:",
+        "message": "you can view the user's past {{days}} day(s) historical data."
+      },
+      "filter": {
+        "user": "Search user",
+        "from": "from",
+        "to": "to",
+        "full": "in all history."
+      }
+    }
+  },
+  "advanced": {
+    "logging": {
+      "settings": {
+        "label": "Logging settings",
+        "type": {
+          "label": "Type",
+          "desc": "It won't generate log file if it's set as 'console', instead, it will output the log to console",
+          "options": {
+            "file": "file",
+            "console": "console"
+          }
+        },
+        "surfix": {
+          "label": "Suffix",
+          "desc": "Suffix of log file names"
+        },
+        "dailyRotate": {
+          "label": "Daily rotate",
+          "desc": "Whether to rotate the log file daily. When enabled, log file will rotate at mid-night everyday automatically",
+          "options": {
+            "enable": "Enable",
+            "disable": "Disable"
+          }
+        }
+      },
+      "server": {
+        "label": "Server logging",
+        "dir": {
+          "label": "Dir",
+          "desc": "The path to the directory for the log files",
+          "tooltip": "The path relative to 'bzwapps\\bin'"
+        },
+        "prefix": {
+          "label": "Prefix",
+          "desc": "Prefix of log file names"
+        },
+        "keepDays": {
+          "label": "Keep days",
+          "desc": "Days to keep the log files",
+          "validationText": {
+            "min":"Minimum keep days cannot be less than {{min}}.",
+            "max":"Maximum keep days cannot be greater than {{max}}.",
+            "requied": "Keep days is required.",
+            "integer": "Keep days must be an integer."
+          }
+        }
+      },
+      "httpRequest": {
+        "label": "Http request logging",
+        "enable": {
+          "label": "Enable",
+          "desc": "Whether to enable http request log",
+          "options": {
+            "enable": "Enable",
+            "disable": "Disable"
+          }
+        },
+        "type": {
+          "label": "Type",
+          "desc": "Use the 'Type' option in Server logging",
+          "options": {
+            "file": "File",
+            "console": "Console"
+          }
+        },
+        "dailyRotate": {
+          "label": "Daily rotate",
+          "desc": "Use the 'Daily rotate' option in Server logging",
+          "options": {
+            "enable": "Enable",
+            "disable": "Disable"
+          }
+        },
+        "surfix": {
+          "label": "Suffix",
+          "desc": "Use the 'Suffix' option in Server logging"
+        },
+        "dir": {
+          "label": "Dir",
+          "desc": "The path to the directory for the http request log files",
+          "tooltip": "The path relative to 'bzwapps\\bin'"
+        },
+        "prefix": {
+          "label": "Prefix",
+          "desc": "Prefix of http request log file names"
+        },
+        "keepDays": {
+          "label": "Keep days",
+          "desc": "Days to keep the http request log files",
+          "validationText": {
+            "min":"Minimum keep days cannot be less than {{min}}.",
+            "max":"Maximum keep days cannot be greater than {{max}}.",
+            "requied": "Keep days is required.",
+            "integer": "Keep days must be an integer."
+          }
+        }
+      },
+      "notification": {
+        "server": "Updated 'Server logging'",
+        "httpRequest": "Updated 'Http request logging'",
+        "restartServer": "To update 'Server logging', restart the server.",
+        "restartServerFailed": "Failed to restart server."
+      }
+    },
+    "adminConfig": {
+      "label": "Admin settings",
+      "IPWhiteList": {
+        "label": "IP white list",
+        "desc": "Specific IP addresses access to Rocket TE Administration Console when enable 'Restrict remote address', multiple addresses separated by commas",
+        "tooltip": "This empty value specifies that only localhost and 127.0.0.1 can access the Administration Console."
+      },
+      "enableUserReport": {
+        "label": "User report",
+        "desc": "Whether to enable user report",
+        "options": {
+          "enable": "Enable",
+          "disable": "Disable"
+        }
+      },
+      "enableATTLS": {
+        "label": "AT-TLS",
+        "desc": "Application Transparent Transport Layer Security (AT-TLS) creates a secure session on behalf of an application.",
+        "options": {
+          "enable": "Enable",
+          "disable": "Disable"
+        }
+      },
+      "enablePasswordRecord": {
+        "label": "Password recording",
+        "desc": "Record password or not when recording scripts",
+        "options": {
+          "enable": "Enable",
+          "disable": "Disable"
+        }
+      },
+      "groupPrivilegeScope": {
+        "label": "Group privilege scope",
+        "desc": "Select the scope of the group privilege",
+        "options": {
+          "preDefinedOnly": "Pre-defined sessions",
+          "preDefinedAndSelfDefined": "Pre-defined and self-defined sessions"
+        }
+      },
+      "restrictRemoteAddress": {
+        "label": "Restrict remote address",
+        "desc": "Only localhost and IP addresses in the IP white list are allowed to access to Rocket TE Administration Console.",
+        "tooltip": "A restart is required for changes to take effect",
+        "options": {
+          "enable": "Enable",
+          "disable": "Disable"
+        }
+      },
+      "wsPingPongInterval": {
+        "label": "Websocket ping/pong interval",
+        "desc": "It maintains connection health by periodically checking responsiveness, preventing potential network or idle connection issues (Seconds)",
+        "tooltip": "WebSocket ping/pong interval can be used to avoid experiencing timeout errors before a ping is sent to host. Typically it should be less than the timeout setting of your gateway. The default value is 5 minutes. So, for example, a timeout value of 6 minutus in gateway will ensure that the gateway does not send a timeout error before the client sends a ping. Otherwise, the session connection will be closed with a 1006 error after timeout.",
+        "validationText": {
+          "min":"Minimum webscoket ping/pong interval cannot be less than {{min}}.",
+          "max":"Maximum webscoket ping/pong interval cannot be greater than {{max}}.",
+          "requied": "Webscoket ping/pong interval is required.",
+          "integer": "Webscoket ping/pong interval must be an integer."
+        }
+      },
+      "maxPowerpadRow": {
+        "label": "Max powerpad row",
+        "desc": "Max powerpad row to display for client user, the maximum value is 3 and the minimum value is 1",
+        "validationText": {
+          "min":"Minimum powerpad row cannot be less than {{min}}.",
+          "max":"Maximum powerpad row cannot be greater than {{max}}.",
+          "requied": "Powerpad row is required.",
+          "integer": "Powerpad rows must be an integer."
+        }
+      },
+      "preCheckEditableField": {
+        "label": "Pre-check editable field",
+        "desc": "Check if it is an editable field before typing when running script",
+        "options": {
+          "enable": "Enable",
+          "disable": "Disable"
+        }
+      },
+      "sessionTimeoutMs": {
+        "label": "Session expiration time",
+        "desc": "Session expiration time (Minutes)",
+        "tooltip": "A restart is required for changes to take effect",
+        "validationText": {
+          "min":"Minimum session expiration time cannot be less than {{min}}.",
+          "max":"Maximum  session expiration time  cannot be greater than {{max}}.",
+          "requied": "Session expiration time is required.",
+          "integer": "Session expiration time must be an integer."
+        }
+      },
+      "copyFullPage4Unselect": {
+        "label": "Copy full page when unselecting",
+        "desc": "Copy full page when unselecting any data in terminal",
+        "options": {
+          "enable": "Enable",
+          "disable": "Disable"
+        }
+      },
+      "uploadingCon": {
+        "label": "Maximum file size\/number for file uploading",
+        "license": {
+          "label": "License file",
+          "desc": "Maximum file size for Rocket TE license file (KB)",
+          "validationText": {
+            "min":"Minimum file size cannot be less than {{min}}.",
+            "max":"Maximum file size cannot be greater than {{max}}.",
+            "requied": "File size is required.",
+            "integer": "File size must be an integer."
+          }
+        },
+        "globalIni": {
+          "label": "Configuration file global.ini",
+          "desc": "Maximum file size for global.ini file (KB)",
+          "validationText": {
+            "min":"Minimum file size cannot be less than {{min}}.",
+            "max":"Maximum file size cannot be greater than {{max}}.",
+            "requied": "File size is required.",
+            "integer": "File size must be an integer."
+          }
+        },
+        "defaultIni": {
+          "label": "Configuration file default.ini",
+          "desc": "Maximum file size for default.ini file (KB)",
+          "validationText": {
+            "min":"Minimum file size cannot be less than {{min}}.",
+            "max":"Maximum file size cannot be greater than {{max}}.",
+            "requied": "File size is required.",
+            "integer": "File size must be an integer."
+          }
+        },
+        "profile": {
+          "label": "Session profile",
+          "desc": "Maximum file size for Rocket TE profile (KB)",
+          "validationText": {
+            "min":"Minimum file size cannot be less than {{min}}.",
+            "max":"Maximum file size cannot be greater than {{max}}.",
+            "requied": "File size is required.",
+            "integer": "File size must be an integer."
+          }
+        },
+        "profileAmount": {
+          "label": "Session profile amount",
+          "desc": "Maximum number of files for concurrent imports of Rocket TE profiles",
+          "validationText": {
+            "min":"Minimum session profile amount cannot be less than {{min}}.",
+            "max":"Maximum session profile amount cannot be greater than {{max}}.",
+            "requied": "Profile amount is required.",
+            "integer": "Profile amount must be an integer."
+          }
+        },
+        "fileDist": {
+          "label": "Distribution file",
+          "desc": "Maximum file size for distribution file (KB)",
+          "validationText": {
+            "min":"Minimum file size cannot be less than {{min}}.",
+            "max":"Maximum file size cannot be greater than {{max}}.",
+            "requied": "File size is required.",
+            "integer": "File size must be an integer."
+          }
+        }
+      },
+      "OAuthCon": {
+        "label": "OAuth 2.0 settings for script variables",
+        "enable": {
+          "label": "Enable",
+          "desc": "Whether to enable OAuth 2.0",
+          "options": {
+            "enable": "Enable",
+            "disable": "Disable"
+          }
+        },
+        "grant_type": {
+          "label": "Grant type",
+          "desc": "Specify the grant type (Required)",
+          "options": {
+            "clientCre": "client_credentials"
+          }
+        },
+        "url": {
+          "label": "URL",
+          "desc": "Specify the authorization URL(Required)",
+          "validationText": {
+            "requied": "URL is required."
+          }
+        },
+        "client_id": {
+          "label": "User ID",
+          "desc": "Specify the user ID (Required)",
+          "validationText": {
+            "requied": "User ID is required."
+          }
+        },
+        "client_secret": {
+          "label": "User password",
+          "desc": "Specify the user password (Required)",
+          "validationText": {
+            "requied": "User password is required."
+          }
+
+        },
+        "scope": {
+          "label": "Scope",
+          "desc": "Specify the scope (Optional)"
+        }
+      },
+      "notification": {
+        "IPWhiteList": "Updated 'IP white list'",
+        "enableUserReport": "Updated 'User report'",
+        "enableATTLS": "Updated 'enable ATTLS'",
+        "groupPrivilegeScope": "Updated 'Group privilege scope'",
+        "restrictRemoteAddress": "Updated 'Restrict remote address'",
+        "maxPowerpadRow": "Updated 'Max powerpad row'",
+        "wsPingPongInterval": "Updated 'Webscoket ping/pong interval'",
+        "preCheckEditableField": "Updated 'Pre-check editable field'",
+        "copyFullPage4Unselect": "Updated 'Copy full page when unselecting'",
+        "sessionTimeoutMs": "Updated 'Session expiration time'",
+        "enablePasswordRecord": "Updated 'Password recording'",
+        "restartServer": "To update the {{option}}, restart the server.",
+        "restartServerFailed": "Failed to restart server.",
+        "fileUpload": "Updated 'file size/number for uploading'",
+        "varMapApiOauth2": "Updated 'OAuth 2.0 settings'"
+      }
+    },
+    "type": {
+      "serverLogging": "Server Logging",
+      "advanced": "Advanced Configuration"
+    },
+    "button": {
+      "submit": "Submit",
+      "discard": "Discard"
+    },
+    "restart": "To update the advanced configuration, restart the server."
+  }
+}

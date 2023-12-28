@@ -1,0 +1,17 @@
+{
+  "name": "rte-desktop",
+  "version": "0.1.0",
+  "description": "binding for RTE desktop",
+  "main": "./lib/rte-desktop.js",
+  "author": {
+    "name": "Zhi Li",
+    "email": "zli@rocketsoftware.com"
+  },
+  "license": "",
+  "dependencies": {
+    "fs-extra": "^9.0.0",
+    "loady": "~0.0.5",
+    "lznt1": "file:../lznt1"
+  },
+  "gypfile": true
+}

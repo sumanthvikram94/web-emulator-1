@@ -1,0 +1,13 @@
+{
+  "RocketSoftwareCopyright_Header" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""],
+  "identifier": "com.rs.common.logger",
+  "pluginLocation": "../lib/zlux/zlux-shared/src/logging"
+
+  ,"RocketSoftwareCopyright_Footer" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""]
+}

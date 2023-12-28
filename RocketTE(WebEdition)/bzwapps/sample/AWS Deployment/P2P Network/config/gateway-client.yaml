@@ -1,0 +1,61 @@
+# Gateway exposes HTTP port 8543 of the Headless Service "svc-rtew-headless" to HTTP port 8080 of Ingress
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: gw-rtew-client
+  namespace: rtew
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 8080
+      name: rtew-client
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+# VirtualService for HTTP port 8543 of the Headless Service "svc-rtew-headless"
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: vs-rtew-client
+  namespace: rtew
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - gw-rtew-client
+  http:
+  - match:
+    - uri:
+        prefix: ''
+    route:
+    - destination:
+        host: svc-rtew-headless
+        port:
+          number: 8543
+        subset: blue # Use this configuration to switch between the blue and green groups. Change this to green if newer version is installed and upgraded in the green group.
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: dr-rtew-client
+  namespace: rtew
+spec:
+  host: svc-rtew-headless
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+    loadBalancer:
+      consistentHash: # ConsistentHash is required, otherwise the "FTP" functions in client won't work correctly.
+        httpCookie: # In this sample, Istio will create the cookie "rtew-client-identity" to use.
+          name: rtew-client-identity
+          ttl: 0s
+  subsets:
+  - name: blue # Filters the pods in statefulsets with the label "group: blue" when subset in VirtualService "vs-rtew-client" is set to blue
+    labels:
+      group: blue
+  - name: green # Filters the pods in statefulsets with the label "group: green" when subset in VirtualService "vs-rtew-client" is set to green
+    labels:
+      group: green

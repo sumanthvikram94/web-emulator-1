@@ -1,0 +1,11 @@
+{
+
+	//"strict-transport-security": "max-age=31536000;includeSubDomains",
+	//"Content-Security-Policy" : "default-src 'self' *.medco.com *.express-scripts.com *.accredo.com;frame-src 'self' *.duosecurity.com;script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' fonts.gstatic.com data:; img-src 'self' data:; frame-ancestors 'self'",
+	//"Cache-Control":"no-store;must-revalidate",
+	//"Pragma":"no-cache",
+	//"Access-Control-Allow-Origin":"*",
+	//"Vary":"Origin",
+	"x-content-type-options"   : "nosniff",
+    "X-XSS-Protection"         : "1;mode=block"
+}

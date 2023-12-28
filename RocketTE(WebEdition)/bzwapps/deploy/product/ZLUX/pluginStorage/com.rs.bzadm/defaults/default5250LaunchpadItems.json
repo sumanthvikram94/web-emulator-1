@@ -1,0 +1,24 @@
+{
+  "launchpad":[{"optionId":1,"name":"Attn","tooltip":"Attention","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Attn","iconName":"Attn"},
+               {"optionId":2,"name":"Back Tab","tooltip":"Back Tab","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Back Tab","iconName":"Back Tab"},
+               {"optionId":3,"name":"Backspace","tooltip":"Backspace","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Backspace","iconName":"Backspace"},
+               {"optionId":4,"name":"Delete","tooltip":"Delete","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Delete","iconName":"Delete"},
+               {"optionId":5,"name":"Enter","tooltip":"Enter","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Enter","iconName":"Enter"},
+               {"optionId":6,"name":"Erase EOF","tooltip":"Erase End Of Field","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Erase EOF","iconName":"Erase EOF"},
+               {"optionId":7,"name":"Home","tooltip":"Home","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Home","iconName":"Home"},
+               {"optionId":8,"name":"Insert","tooltip":"Insert","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Insert","iconName":"Insert"},
+               {"optionId":9,"name":"New Line","tooltip":"New Line","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"New Line","iconName":"New Line"},
+               {"optionId":10,"name":"CF01","tooltip":"CF01","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF01","iconName":"CF1"},
+               {"optionId":11,"name":"CF02","tooltip":"CF02","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF02","iconName":"CF2"},
+               {"optionId":12,"name":"CF03","tooltip":"CF03","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF03","iconName":"CF3"},
+               {"optionId":13,"name":"CF04","tooltip":"CF04","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF04","iconName":"CF4"},
+               {"optionId":14,"name":"CF05","tooltip":"CF05","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF05","iconName":"CF5"},
+               {"optionId":15,"name":"CF06","tooltip":"CF06","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF06","iconName":"CF6"},
+               {"optionId":16,"name":"CF07","tooltip":"CF07","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF07","iconName":"CF7"},
+               {"optionId":17,"name":"CF08","tooltip":"CF08","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF08","iconName":"CF8"},
+               {"optionId":18,"name":"CF20","tooltip":"CF20","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"CF20","iconName":"CF20"},
+               {"optionId":19,"name":"Reset","tooltip":"Reset","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Reset","iconName":"Reset"},
+               {"optionId":20,"name":"Sys Req","tooltip":"System Request","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Sys Req","iconName":"Sys Req"},
+               {"optionId":21,"name":"Print","tooltip":"Print","actionType":"KEYMAP_TYPE_5250FUNCTION","action":"Print","iconName":"Print"}
+  ]
+}

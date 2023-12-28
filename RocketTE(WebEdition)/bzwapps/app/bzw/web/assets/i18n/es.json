@@ -1,0 +1,1232 @@
+{
+  "language": "Español",
+  "button": {
+    "add": "Agregar",
+    "ok": "OK",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "new": "Nuevo",
+    "save": "Salvar",
+    "connect": "Connect",
+    "import": "Importar",
+    "settings": "Configuración",
+    "close": "Cerrar",
+    "overwrite": "Sobrescribir",
+    "clear": "Limpiar",
+    "remove": "Eliminar",
+    "clone": "Clonar",
+    "delete": "Eliminar",
+    "validate": "Validar",
+    "exit": "Salida",
+    "configure": "Configurar",
+    "permissions": "Permisos",
+    "download": "Descargar",
+    "upload": "Subir",
+    "refresh": "Refrescar",
+    "rename": "Cambiar nombre",
+    "execute": "Ejecutar",
+    "executeCmd": "Ejecutar comando",
+    "transferType": "Tipo de transferencia de archivo",
+    "addFolder": "Agregar carpeta",
+    "up": "Arriba",
+    "edit": "Editar",
+    "search": "Buscar",
+    "restore": "Restore to default",
+    "startRecorder": "Start Recording"
+  },
+  "dialog": {
+    "forceSignon": {
+      "description": "Introduzca la información de inicio de sesión de iSeries solicitada",
+      "userName": "Nombre de Usuario",
+      "password": "Contraseña"
+    },
+    "contextMenu": {
+      "copy": "Copy",
+      "copyAppend": "Copy and Append",
+      "paste": "Paste",
+      "powerpad": "Power Pad",
+      "scriptRecord": "Scripting",
+      "navRecord": "Navigation Recorder",
+      "scriptEditor": "Editor de comandos",
+      "keyboard": "Teclado",
+      "import": "Importar script",
+      "sessionSettings": "Configuración de la sesión",
+      "info": "Info",
+      "newScript": "Nuevo script",
+      "startRecording": "Iniciar nueva grabación",
+      "stopRecording": "Para grabación",
+      "pauseRecording": "Pausar la grabación",
+      "playSelected": "Reproducir seleccionado",
+      "fullScreen": "Fullscreen",
+      "indFile": "IND$FILE",
+      "scripts": "Scripts",
+      "stopPlay": "Dejar de jugar"
+    },
+    "passwordPrompt": {
+      "title": "Ejecución del script",
+      "required": "Contraseña requerida.",
+      "password": "Contraseña"
+    },
+    "scriptEditor": {
+      "header": "EDITOR SCRIPT",
+      "settings": {
+        "header": "CONFIGURACIÓN EDITOR SCRIPT",
+        "close": "Cerrar configuración",
+        "mode": "Modo",
+        "theme": "Tema",
+        "fontSize": "Tamaño del fuente",
+        "saveSuccess": "La configuración del editor se ha guardado correctamente."
+      }
+    },
+    "scriptSave": {
+      "title": "Salvar Script",
+      "scriptName": "Nombre del Script",
+      "required": "Se requiere el nombre del script.",
+      "pattern": "La entrada no puede incluir caracteres: #&%+",
+      "maxLen": "La longitud máxima es de 16 caracteres.",
+      "failed": "No se pudo guardar el script en el servidor.",
+      "exist": "Existe un script con el mismo nombre de archivo. ¿Quiere sobrescribirlo?",
+      "overwrite": "Sobrescribir el script"
+    },
+    "scriptDelete": {
+      "title": "Delete Script",
+      "scriptName": "Script to delete :"
+    },
+    "ctcPrompt": {
+      "title": "Reuse CTC",
+      "info1": "There is a CTC available for logon to this host system. Please select the User Id below to reuse its Cached Token Credential",
+      "infon": "There are multiple CTCs available for logon to this host system. Please select the User Id below to reuse its Cached Token Credential"
+    },
+    "inputHistory": {
+      "go": "Ir",
+      "close": "Cerrar",
+      "label": "Historial de entrada del usuario"
+    }
+  },
+  "login": {
+    "signIn": "Registrarse",
+    "userId": "Useario ID",
+    "password": "Contraseña",
+    "invalid": "Usuario ID inválido / Contraseña",
+    "copyright": "Rocket Software, Inc. o sus afiliados. Todos los derechos reservados.",
+    "version": "Versión:",
+    "duoMsg": "Configuraciones de Duo no válidas. Verifique y modifique sus configuraciones de Duo en la Consola de administración de Rocket TE.",
+    "resetPwd": "Restablecer la contraseña",
+    "cancel": "Cancelar",
+    "content": "Bienvenido a Rocket TE Web Edition. Está iniciando sesión con una contraseña reservada, por favor,  restablezca su contraseña.",
+    "newPwd": "Contraseña nueva",
+    "inputNewPwd": "Teclee nueva contraseña",
+    "retypePwd": "Vuelva a escribir la contraseña",
+    "repeatPwd": "Repita la nueva contraseña",
+    "reset": "Reiniciar",
+    "weak": "Débil",
+    "medium": "Medio",
+    "strong": "Fuerte",
+    "minLen": "Contiene al menos 6 caracteres",
+    "must": "Contiene un número y una cadena",
+    "symbol": "Contiene un símbolo especial",
+    "pattern": "The password can only contain Latin-1 characterso",
+    "reserved": "la \"password\" es una contraseña reservada. Introduzca otro valor",
+    "match": "Las contraseñas no coinciden",
+    "required": "Debe volver a escribir la contraseña",
+    "signOut": "Cerrar sesión",
+    "about": "About",
+    "help": "Help",
+    "resetSuccessContent": "Contraseña cambiada exitosamente",
+    "totp": {
+      "title": "Autenticación multifactor (MFA)",
+      "setup": "Configuración de la aplicación de autenticación",
+      "scan": "Escanea el código QR",
+      "setupDesc": "Configure una aplicación de dispositivo móvil para recibir códigos MFA para la verificación de inicio de sesión. Las aplicaciones pueden incluir: Microsoft Authenticator, Google Authenticator, Authy, etc.",
+      "secretDesc": "Use una aplicación de autenticación desde su dispositivo móvil para escanear.",
+      "unableToScan": " Si no puede escanear, ",
+      "textCode": "introduzca el código de texto en su lugar.",
+      "verifyCode": "Verifica el código desde la aplicación",
+      "scanDesc": "Abra la aplicación de autenticación multifactor (TOTP) en su dispositivo móvil para ver su código de autenticación.",
+      "code": "Código de autenticación",
+      "verify": "Verificar",
+      "back": "Atrás",
+      "validateText": "el código del autenticador contiene ",
+      "numbers": " números.",
+      "invalid": "La verificación del código multifactor falló. Inténtalo de nuevo.",
+      "validateNum": "El código del autenticador contiene solo números.",
+      "validateEmpty": "El código del autenticador no puede estar vacío.",
+      "maxLen": "La longitud máxima es de 8 caracteres."
+    },
+    "settings": "Settings"
+  },
+  "userValidation": {
+    "title": "Validación del Usuario",
+    "expire": "Su sesión ha caducado",
+    "enterPassword": "Ingrese la contraseña para el usuario '{{userId}}'",
+    "pwdMismatch": "La contraseña no coincide. No se puede validar al usuario '{{userId}}'",
+    "ignorePwd": "You are in ignore user password mode, the userId is {{userId}}.",
+    "validateFailed": "La validación falló",
+    "expireTitle": "Sesión caducó",
+    "expireMsg": "Se sesión ha caducado. Vuelva a iniciar sesión en la consola de Rocket TE Administration Console y vuelva a verificar"
+  },
+  "navigator": {
+    "addNewSession": "AGREGAR NUEVA SESIÓN",
+    "addNewNav": "Add New Navigation Project",
+    "editNav": "Edit Navigation Project",
+    "sessionName": {
+      "label": "Nombre de la sesión",
+      "validation": {
+        "required": "El nombre de la sesión es obligatorio.",
+        "pattern": "El nombre no puede incluir los caracteres /\\*&%#+?~`",
+        "maxLen": "La longitud máxima es de 16 caracteres.",
+        "exist": "El nombre de la sesión ya está en uso."
+      }
+    },
+    "sessionLabel": {
+      "label": "Session Label"
+    },
+    "windowTB": {
+      "label": "Terminal Window Title"
+    },
+    "sessionType": {
+      "label": "Tipo de sesión",
+      "validation": {
+        "required": "Se requiere el tipo de sesión."
+      }
+    },
+    "sessionLevel": {
+      "global": "Global",
+      "group": "Group"
+    },
+    "3270DisplayModel": {
+      "label": "Pantalla de 3270",
+      "3270Model2": "3278 Model 2 (24 x 80)",
+      "3270Model3": "3278 Model 3 (32 x 80)",
+      "3270Model4": "3278 Model 4 (43 x 80)",
+      "3270Model5": "3278 Model 5 (27 x 132)",
+      "3270dynamic": "3278 Dynamic",
+      "3270Model2_3279": "3279 Model 2 (24 x 80)",
+      "3270Model3_3279": "3279 Model 3 (32 x 80)",
+      "3270Model4_3279": "3279 Model 4 (43 x 80)",
+      "3270Model5_3279": "3279 Model 5 (27 x 132)",
+      "3270dynamic_3279": "3279 Dynamic"
+    },
+    "3270PrinterModel": {
+      "label": "Impresora de 3270",
+      "3287Model2": "3287 Model 1"
+    },
+    "5250DisplayModel": {
+      "label": "Pantalla de 5250",
+      "5250Model3179-2": "3179 Model 2 (24 x 80)",
+      "5250Model3180-2": "3180 Model 2 (27 x 132)",
+      "5250Model3196-A1": "3196 Model A1 (24 x 80)",
+      "5250Model3477-FC": "3477 Model FC (27 x 132)",
+      "5250Model3477-FG": "3477 Model FG (27 x 132)",
+      "5250Model5251-11": "5251 Model 11 (24 x 80)",
+      "5250Model5291-1": "5291 Model 1 (24 x 80)",
+      "5250Model5292-2": "5292 Model 2 (24 x 80)",
+      "5250Model5555-B01": "5555 Model B01 (24 x 80)",
+      "5250Model5555-C01-132": "5555 Model C01 (27 x 132)",
+      "5250Model5555-C01-80": "5555 Model C01 (24 x 80)"
+    },
+    "5250PrinterModel": {
+      "label": "Impresora 5250",
+      "3812Model1": "Modelo 3812 1 (impresora de un solo byte)",
+      "5553ModelB01": "5553 B01 (impresora de doble byte)"
+    },
+    "VTDisplayModel": {
+      "label": "Series de VT",
+      "VTlinux": "VT Linux",
+      "VT220": "VT 220",
+      "VT320": "VT 320",
+      "VT420": "VT 420"
+    },
+    "FTPModel": {
+      "label": "Series de FTP",
+      "FTP": "File Transfer Protocol - FTP",
+      "SFTP": "SSH File Transfer Protocol - SFTP",
+      "FTPS": "FTP over Implicit TLS/SSL - FTPS",
+      "FTPES": "FTP over Explicit TLS/SSL - FTPES"
+    },
+    "rows": {
+      "label": "Filas",
+      "validation": {
+        "min": "El número mínimo de filas  no puede ser inferior a 24",
+        "max": "El número máximo de filas no puede ser superior a 98",
+        "required": "Las filas no pueden ser nulas.",
+        "pattern": "Valores númericos sólo para las filas."
+      }
+    },
+    "columns": {
+      "label": "Columnas",
+      "validation": {
+        "min": "El número mínimo de columnas no puede ser menor de 80.",
+        "max": "El número máximo de columnas no puede ser mayor de 160.",
+        "required": "Las columnas no pueden ser nulas.",
+        "pattern": "Valores númericos sólo para las columnas."
+      }
+    },
+    "altrows": {
+      "label": "Alternate Rows",
+      "validation": {
+        "required": "A number is required for alternate rows.",
+        "min": "Minimum alternate rows cannot be less than 24.",
+        "max": "Maximum alternate rows cannot be more than 98.",
+        "pattern": "Numeric values only for rows."
+      }
+    },
+    "altcolumns": {
+      "label": "Alternate Columns",
+      "validation": {
+        "required": "A number is required for alternate columns.",
+        "min": "Minimum alternate columns cannot be less than 80.",
+        "max": "Maximum alternate columns cannot be more than 160.",
+        "pattern": "Numeric values only for columns."
+      }
+    },
+    "defrows": {
+      "label": "Default Rows",
+      "validation": {
+        "required": "A number is required for default rows.",
+        "min": "Minimum default rows cannot be less than 24.",
+        "max": "Maximum default rows cannot be more than 98.",
+        "pattern": "Numeric values only for default rows."
+      }
+    },
+    "defcolumns": {
+      "label": "Default Columns",
+      "validation": {
+        "required": "A number is required for default columns.",
+        "min": "Minimum default columns cannot be less than 80.",
+        "max": "Maximum default columns cannot be more than 160.",
+        "pattern": "Numeric values only for default columns."
+      }
+    },
+    "maxSize": "Tamaño Máximo",
+    "connectionType": {
+      "label": "Tipo de conexión",
+      "type": {
+        "telnet": "Telnet",
+        "ssh": "SSH",
+        "tls": "TLS"
+      }
+    },
+    "addType": {
+      "label": "Session From",
+      "type": {
+        "exist": "Existing session",
+        "new": "New session"
+      }
+    },
+    "project": {
+      "label": "Project Name",
+      "validation": {
+        "required": "Project name is required.",
+        "pattern": "Input can't include characters /\\*&%#+?~`",
+        "maxLen": "Max length is 64 characters.",
+        "exist": "Project name already in use."
+      },
+      "selectSession": "Select Session",
+      "recorder": {
+        "header": "Navigation Recorder",
+        "switcherOpts": {
+          "title": "Navigation recorder view",
+          "detail": "Detail View",
+          "model": "Model View"
+        },
+        "tabs": {
+          "saved": "Saved recordings",
+          "test": "Test recording"
+        },
+        "status": {
+          "connect": "Connect",
+          "disconnect": "Disconnect",
+          "record": "Record",
+          "stop": "Stop",
+          "run": "Run",
+          "pause": "Pause",
+          "debug": "Debug",
+          "add": "Add"
+        },
+        "tip": {
+          "save": "Save",
+          "close": "Close",
+          "edit": "Edit",
+          "download": "Donwload"
+        },
+        "log": "Explorer Output"
+      }
+    },
+    "host": {
+      "label": "TCP Sistema Principal",
+      "validation": {
+        "required": "Se requiere una conexión TCP al sistema principal.",
+        "pattern": "Sólo se permiten símbolos alfanuméricos y los siguientes : '.', ':', '-'",
+        "maxLen": "La longitud máxima es de 253 caracteres."
+      }
+    },
+    "port": {
+      "label": "Puerto TCP",
+      "validation": {
+        "required": "Se requiere puerto de conexión TCP.",
+        "pattern": "Numeric values only for port.",
+        "range": "Puerto fuera de rango."
+      }
+    },
+    "activeSessions": "Sesiones activas",
+    "sessionList": "Sessions List",
+    "pre-defined": "Predefinidos",
+    "self-defined": "Autodefinido",
+    "terminalType": {
+      "3270": "Sesiones de pantalla 3270",
+      "5250": "Sesiones de pantalla 5250",
+      "3270p": "Sesiones de impresora 3270",
+      "5250p": "Sesión de la impresora 5250",
+      "VT": "Sesiones de VT",
+      "FTP": "Sesiones de FTP"
+    },
+    "GDDMSupport": "Enable Graphics"
+  },
+  "header": {
+    "info": {
+      "iconTitle": "Info",
+      "dialogHeader": "Acerca de",
+      "about": {
+        "title": "Acerca de",
+        "loginAs": "Conectado como",
+        "host": "Sistema principal:",
+        "buildNumber": "Número de compilación:",
+        "zoweVersion": "ZOWE Versión:",
+        "rights": "© 2017-2023 Rocket Software, Inc. o sus afiliados. Todos los derechos reservados."
+      },
+      "diagnostics": {
+        "title": "Diagnóstico",
+        "tracing": "Seguimiento del flujo de datos de la sesión",
+        "tracingDesc": "To ensure a valid trace file for issue playback, please start the session after tracing is enabled",
+        "stopped": "Detenido",
+        "recording": "Grabación",
+        "download": "Descargar trace",
+        "logging": "Inicio de sesión detallado en el navegador",
+        "loggingDesc": "The verbose log is written into the console of web browser developer tool",
+        "enabled": "Habilitado",
+        "disabled": "Desactivado",
+        "level": "Nivel detallado",
+        "low": "Bajo",
+        "high": "Alto",
+        "chooseTypes": "Elija tipo de registros",
+        "network": "Red",
+        "protocol": "Protocolo",
+        "render": "Hacer",
+        "event": "Evento",
+        "ftp": "FTP"
+      },
+      "credits": {
+        "title": "Créditos"
+      },
+      "settings": {
+        "title": "Preference",
+        "session": {
+          "mode": "Launch sessions in",
+          "inputHistory": "Habilitar historial de entrada",
+          "historyTooltip": "Habilite esta opción para usar el historial de entrada de la usuaria",
+          "tab": "RTE tab",
+          "list": "Session list",
+          "browser": "New browser tab",
+          "window": "New browser window",
+          "succed": "Preference saved successfully.",
+          "failed": "Preference saved failed"
+        },
+        "update": {
+          "prompt": "Changing session launch method will close all active sessions on current page. Are you sure you want to change the method?",
+          "confirm": "Change Preference Confirmation"
+        }
+      },
+      "lang": {
+        "label": "Language",
+        "message": {
+          "succed": "Language saved successfully.",
+          "failed": "Language saved failed"
+        }
+      }
+    }
+  },
+  "sessionSettings": {
+    "title": "Configuración de la Sesión",
+    "tab": {
+      "session": "Sesión",
+      "font": "Fuente/Tamaño",
+      "color": "Colores",
+      "cursor": "Cursor",
+      "powerpad": "Power Pad",
+      "keyboard": "Teclado",
+      "hotspots": "Hotspot",
+      "language": "Idioma",
+      "translation": "Translation",
+      "ftp": "Transferencia de archivos",
+      "printOpt": "Opciones de impresión",
+      "appearance": "Apareiencia",
+      "indFileTransfer": "IND$FILE"
+    },
+    "color": {
+      "standColors": "Colores estándar",
+      "extendedColors": "Colores Extendidos",
+      "inverseColors": "Colores invertidos",
+      "extendedBoldColors": "Colores intensos extendidos",
+      "foreground": "Primer plano",
+      "background": "Fondo",
+      "foregroundBold": "Primer Plano en negrita",
+      "backgroundBold": "Fondo negrita",
+      "foregroundBlinking": "Primer Plano en parpadeo",
+      "backgroundBlinking": "Fondo en parpadeo",
+      "foregroundBoldBlinking": "Parpadeo en negrita en primer plano",
+      "backgroundBoldBlinking": "Fondo en negrita parpadeando",
+      "protectedBoldText": "Texto protegido en negrita",
+      "unprotectedBoldText": "Texto en negrita sin protección",
+      "protectedText": "Texto protegido",
+      "unprotectedText": "Texto desprotegido",
+      "hotspotsForeground": "Primer plano de los puntos críticos",
+      "hotspotsBackground": "Fondo de los puntos críticos",
+      "cursorGuide": "Guía del cursor",
+      "oiaText": "Texto OIA",
+      "blue": "Azul",
+      "red": "Rojo",
+      "pink": "Rosa",
+      "green": "Verde",
+      "turquoise": "Turquesa",
+      "yellow": "Amarillo",
+      "white": "Blanco",
+      "overrideInverseColors": "Anular colores inversos",
+      "inverseForeground": "Primer plano inverso",
+      "inverseBackgound": "Fondo inverso",
+      "inverseForegroundBold": "Negrita en primer plano inverso",
+      "inverseBackgroundBold": "Fondo inverso en negrita",
+      "inverseForegroundBlinking": "Parpadeo inverso en primer plano",
+      "inverseBackgroundBlinking": "Fondo inverso en parpadeo",
+      "inverseForegroundBoldBlinking": "Parpadeo en negrita en primer plano inverso",
+      "inverseBackgroundBoldBlinking": "Fondo inverso negrita en parpadeo",
+      "pink/purple": "Rosa/Morado",
+      "cyan": "Cian",
+      "black": "Negro",
+      "lightGray": "Gris claro",
+      "brightBlue": "Azul brillante",
+      "brightRed": "Rojo brillante",
+      "brightPink": "Magenta brillante/rosa",
+      "brightGreen": "Verde brillante",
+      "brightCyan": "Cian brillante",
+      "brightYellow": "Amarillo brillante",
+      "darkGray": "Gris oscuro",
+      "message": {
+        "success": "Los cambios en la configuración de color han sido publicados en la configuración del servidor.",
+        "cannotSave": "Los cambios en la configuración de color no se pueden publicar en la configuración del servidor.",
+        "failed": "No se pudieron guardar las selecciones de color.",
+        "restoreSuccess": "Color settings restored successfully.",
+        "restoreFailed": "Color settings restored failed!"
+      }
+    },
+    "cursor": {
+      "horizontal": "Mostrat guía de cursor horizontal",
+      "vertical": "Mostrar guía de cursor vertical",
+      "underline": "Cursor subrayado",
+      "steady": "Cursor fijo",
+      "highlightFocusedField": "Outline active unprotected field",
+      "message": {
+        "success": "Los cambios en la configuración del cursor se han publicado en la configuración del servidor.",
+        "cannotSave": "Los cambios en la configuración del cursor no se pueden publicar en la configuración del servidor.",
+        "failed": "Error al guardar la selección del cursor",
+        "resotreSuccess": "Cursor settings restored successfully.",
+        "resotreFailed": "Cursor settings restored failed!"
+      }
+    },
+    "ftp": {
+      "tab": {
+        "autoMode": "Modo automático",
+        "options": "Opciones"
+      },
+      "autoMode": "Configurar el modo de transferencia",
+      "defaultMode": "Modo predeterminado para todas las trasnferencias de archivos:",
+      "ascii": "ASCII",
+      "binary": "Binario",
+      "fileExtension": "Extensión de archivo",
+      "action": "Accione",
+      "exceptionList": "Lista de excepciones de extensiones de archivo:",
+      "exceptionListInfo": "Las extensiones de archivo en esta lista usarán \"{{exceptionType}}\" para transferir",
+      "noData": "No hay extensión de archivo, haga click en Agregar para añadir uno",
+      "overwrite": {
+        "label": "Overwrite file options for upload:",
+        "never": "Never overwrite file",
+        "always": "Always overwrite file",
+        "ask": "Ask to overwrite file"
+      },
+      "message": {
+        "success": "Changes to file transfer settings have been posted to the server configuration.",
+        "cannotSave": "Changes to file transfer settings can not be posted to the server configuration.",
+        "failed": "Save file transfer selection failed"
+      },
+      "restore": {
+        "success": "File Transfer settings restored successfully.",
+        "failed": "File Transfer settings restored failed!"
+      }
+    },
+    "fontConfig": {
+      "font": "Fuente",
+      "fontName": "Nombre del fuente",
+      "fontSize": "Tamaño del fuente",
+      "saveFontSize": "Guarde y vuelva abrir la sesión para aplicar el cambio de tamaño del fuente",
+      "fontWeight": "Peso del fuente",
+      "bold": "Negrita",
+      "normal": "Normal",
+      "size": "Tamaño",
+      "maxSize": "Tamaño máximo de la pantalla",
+      "maxSizeInfo": "El tamaño máximo de pantalla se calcula en función del tamaño del fuente",
+      "scrollback": {
+        "label": "Desplazarse hacia atrás",
+        "enable": "Habilitar el desplazamiento hacia atrás",
+        "lines": "Líneas de retroceso",
+        "range": "El número máximo de líneas de retroceso no puede ser inferior a 99 ni usperior a 1000",
+        "pattern": "Valores númericos sólo para el retroceso",
+        "required": "El número máximo de retrocesos no puede ser nulo"
+      },
+      "message": {
+        "success": "Los cambios en la configuración de fuente han sido escritos a la configuración del servidor.",
+        "cannotSave": "Los cambios en la configuración de fuentes no se pueden publicar en la configuración del servidor.",
+        "failed": "Error al guardar la selección de fuente",
+        "resotreSuccess": "Font settings restored successfully.",
+        "resotreFailed": "Font settings restored failed!"
+      },
+      "options": {
+        "label": "Options",
+        "autoSize": "Auto-size font",
+        "fixedSize": "Fixed-aspect ratio"
+      }
+    },
+    "hotspotsConfig": {
+      "enable": "Habilitar punto críticos",
+      "show": "Mostrar Hotspot",
+      "turnHTTP": "Ponga \"HTTP(S)://\"",
+      "turnHTTPInfo": "Convierta las cadenas \"HTTP(S)://\" en Hotspot",
+      "defined": "Hotspot defnidos",
+      "none": "Ninguno",
+      "editIcon": "Botón para editar Hotspot",
+      "deleteIcon": "Botón para eliminar Hotspot",
+      "addButton": "Agrenga nuevo",
+      "addLabel": "Agregar nueva definición de Hotspot",
+      "editLabel": "Editar definición de punto críticos",
+      "characterString": "Cadena de caracteres",
+      "required": "Se requiere una cadena de Hotspot",
+      "pattern": "La cadena de Hotspot no pueden incluir los caracteres /\\*&%?#`~\"",
+      "matchCase": "Coincidencia",
+      "actionType": "Tipo de acción",
+      "actions": "Acciones",
+      "pressSave": "Presione \"Salvar\" para guardar los cambios para definción de Hotspot",
+      "message": {
+        "required": "Uno o más parámetros de definición de hotspot están vacíos o no están definidos.",
+        "inUse": "Cadena de Hotspot ya en uso. Elija una cadena única",
+        "exist": "Los Hotspot con la cadena seleccionada y coincidencias ya existen",
+        "success": "Los cambios en la configuración del hotspot se han guardado en el archivo de configuración del servidor.",
+        "cannotSave": "Los cambios en la configuración de los Hotspot no se pueden publicar en la configuración del servidior.",
+        "failed": "No se pudo guardar la configuración de los Hotspot"
+      },
+      "restore": {
+        "success": "Hotspots settings restored successfully.",
+        "failed": "Hotspots settings restored failed!"
+      }
+    },
+    "scriptConfig": {
+      "actions": {
+        "export": "Export",
+        "delete": "Delete",
+        "edit": "Edit",
+        "play": "Play",
+        "view": "View"
+      },
+      "filter": {
+        "noData": "No results"
+      },
+      "import": {
+        "fileSizeLimited": "The file size should be less than 2MB ",
+        "fileSizeEmpty": "The file is empty ",
+        "typeNotMatch": "The script type does not match.",
+        "notJsonFile": "The file data format is incorrect.",
+        "dataFormatError": "The file data format is incorrect."
+      },
+      "removeScriptConfirmMsg": "Deleting this script \"{{scriptName}}\" may impact all associated configurations, are you sure to delete it anyway?",
+      "inexistenceScriptMsg": "The mapped script \"{{scriptName}}\" cannot operated, it may have been deleted.",
+      "inexistenceMappedScriptMsg": "The script is not available any more.",
+      "unKnownScript": "Unknown script"
+    },
+    "keyboardConfig": {
+      "keyMapping": "Mapeo de teclas",
+      "options": "Opciones",
+      "step1": "1. Seleccione una tecla",
+      "step2": "2. Seleccione el tipo de tecla de acción y el mapeo de acciones:",
+      "actionType": "Tipo de acciones",
+      "actions": "Acciones",
+      "step3": "3. Presione \"Salvar\" para guardar los cambios para cada mapeo.",
+      "additionalBSOptions": "Opciones de retroceso adicionales:",
+      "operateDestructiveBS": "Operar el retroceso de la función {{terminalType}} como retroceo destructivo",
+      "destructiveBS": "Retroceso destructivo",
+      "autoResetOptions": "Opciones de reinicio automático:",
+      "autoRepeatOptions": "Opciones de repetición automática:",
+      "autoRepeatCtrAltShift": "Modo de repetición automática para las teclas Ctrl, Alt y Shift",
+      "autoResetLock": "Reinicio automático cuando el teclado está bloquedado",
+      "autoResetMode": "Modo de reinicio automático:",
+      "immediateAutoReset": "Reinicio automático inmediato",
+      "autoResetByPress": "Cuando se presiona la tecla Siguiente",
+      "autoTabOption": "Opción de tabulación automática:",
+      "tabAfterReset": "Tabulación automática después del reinicio",
+      "defaultBS": "Retroceso predeterminado",
+      "autoSkipBS": "Retroceso de salto automático",
+      "rapidOptions": "Rápidas opciones izquierda/derecha:",
+      "mouseAction": {
+        "label": "Opciones de evento de ratón:",
+        "dbclick2word": {
+          "label": "Seleccionar palabra con doble clic del ratón"
+        },
+        "mouseWheel": {
+          "label": "Desplace la rueda del mouse para activar la página hacia arriba o hacia abajo"
+        }
+      },
+      "autoCopy": "Copiar automáticamente la selección del ratón",
+      "operateRapid": "Opera {{terminalType}} función rápida izquierda/derecha como palabra izquierda/derecha",
+      "viewList": "Ver asignaciones de teclas actuales",
+      "search": "Buscar",
+      "onlyShowCustomized": "Mostrar sólo asignaciones de teclas personalizadas",
+      "key": "Tecla",
+      "action": "Acción",
+      "back": "Atrás",
+      "restore": "Restore",
+      "keyboardType": "Tipo de Teclado",
+      "standardKeys": "Teclas estándar",
+      "commandKeys": "Teclas de comando",
+      "numpadKeys": "Teclas del teclado numérico",
+      "left": "Izquierda",
+      "right": "Derecha",
+      "message": {
+        "success": "Los cambios en las asignaciones de teclas \"{{keyCombination}}\" se han publicado en la configuración del servidor.",
+        "cannotSave": "Los cambios en las asignaciones de teclas \"{{keyCombination}}\" no se pueden publicar en la configuración del servidor.",
+        "successWithoutSetKey": "Changes to this keyboard have been posted to the server configuration.",
+        "cannotSaveWithoutSetKey": "Changes to this keyboard can not be posted to the server configuration.",
+        "failed": "Error al guardar la asignación del teclado!",
+        "selectKey": "Seleccione una tecla para mapear",
+        "actionUndefined": "La acción de asignación del teclado no está definida.",
+        "numLockInfo": "NumLock es la tecla de alternancia. Solo se puede asignar en combinación con otras teclas.",
+        "specifyAnother": "Especifique otra tecla para asignar la clave de combinación.",
+        "optionSuccess": "Se han publicado cambios en la tecla de opciones en la configuración del servidor.",
+        "optionCannotSave": "Los cambios en la tecla de opciones no se pueden publicar en la configuración del servidor.",
+        "optionFailed": "Error al guardar las opciones del teclado!",
+        "printScreenInfo": "No se puede asignar la tecla PrintScreen",
+        "restoreSuccess": "Keyboard mappings restored successfully.",
+        "restoreCannotSave": "Keyboard mappings restored failed.",
+        "restoreFailed": "Keyboard mappings restored failed!",
+        "restoreAllDataSuccess": "Keyboard restored successfully.",
+        "restoreAllDataFailed": "Keyboard restored failed!"
+      },
+      "keypadMode": {
+        "label": "Keypad Mode",
+        "options": {
+          "hostctr": "Host Controlled",
+          "num": "Numeric",
+          "app": "Application"
+        }
+      },
+      "paste": {
+        "skipSpace": "Skip spaces when moving to new field",
+        "tabReplace": "Treat tabs as spaces",
+        "title": "Paste from Clipboard",
+        "straightPaste": "Straight Paste with Wrapping",
+        "columnsAligned": "Paste with Columns Aligned"
+      }
+    },
+    "languageConfig": {
+      "label": "Idioma",
+      "codePagelabel": "Remote character set",
+      "message": {
+        "success": "Los cambios en la configuración del idioma se han publicado en la configuración del servidor.",
+        "failed": "Los cambios en la configuración de idioma no se pueden publicar en la configuración del servidor.",
+        "resotreSuccess": "Language settings restored successfully.",
+        "resotreFailed": "Language settings restored failed!"
+      }
+    },
+    "translateConfig": {
+      "label": "Translation",
+      "codePagelabel": "Remote character set",
+      "message": {
+        "success": "Translation settings saved successfully.",
+        "failed": "Translation settings saved failed.",
+        "resotreSuccess": "Translation settings restored successfully.",
+        "resotreFailed": "Translation settings restored failed!"
+      }
+    },
+    "launchpadConfig": {
+      "options": {
+        "label": "Opciones de pantalla",
+        "icon": "Icono",
+        "name": "Nombre",
+        "iconName": "Icono y Nombre"
+      },
+      "position": {
+        "label": "Opciones de posición",
+        "left": "Izquierda",
+        "top": "Parte superior",
+        "right": "Derecha",
+        "bottom": "Pie"
+      },
+      "powerpadButton": "Botones de Power PAD",
+      "none": "Ninguno",
+      "deleteIcon": "Eliminar el botón de Power Pad",
+      "editIcon": "Editar el botón de Power Pad",
+      "addNew": "Agregar nuevo",
+      "dragInfo": "Opciones de arrastrar y soltar para reajustar el orden de visualización.",
+      "addButton": "Agregar un botón nuevo de Power Pad",
+      "editButton": "Editar el botón de power pad",
+      "name": "Nombre",
+      "required": "Se requiere el título.",
+      "pattern": "El nombre no puede incluir caracteres /\\*&%?# '~\"",
+      "tooltip": "Tooltip",
+      "actionType": "Tipo de acción",
+      "actions": "Acciones",
+      "icon": "Icono",
+      "pressSave": "Presione \"Salvar\" para guardar los cambios por cada definición de power pad",
+      "message": {
+        "empty": "Uno o más parámetros de la definición del power pad está vacío o no está definido",
+        "exist": "La opción de Power Pad con el mismo nombre ya existe. Especifique un nombre diferente",
+        "success": "Los cambios en la configuración del power pad se han publicado en la configuración del servidor.",
+        "cannotSave": "Los cambios en la configuración del power pad no se pueden publicar en la configuración del servidor.",
+        "failed": "Falló la configuración del power pad!",
+        "resotreSuccess": "Power pad restored successfully.",
+        "resotreFailed": "Power pad restored failed!"
+      }
+    },
+    "sessionConfig": {
+      "tabName": {
+        "connection": "Conexión",
+        "security": "Seguridad",
+        "keepAlive": "Keep Alive",
+        "display": "Pantalla",
+        "signon": "Iniciar sesión",
+        "print": "Imprimir",
+        "advanced": "Avanzado"
+      },
+      "luName": "Nombre de la LU",
+      "resetLU": "Restore",
+      "resetLUTitle": "Restore to pre-defined",
+      "deviceName": "Nombre del dispositivo",
+      "luCustomizedWarning": "This has been customized, future administrator changes won't be synced anymore",
+      "association": "Nombre de sesión asociado",
+      "transferMode": {
+        "label": "Transfer Mode",
+        "active": "Active",
+        "passive": "Passive"
+      },
+      "message": {
+        "success": "Los cambios de esta sesión se publican en el servidor.",
+        "cannotSave": "Este cambio de sesión no se puede guardar desde la configuración del servidor.",
+        "failed": "Error al guardar la configuración de la sesión!!"
+      },
+      "initialHostDir": "Directorio del Sistema principal inicial",
+      "userName": "Nombre de Usuario",
+      "password": "Contraseña",
+      "autoScript": "Reproducción automática del script a conectar",
+      "sharedScript": "Pre-defined scripts",
+      "privateScript": "Self-defined scripts",
+      "3270Extensions": "TN3270E Extensions",
+      "3270FieldValidation": "3270 Field Validation",
+      "hostBell": "Host Bell",
+      "backUp": {
+        "checkbox": "Enable \"Hot Backup\" Host Names",
+        "addNew": "Add New",
+        "dragInfo": "Drag and drop item to change the order.",
+        "title": "Hot Backup",
+        "label": "Hot Backup",
+        "addTitle": "Add New Host",
+        "editTitle": "Edit Host",
+        "none": "None",
+        "editIcon": "Edit",
+        "deleteIcon": "Delete",
+        "header": {
+          "name": "Name",
+          "action": "Actions"
+        },
+        "host": {
+          "label": "TCP Host",
+          "required": "Host is required",
+          "length": "Maximum length is 253 characters.",
+          "text": "Only alphanumeric characters, periods, colons, underscores and dashes are allowed."
+        },
+        "port": {
+          "label": "TCP Port",
+          "required": "Port is required",
+          "length": "Port must be a number in the range 1 - 65535.",
+          "text": "Only numeric values are allowed."
+        }
+      },
+      "forceAutoWrap": "Force Auto Wrap",
+      "keepAlive": {
+        "title": "Opciones del temporizador para el Keepalive de la sesión",
+        "enable": "Habilitar Keep Alive",
+        "disable": "Inhabilitar",
+        "nop": "Utilice NOP",
+        "timingMark": "Usar marca de tiempo",
+        "tcp": "Utilice TCP",
+        "timerValue": "Valor de temporizador (minutos)",
+        "range": "El valor del temporizador debe estar entre 1 y 999.",
+        "autoReconnectTitle": "Opciones de reconexión automática",
+        "autoReconnect": "Sesión de reconexión automática"
+      },
+      "clone": {
+        "title": "Clonar una sesión",
+        "sessionName": "Nombre de la sesión",
+        "validation": {
+          "required": "Un nombre se sesión es requerido.",
+          "pattern": "Estos nombres no pueden contener los siguientes caracteres: / \\ * &% #? ~ + `",
+          "maxLen": "La longitud máxima es de 16 caracteres.",
+          "exist": "Este nombre de sesión ya existe. Teclee un nombre único.",
+          "cannotSave": "Este cambio de sesión clonar no se puede guardar desde la configuración del servidor."
+        },
+        "failed": "Este cambio de sesión clonar no se puede guardar desde la configuración del servidor."
+      },
+      "delete": {
+        "title": "Delete Session Confirmation",
+        "sessionName": "Confirm delete session:",
+        "note": "Note: All related open session connections will be closed.",
+        "failed": "This session can not be deleted from server configuration."
+      },
+      "display": {
+        "keyboardType": "Tipo de Teclado",
+        "codePage": "Code Page",
+        "codePagePattern": "Valores numéricos sólo para el Code Page.",
+        "characterSet": "Conjunto  de caracteres",
+        "printAss": "Asociación de impresoras",
+        "characterSetPattern": "Valores numéricos sólo para el juego de caracteres.",
+        "record": "Solicitar registro de respuesta de inicio"
+      },
+      "printer": {
+        "name": "*NOMBRE MSGQ",
+        "library": "*Biblioteca MSGQ",
+        "font": "Fuente",
+        "hostTransform": "Transformación Iimpresión host",
+        "typeMode": "Tipo de fabricación y modelo",
+        "customName": "Nombre personalizado",
+        "customLibrary": "Biblioteca personalizada",
+        "paper": {
+          "label": "Papel",
+          "s1": "Fuente de papel 1",
+          "s2": "Fuente de papel 2",
+          "envelope": "Sobre"
+        },
+        "formfeed": {
+          "label": "Alimentación de formulario",
+          "default": "Predeterminado",
+          "continuous": "Continuo",
+          "cut": "Corte",
+          "autocut": "Corte automático"
+        },
+        "pattern": {
+          "font": "Sólo valores numéricos para el conjunto de caracteres.",
+          "name": "Se requiere el NOMBRE de MSGQ.",
+          "library": "Se requiere la BIBLIOTECA de MSGQ."
+        }
+      },
+      "security": {
+        "invalidCert": "Certificado inválido",
+        "accept": "Aceptar",
+        "reject": "Rechazar",
+        "principleName": "Nombre Principal Alternativo",
+        "tls": {
+          "label": "Minimum TLS Version",
+          "version": {
+            "v10": "TLS v1.0",
+            "v11": "TLS v1.1",
+            "v12": "TLS v1.2",
+            "v13": "TLS v1.3"
+          }
+        },
+        "cipherTitle": "Select one or more Cipher Suites to Enable TLS",
+        "useCipher": "Select preferred Cipher Suites"
+      },
+      "signon": {
+        "force": "Forzar inicio de sesión cifrado",
+        "userName": "Nombre de Usuario",
+        "password": "Contraseña",
+        "program": "Programa a llamar",
+        "menu": "Menú inicial",
+        "library": "Librería actual",
+        "editPwd": "Edit Password"
+      },
+      "restore": {
+        "success": "Session configuration restored successfully.",
+        "failed": "Session configuration restored failed!",
+        "title": "Restore Confirmation",
+        "sessionName": "Confirm restore session:",
+        "button": "Restore",
+        "sessionConfig": "Session configuration",
+        "hotspotConfig": "Hotspot settings",
+        "fontConfig": "Font settings",
+        "colorConfig": "Color settings",
+        "launchpadConfig": "Power pad settings",
+        "keyboardConfig": "Keyboard settings",
+        "keyboardMappings": "Keyboard mappings",
+        "languageConfig": "Language settings",
+        "translateConfig": "Translation settings",
+        "fileTransConfig": "File Transfer settings",
+        "printBasicConfig": "Print options settings",
+        "printAppearanceConfig": "Print appearance settings",
+        "indfileTransferConfig": "IND$FILE settings",
+        "cursorConfig": "Cursor settings",
+        "header": "Any customization made to the ",
+        "onend": "will be lost.",
+        "body": "Are you sure you want to restore to default configuration settings?"
+      },
+      "GDDMSupport": "Enable Graphics"
+    },
+    "sessionSearch": {
+      "noFound": "No session found with session name"
+    },
+    "printBasic": {
+      "printMethod": {
+        "label": "Método de impresión",
+        "choose": "Choose an option",
+        "browser": "Browser Printing",
+        "pdf": "Imprimir a PDF",
+        "normal": "Passthrough - Normal",
+        "afp": "Passthrough - AFP Support",
+        "noebcdic": "Passthrough - No EBCDIC conversion",
+        "passthrough": "Passthrough",
+        "infomation": "Re-open session to apply print method change."
+      },
+      "timeout": "Fin del tiempo de espera",
+      "seconds": "segundo(s)",
+      "unbind": "Utilice host unbind como indicador de fin de trabajo",
+      "ignoreFF": "Ignorar los pies de los formularios enviados desde el sistema principal",
+      "processHorzTabs": "Procesar comandos de tabulación horizontal de SCS",
+      "message": {
+        "success": "El cambio a las opciones de impresión se ha publicado en la configuración del servidor.",
+        "cannotSave": "Los cambios en las opciones de impresión no se pueden publicar en la configuración del servidor.",
+        "range": "Debe ser un número en el rango {{min}} - {{max}}",
+        "mustBePassThrou":"Cuando se abre la conversión de impresión del host, se debe pasar el método de impresión"
+      },
+      "toolNotification": {
+        "message": "You have selected a Passthrough print method. If you don't know how to send the file to a printer, you can {{toolLink}} a {{useLink}} to help print the job."
+      },
+      "restore": {
+        "success": "Print options restored successfully.",
+        "failed": "Print options restored failed!"
+      }
+    },
+    "printAppearance": {
+      "pageSize": {
+        "label": "Tamaño del papel",
+        "A3": "A3",
+        "A4": "A4",
+        "A5": "A5",
+        "B4": "B4",
+        "B5": "B5",
+        "executive": "Executive",
+        "legal": "Legal",
+        "letter": "Letter",
+        "statement": "Statement",
+        "tabloid": "Tabloid"
+      },
+      "orientation": {
+        "label": "Orientación",
+        "portrait": "Retrato",
+        "landscape": "Paisaje"
+      },
+      "margin": {
+        "label": "Márgenes (Pulgadas)",
+        "left": "Izquierda",
+        "right": "Derecha",
+        "top": "Arriba",
+        "bottom": "Abajo"
+      },
+      "fontSize": "Tamaño del fuente (pts)",
+      "linesPerPage": "Líneas por página",
+      "override": "Anular los comandos del sistema principal",
+      "message": {
+        "success": "Se ha publicado un cambio en la apariencia de impresión en la configuración del servidor.",
+        "cannotSave": "Los cambios en la apariencia de impresión no se pueden publicar en la configuración del servidor.",
+        "range": "Debe ser un número en el rango {{min}} - {{max}}",
+        "overlap": "Los márgenes se superponen o están fuera del papel."
+      },
+      "restore": {
+        "success": "Print appearance restored successfully.",
+        "failed": "Print appearance restored failed!"
+      }
+    },
+    "indFileTransfer": {
+      "tabName": {
+        "settings": "Configuraciones",
+        "advanced": "Avanzado",
+        "dbcs": "DBCS"
+      },
+      "settings": {
+        "hostName": "Sistema de host",
+        "vmcms": "VM/CMS",
+        "tso": "TSO",
+        "cicsvs": "CICS/VS",
+        "hostFileOptions": "Opciones del archivo de host",
+        "fileType": "Tipo del archivo",
+        "fileMode": "Modo del archivo",
+        "fileOptions": "Opciones del Archivo",
+        "text": "Texto",
+        "binary": "Binario",
+        "crlf": "CR/LF",
+        "append": "Adjuntar",
+        "transferOptions": "Opciones de transferencia",
+        "useLTT": "Usar tablas locales de traducciones",
+        "packetSize": "Tamaño del paquete",
+        "autoBT": "<Borrar entrada> automáticamente antes de la transferencia",
+        "sendCBT": "Enviar <Quitar> antes de transferencia",
+        "inputNumber": "Please enter an integer"
+      },
+      "advanced": {
+        "recordFormat": "Forma de grabar",
+        "default": "Predeterminado",
+        "variable": "Variable",
+        "fixed": "Fijo",
+        "undefined": "Indefinido",
+        "recordLength": "Duración de grabación",
+        "blockSize": "Tamaño del bloqueo",
+        "space": "Espacio",
+        "allocateSize": "Distribuir tamaño",
+        "increment": "Incremento",
+        "unspecified": "No especificado",
+        "avgBlocks": "Bloqueos promedios",
+        "cylinders": "Cilindros",
+        "options": "Opciones",
+        "tracks": "Pistas",
+        "hostFilePW": "Contraseña del archivo de Host",
+        "tpn": "Nombre del programa de transferencia",
+        "ilp": "Incluir paréntesis izquierda",
+        "irp": "Incluir paréntesis derecha",
+        "addParameters": "Parámetros adicionales"
+      },
+      "dbcs": {
+        "options": "DBCS Options",
+        "fileOptions": "File Options",
+        "enable": "Enable DBCS Processing",
+        "codepage": "PC Code Page:",
+        "so": "SO",
+        "noso": "NOSO",
+        "user": "USER"
+      },
+      "message": {
+        "success": "IND$FILE settings saved successfully.",
+        "cannotSave": "IND$FILE settings saved failed."
+      },
+      "restore": {
+        "success": "IND$FILE settings restored successfully.",
+        "failed": "IND$FILE settings restored failed!"
+      }
+    }
+  },
+  "terminal": {
+    "groupMessage": "No se encontró ningún script con el nombre de script \"{{urlScriptName}}\"",
+    "launchFTP": "Iniciar sesión FTP ",
+    "connection": {
+      "limitation": "Ha alcanzado el límite de conexiones máximas. Se le permite tener solo \"{{maxCount}}\" sesiones activas al mismo tiempo."
+    }
+  },
+  "ftp": {
+    "actions": {
+      "download": "Descargar",
+      "rename": "Cambiar nombre",
+      "permissions": "Permisos",
+      "delete": "Eliminar"
+    },
+    "folderName": "Nombre de la carpeta",
+    "delete": {
+      "header": "Eliminar",
+      "defaultInfo": "Do you want to delete",
+      "info": "Do you want to delete selected item?",
+      "allInfo": "Do you want to delete selected file(s) and/or folder(s)?"
+    },
+    "command": {
+      "label": "Teclee el comando a ejecutar",
+      "header": "Ejecutar comando"
+    },
+    "transferType": {
+      "label": "Tipo de transferencia de archivo",
+      "ascii": "ASCII",
+      "binary": "Binario",
+      "auto": "Auto"
+    },
+    "permissions": {
+      "read": "Leer",
+      "write": "Escribir",
+      "execute": "Ejecutar",
+      "owner": "Permisos de propietario",
+      "group": "Permisos de grupo",
+      "world": "Permisos generales"
+    },
+    "userInfo": {
+      "username": "Nombre de usuario",
+      "password": "Contraseña"
+    },
+    "newName": "Nombre nuevo",
+    "emptyDir": "No Data in current directory.",
+    "user": "FTP user",
+    "addFolder": "Agregar carpeta",
+    "upload": {
+      "title": "Subir",
+      "description": "Seleccionar archivos para subir",
+      "addFiles": "Agregar archivos",
+      "uploadFailed": "upload failed",
+      "clearList": "Clear List"
+    },
+    "message": {
+      "required": "File extension is required.",
+      "existed": "File extension is already existed."
+    }
+  },
+  "printer": {
+    "header": "Sesión de impresora",
+    "download": "Descargar",
+    "print": "Imprimir a PDF",
+    "delete": "Eliminar",
+    "LU1": "LU Type 1",
+    "LU3": "LU Type 3",
+    "LU4": "LU Type 4",
+    "disconnected": "Desconectado",
+    "connecting": "disco",
+    "connected": "Conectado",
+    "offline": "Off-line",
+    "active": "Active",
+    "ready": "Ready",
+    "spooling": "Spooling",
+    "sessionID": "Sesión ID",
+    "connectionStatus": "Estado de la conexión",
+    "protocol": "Protocolo",
+    "luName": "Nombre de la LU",
+    "deviceName": "Nombre del dispositivo",
+    "printStatus": "Estado de la impresora",
+    "time": "Tiempo",
+    "boundTime": "Tiempo limitado",
+    "jobName": "Nombre de JOB",
+    "size": "Tamaño",
+    "date": "Fecha y Hora",
+    "status": "Estado",
+    "jobType": "Tipo de Job",
+    "action": "Accione",
+    "noData": "No print job in current user.",
+    "jobStatus": {
+      "inProgress": "En curso",
+      "completed": "Completado",
+      "printing": "Imprimiendo"
+    },
+    "deleteDialog": {
+      "header": "Eliminar \"{{name}}\"",
+      "info": "Está a punto de eliminar \"{{name}}\". Los cambios no se pueden recuperar. ¿Quieres eliminarlo de todos modos? "
+    },
+    "notification": {
+      "fail": "Fracaso:",
+      "getFailMsg": "No conseguir empleo {{jobName}}",
+      "success": "Éxito:",
+      "deleteSuccessMsg": "El job {{jobName}} se ha eliminado correctamente",
+      "deleteFailMsg": "No se pudo borrar el job {{jobName}}"
+    }
+  },
+  "mobileKeyboard": {
+    "option": {
+      "display": "Display",
+      "theme": "Theme",
+      "opacity": "Opacity"
+    }
+  }
+}

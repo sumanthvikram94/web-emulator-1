@@ -1,0 +1,57 @@
+# The LoadBalancer service which expose the IngressGateway
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-rtew-ingressgateway
+  namespace: rtew # The namespace for Rocket TE Web product
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-internal: 'true'
+spec:
+  type: LoadBalancer
+  selector:
+    istio: ingressgateway
+  ports:
+  - port: 8543
+    name: rtew-admin-blue-0 # HTTP port for admin console running on Pod 0 of the blue group
+  - port: 8545
+    name: rtew-admin-blue-1 # HTTP port for admin console running on Pod 1 of the blue group
+  - port: 8547
+    name: rtew-admin-green-0 # HTTP port for admin console running on Pod 0 of the green group
+  - port: 8549
+    name: rtew-admin-green-1 # HTTP port for admin console running on Pod 1 of the green group
+  - port: 8080
+    name: rtew-client # HTTP port for RTEW client UI
+---
+# Deployment for the Istio Ingress Gateway
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: istio-ingressgateway
+  namespace: rtew
+spec:
+  selector:
+    matchLabels:
+      istio: ingressgateway
+  template:
+    metadata:
+      annotations:
+        inject.istio.io/templates: gateway
+      labels:
+        istio: ingressgateway
+        sidecar.istio.io/inject: "true"
+    spec:
+      # Allow binding to all ports (such as 80 and 443)
+      securityContext:
+        sysctls:
+        - name: net.ipv4.ip_unprivileged_port_start
+          value: "0"
+      containers:
+      - name: istio-proxy
+        image: auto # The image will automatically update each time the pod starts.
+        # Drop all privileges, allowing to run as non-root
+        securityContext:
+          capabilities:
+            drop:
+            - ALL
+          runAsUser: 1337
+          runAsGroup: 1337

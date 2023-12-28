@@ -1,0 +1,24 @@
+{
+  "RocketSoftwareCopyright_Header" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""],
+  "identifier": "com.rs.ssoController",
+  "pluginType": "application",
+  "apiVersion": "0.0.0-version-number",
+  "pluginVersion": "0.0.0-version-number",
+  "dataServices": [
+    {
+      "type": "router",
+      "name": "ssoController",
+      "initializerLookupMethod": "external",
+      "fileName": "sso-controller.js",
+      "routerFactory": "ssoAuthRouter",
+      "dependenciesIncluded": true
+    }
+  ],
+  "RocketSoftwareCopyright_Footer" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""]
+}

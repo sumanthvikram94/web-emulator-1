@@ -1,0 +1,13 @@
+{
+  "RocketSoftwareCopyright_Header" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""],
+  "identifier": "com.rs.configjs",
+  "pluginLocation": "../lib/zlux/zlux-proxy-server/plugins/config"
+
+  ,"RocketSoftwareCopyright_Footer" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""]
+}

@@ -1,0 +1,47 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "TOTP Config",
+	"type": "object",
+	"properties": {
+		"window": {
+			"description": "Tokens in the previous and future x-windows that should be considered valid.",
+			"default": 1,
+			"enum": [
+				0,
+				1,
+				2
+			]
+		},
+		"digits": {
+			"description": "The length of the token usually 6,7,8.",
+			"default": 6,
+			"enum": [
+				6,
+				7,
+				8
+			]
+		},
+		"period": {
+			"description": "Time step",
+			"default": 30,
+			"enum": [
+				30,
+				40,
+				50,
+				60,
+				70,
+				80,
+				90
+			]
+		},
+		"algorithm": {
+			"description": "The algorithm used for calculating the HMAC. supports SHA1, SHA256, SHA512",
+			"enum": [
+				"SHA1",
+				"SHA256",
+				"SHA512"
+			]
+		}
+	},
+	"required": ["window", "digits", "period", "algorithm"]
+}

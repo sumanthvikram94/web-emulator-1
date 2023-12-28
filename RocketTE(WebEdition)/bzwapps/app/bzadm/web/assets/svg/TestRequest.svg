@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>test request</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc" transform="translate(-999.000000, -221.000000)">
+            <g id="test-request" transform="translate(999.000000, 221.000000)">
+                <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="18" height="18"></rect>
+                <rect id="矩形" stroke="#ad33ad" fill="#D8D8D8" x="9.5" y="4.5" width="7" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-4" stroke="#ad33ad" fill="#D8D8D8" x="9.5" y="12.5" width="7" height="1" rx="0.5"></rect>
+                <polyline id="路径-13" stroke="#ad33ad" stroke-width="2" stroke-linecap="round" points="2 5 4 7 8 2"></polyline>
+                <path d="M2.5,10.5 L7.5,15.5 M7.5,10.5 L2.5,15.5" id="形状结合" stroke="#ad33ad" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

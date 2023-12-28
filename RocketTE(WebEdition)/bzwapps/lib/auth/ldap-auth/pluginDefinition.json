@@ -1,0 +1,17 @@
+{
+  "RocketSoftwareCopyright_Header" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""],
+  "identifier": "com.rs.ldapAuth",
+  "pluginType": "nodeAuthentication",
+  "authenticationCategory": "ldap",
+  "apiVersion": "1.0",
+  "pluginVersion": "1.0",
+  "filename": "ldapAuth.js",
+  "authenticationInstaller": "ldapAuthInstaller",
+  "RocketSoftwareCopyright_Footer" : [
+    "© 2014-2020 Rocket Software, Inc. or its affiliates. All Rights Reserved.",
+    "ROCKET SOFTWARE, INC. CONFIDENTIAL",
+    ""]
+}
