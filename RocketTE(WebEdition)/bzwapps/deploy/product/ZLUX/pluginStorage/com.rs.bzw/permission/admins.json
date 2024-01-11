@@ -1,4 +1,0 @@
-{
-  "description": "The usernames listed in adminIDs have permission for administration operations. If __ANY_LOGIN_ID__ exists in the array, then any login users has the permission.",
-  "adminIDs": ["__ANY_LOGIN_ID__"]
-}

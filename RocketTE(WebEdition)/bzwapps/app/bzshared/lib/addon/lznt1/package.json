@@ -1,9 +1,0 @@
-{
-  "name": "lznt1",
-  "version": "0.1.0",
-  "description": "LZNT1 compress algorithm",
-  "main": "./build/Release/lznt1",
-  "author": "Zhi Li <zli@rocketsoftware.com>",
-  "license": "",
-  "gypfile": true
-}
